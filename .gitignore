@@ -1,0 +1,10 @@
+venv/
+__pycache__/
+*.pyc
+
+data/*.csv
+models/*.joblib
+models/metrics.txt
+
+.DS_Store
+Thumbs.db

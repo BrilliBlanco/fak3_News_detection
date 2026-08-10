@@ -1,0 +1,24 @@
+Good question to prep for — here's a strong, defensible answer:
+
+**1. Interpretability / explainability**
+Your model is a transparent pipeline: TF-IDF gives you exact word/n-gram weights, and Naive Bayes/SVM decisions can be traced back to specific features. You can literally say "this article was flagged fake because of these 10 words with these weights." An LLM's answer is a black box — you can't inspect *why* it decided something, which matters a lot for something like misinformation detection where trust and auditability matter.
+
+**2. Reproducibility & consistency**
+Your model gives the same prediction for the same input, every time, forever — it's a fixed, versioned artifact you trained and can re-run. ChatGPT's answer can vary between calls, model updates, or even subtle prompt-wording changes. For a system meant to be *evaluated* or *deployed*, that determinism matters.
+
+**3. Cost & scalability**
+Once trained, your model classifies text in milliseconds for free, offline, no API calls. Classifying millions of articles (which is the real use case for fake news detection — social media scale) via an LLM API would cost real money per request and hit rate limits. TF-IDF + SVM is the kind of lightweight approach actually used in production content-moderation pipelines for exactly this reason.
+
+**4. No data leaves your machine**
+Everything runs locally — no sending potentially sensitive text to a third-party API. Relevant for privacy-conscious applications (e.g., internal newsroom tools, government use).
+
+**5. It demonstrates you understand the fundamentals**
+This is probably the most important one for a teacher/judge: asking ChatGPT to classify text demonstrates you can use a tool. Building the pipeline yourself demonstrates you understand *how* text classification actually works — feature extraction, vectorization, the bias/variance tradeoff between NB and SVM, calibration for confidence scores, evaluation metrics. That's the actual learning objective of the assignment.
+
+**6. Purpose-built vs. general-purpose**
+An LLM is a generalist trained on a huge diverse mix of data. Your model is trained *specifically* on labeled fake/real news examples for this exact task, so its "understanding" of what separates fake from real in this domain is more targeted (whether that makes it more accurate is genuinely debatable and a fair thing to discuss with a judge — but it's a real design difference).
+
+**A short version you can say out loud:**
+> "An LLM gives you an opinion; our model gives you a measurable, explainable, reproducible decision that we built and can defend — that's the difference between using a tool and understanding a technique."
+
+If they push back with "but ChatGPT is probably more accurate" — that's a fair point you can concede while pivoting to: accuracy isn't the only metric that matters for a production or academic system; **transparency, cost, and reproducibility** are equally real engineering tradeoffs, and this project demonstrates you can build and evaluate a model rather than just call one.
