@@ -39,8 +39,15 @@ project. Reporting 99% and stopping would have been the failure.
 pip install -r requirements.txt
 python src/setup_data.py     # extracts Fake.csv / True.csv from archive.zip
 python src/train.py          # trains all three models (~35s)
-streamlit run app.py         # the demo UI
+python -m streamlit run app.py   # the demo UI
 ```
+
+> Commands are written as `python -m streamlit` / `python -m pytest` rather
+> than bare `streamlit` / `pytest`. When pip installs into a *user* directory
+> — which it does whenever the active Python (e.g. conda `base`) isn't
+> writable — the `.exe` launchers land somewhere that isn't on PATH, and the
+> bare commands fail with *"is not recognized"*. The module form always works.
+> See [PROJECT_GUIDE.md §5](PROJECT_GUIDE.md#5-debugging-common-errors).
 
 Full setup, per-OS notes and troubleshooting: [PROJECT_GUIDE.md](PROJECT_GUIDE.md).
 
@@ -58,8 +65,8 @@ Full setup, per-OS notes and troubleshooting: [PROJECT_GUIDE.md](PROJECT_GUIDE.m
 | `python src/explain.py` | Per-prediction and global feature attributions |
 | `python src/cross_dataset_eval.py` | Score the trained models on a *second* dataset — the only honest generalization test |
 | `python src/db.py` | Inspect / export the prediction log |
-| `pytest -q` | 53 tests |
-| `streamlit run app.py` | Demo UI: Classify, Batch, Dataset, Model, History |
+| `python -m pytest -q` | 53 tests |
+| `python -m streamlit run app.py` | Demo UI: Classify, Batch, Dataset, Model, History |
 
 Every script supports `--help`.
 
@@ -233,7 +240,7 @@ distribution the model is *actually used on* rather than from ISOT.
 ## 10. Run the demo UI
 
 ```bash
-streamlit run app.py
+python -m streamlit run app.py
 ```
 
 Five tabs:
@@ -293,7 +300,7 @@ fake-news-detection/
 - Label convention is `0 = fake, 1 = real` everywhere.
 - `LinearSVC` has no `predict_proba`, so it's wrapped in `CalibratedClassifierCV`
   for real probabilities instead of raw decision-function distances.
-- Run `pytest -q` before pushing. Tests that need trained models skip
+- Run `python -m pytest -q` before pushing. Tests that need trained models skip
   themselves on a fresh clone.
 - If git shows every line as changed on Windows:
   `git config --global core.autocrlf true` (Windows) or

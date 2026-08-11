@@ -80,8 +80,8 @@ python src/setup_data.py                      # ~5s   -> data/Fake.csv, data/Tru
 python src/eda.py                             # ~90s  -> reports/eda_report.md + figures
 python src/train.py --cv 3                    # ~60s  -> models/
 python src/evaluate.py --cv 3 --learning-curve # ~5min -> reports/evaluation_report.md
-pytest -q                                     # ~10s  -> 53 passed
-streamlit run app.py                          # opens http://localhost:8501
+python -m pytest -q                                     # ~10s  -> 53 passed
+python -m streamlit run app.py                          # opens http://localhost:8501
 ```
 
 Expected output at each step:
@@ -115,7 +115,7 @@ dataset: SVM 99.32% → 98.49%, and the Reuters one-rule baseline collapses from
 
 **Changed `clean_text()` or any preprocessing?**
 ```bash
-python src/train.py && python src/evaluate.py && pytest -q
+python src/train.py && python src/evaluate.py && python -m pytest -q
 ```
 You *must* retrain. A vectorizer fitted on differently-cleaned text will
 silently produce garbage features at prediction time — no error, just bad
@@ -138,7 +138,7 @@ explanation panel degrades instead of crashing.
 
 **Just want to test a change to the UI?**
 ```bash
-streamlit run app.py
+python -m streamlit run app.py
 ```
 Streamlit hot-reloads on save. If a `@st.cache_resource` loader is stale,
 press **C** in the browser (clear cache) or restart.
@@ -170,6 +170,54 @@ press **C** in the browser (clear cache) or restart.
 ---
 
 ## 5. Debugging: common errors
+
+### `pytest : The term 'pytest' is not recognized...` / same for `streamlit`
+
+The package **is** installed — only its `.exe` launcher isn't on your PATH.
+pip warns about this during install:
+
+```
+WARNING: The script streamlit.exe is installed in
+'C:\Users\<you>\AppData\Roaming\Python\Python312\Scripts'
+which is not on PATH.
+```
+
+This happens when the active Python (e.g. conda `base`) isn't writable, so pip
+falls back to a **user** install. Reinstalling won't help — pip correctly
+reports "Requirement already satisfied".
+
+**Fix — run them as modules.** Works everywhere, no PATH changes:
+
+```bash
+python -m pytest -q
+python -m streamlit run app.py
+```
+
+All docs in this repo use this form for exactly that reason.
+
+**Optional, if you want the bare commands back**, add the Scripts folder to
+PATH for the current PowerShell session:
+
+```powershell
+$env:Path += ";$env:APPDATA\Python\Python312\Scripts"
+```
+
+To make it permanent (new shells only — reopen PowerShell after):
+
+```powershell
+[Environment]::SetEnvironmentVariable("Path", $env:Path + ";$env:APPDATA\Python\Python312\Scripts", "User")
+```
+
+**Cleaner long-term fix — use a venv**, which puts everything in one writable
+place and sidesteps this entirely:
+
+```powershell
+python -m venv venv
+venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+```
+
+Inside an activated venv, plain `pytest` and `streamlit` work.
 
 ### `FileNotFoundError: Missing Fake.csv, True.csv inside .../data`
 The dataset isn't extracted.
@@ -218,7 +266,7 @@ Same cause, raised deliberately by `explain.py` with a clearer message.
 
 ### Streamlit: `Port 8501 is already in use`
 ```bash
-streamlit run app.py --server.port 8899
+python -m streamlit run app.py --server.port 8899
 ```
 Or kill the old process. On Windows:
 ```powershell
@@ -227,7 +275,7 @@ Get-CimInstance Win32_Process -Filter "Name='python.exe'" | Where-Object { $_.Co
 
 ### App shows "No trained models found"
 The app looks in `models/` relative to the **project root**. Run
-`streamlit run app.py` from the root, not from `src/`.
+`python -m streamlit run app.py` from the root, not from `src/`.
 
 ### `MemoryError` / machine crawls during training
 Lower the feature count:
@@ -237,7 +285,7 @@ python src/train.py --max-features 2000 --ngram-max 1
 The `--cv` and `--learning-curve` flags multiply the work — drop them first.
 
 ### `pytest` collects 0 tests
-Run from the project root: `pytest -q`. Tests requiring trained models skip
+Run from the project root: `python -m pytest -q`. Tests requiring trained models skip
 themselves (`run python src/train.py first`) rather than fail — that's normal
 on a fresh clone.
 
@@ -391,7 +439,7 @@ preprocessing.py ◄─────┘   clean_text, strip_source_boilerplate,
 ## 9. Before you push
 
 ```bash
-pytest -q                        # 53 passed
+python -m pytest -q                        # 53 passed
 python src/train.py              # artifacts still build
 git status                       # no data/*.csv, no *.joblib, no predictions.db
 ```

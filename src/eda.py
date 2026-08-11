@@ -466,10 +466,13 @@ learning involved.
     out = REPORTS_DIR / "eda_report.md"
     out.write_text(report, encoding="utf-8")
 
+    written = [f for f in (balance_fig, subj_fig, len_fig, time_fig,
+                           style_fig, terms_fig, leak_fig) if f]
     print(f"\nWrote {out}")
     print(f"      {TABLES_DIR} ({len(list(TABLES_DIR.glob('*.csv')))} tables)")
     if figs:
-        print(f"      {FIGURES_DIR} ({len(list(FIGURES_DIR.glob('*.png')))} figures)")
+        # count only this script's own figures - evaluate.py writes here too
+        print(f"      {FIGURES_DIR} ({len(written)} figures)")
     print(f"\nKey finding: '{worst.name}' alone classifies "
           f"{worst['one_rule_accuracy']:.1%} of the dataset correctly.")
 

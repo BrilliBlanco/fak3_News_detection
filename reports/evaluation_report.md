@@ -53,8 +53,6 @@ if a false "REAL" verdict is more costly than a false "FAKE" one.
 | SVM (Linear, calibrated) | 0.9923 | 0.0002 |
 | Logistic Regression | 0.9862 | 0.0005 |
 
-## Learning curve
-![learning curve](figures/learning_curve.png)
 
 
 ## Error analysis - the confident mistakes
