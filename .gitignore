@@ -8,10 +8,11 @@ __pycache__/
 data/*.csv
 
 # Trained artifacts - regenerate with src/train.py
-models/*.joblib
+# Note the ** patterns: models/alt/ (from src/alt_models.py) is ~250MB, and a
+# top-level-only "models/*.joblib" would have silently let it into git.
+models/**/*.joblib
+models/**/*.json
 models/metrics.txt
-models/metrics.json
-models/run_metadata.json
 models/model_card.md
 
 # Runtime prediction store and scored outputs.

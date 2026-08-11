@@ -1,0 +1,618 @@
+model,article_index,actual,predicted,direction,confidence,subject,n_words,length_bucket,n_matched_features,mentions_reuters,reuters_tag,wire_dateline,title
+Logistic Regression,10277,fake,real,false REAL,0.9687189812080936,politics,1184,1000+,323,False,False,False,EXPERT CLAIMS N. KOREA’S SECOND MISSILE Test Demonstrates They Now Have Ability To Hit 3 Major Cities On U.S. Mainland
+Logistic Regression,25560,real,fake,false FAKE,0.9560969741190102,politicsNews,675,500-999,196,True,True,False,Highlights from Reuters' exclusive interview with Donald Trump
+Logistic Regression,33525,real,fake,false FAKE,0.9335832251722447,worldnews,537,500-999,116,True,True,False,A Picture and its Story: Reaching out to rescue a Rohingya woman
+Logistic Regression,10571,fake,real,false REAL,0.9190089571670724,politics,315,200-499,106,False,False,False,FORD’S NEW CEO SNUBS President Trump…Will Build Focus In China…Export To U.S.
+Logistic Regression,15836,fake,real,false REAL,0.9119056335331939,politics,671,500-999,193,True,False,False,EGYPTIAN COURT SENTENCES MUSLIM BROTHERHOOD LEADER AND 13 OTHERS TO DEATH AND LEADER’S “Peaceful” U.S.-Egyptian Brother To Life In Prison
+Logistic Regression,14743,fake,real,false REAL,0.9078726626911569,politics,1827,1000+,434,True,False,False,"IS OBAMA’S RADICAL AGENDA Responsible For State Department’s Misleading Report On Forced Labor, Prostitution And Human Slavery?"
+Logistic Regression,21665,real,fake,false FAKE,0.9022590311728217,politicsNews,115,50-199,51,True,True,False,Russia's response to Trump leak reports: don't read U.S. newspapers
+Logistic Regression,11694,fake,real,false REAL,0.8928628067634631,politics,207,200-499,92,False,False,False,BREAKING: Activist Appeals Court Rules Against Trump…Trump Comes Out Swinging…Tweets Awesome Reply
+Logistic Regression,17285,fake,real,false REAL,0.8747289819312623,US_News,1091,1000+,305,False,False,False,NORTH KOREA: Trump’s Recklessness Could Trigger All-Out Conflict on Korean Peninsula
+Logistic Regression,27590,real,fake,false FAKE,0.8730941048224442,politicsNews,129,50-199,62,False,False,False,Jenner uses women's restroom at Trump property
+Logistic Regression,16282,fake,real,false REAL,0.8619173363710064,Government News,1406,1000+,321,False,False,False,FOLLOW THE MONEY: MEXICAN GIVEAWAY OF MILLIONS OF FLAT SCREEN TV’S TO THE POOR RAISES QUESTIONS
+Logistic Regression,14588,fake,real,false REAL,0.8555404686773768,politics,503,500-999,141,False,False,False,WARNING: FEDS PREDICT $30 TRILLION DOLLAR DEBT Because Of These Two Key Things
+Logistic Regression,23222,real,fake,false FAKE,0.8359833413924003,politicsNews,408,200-499,129,True,True,True,Suppressing free press is 'how dictators get started': Senator McCain
+Logistic Regression,13672,fake,real,false REAL,0.8254787111360412,politics,425,200-499,117,False,False,False,ARIZONA BIKERS ARE ABOUT To Become Violent “Dreamers” Worst Nightmare At Upcoming Phoenix Trump Rally
+Logistic Regression,28194,real,fake,false FAKE,0.8231740317947449,politicsNews,432,200-499,134,True,True,False,Graphic account of Hulk Hogan sex tape read in Florida court
+Logistic Regression,28994,real,fake,false FAKE,0.8224551054513254,politicsNews,1017,1000+,281,True,True,False,"Factbox: Trump seen from Davos: 'unbelievable', 'embarrassing' but candor 'hit a vein'"
+Logistic Regression,21433,real,fake,false FAKE,0.814769605571732,politicsNews,544,500-999,128,True,True,True,"Before the White House, Kennedy was a high-school prankster"
+Logistic Regression,11660,fake,real,false REAL,0.8138862714746067,politics,525,500-999,200,False,False,False,BREAKING: GEN MICHAEL FLYNN RESIGNS After Close Friend Steve Bannon Reportedly Offered These 4 Words Of Advice
+Logistic Regression,12208,fake,real,false REAL,0.8130877371761734,politics,243,200-499,97,False,False,False,"ANGELA MERKEL Running For Re-Election Makes Stunning Announcement To BAN BURKAS, After Flooding Nation With 2 Million (Mostly Muslim) Migrants"
+Logistic Regression,24958,real,fake,false FAKE,0.8125052199225471,politicsNews,433,200-499,173,True,True,False,Conservatives bristle as Trump backs off Clinton prosecution
+Logistic Regression,12466,fake,real,false REAL,0.8046578615237671,politics,359,200-499,126,False,False,False,OBAMA UNLEASHES HUNDREDS Of Intelligence Agents To “Protect Elections” From Outside Forces…Hacker known as “Guccifer 2.0” Warns Of Threat “From INSIDE The System”
+Logistic Regression,9847,fake,real,false REAL,0.8021395668105107,politics,328,200-499,133,True,True,False,Why John McCain Will Never Vote to Repeal and Replace Obamacare
+Logistic Regression,14369,fake,real,false REAL,0.7823568231382289,politics,617,500-999,168,True,True,False,INVASION OF AMERICA: POSSIBILITY OF A TRUMP WALL Has Illegals Racing To Across The Border In Record Numbers
+Logistic Regression,13283,fake,real,false REAL,0.7791621457327649,politics,308,200-499,88,False,False,False,"How Is Panama’s “Migrant Crisis” Giving A FREE PASS TO THE U.S. To Anyone From Asia, Cuba, Africa, Haiti…When Did We Become The World’s Dumping Ground?"
+Logistic Regression,28109,real,fake,false FAKE,0.7606706492241061,politicsNews,250,200-499,72,True,True,True,¿Qué bolá? Obama jokes with Cuban humorist in video
+Logistic Regression,14051,fake,real,false REAL,0.7590843756363045,politics,514,500-999,179,False,False,False,NEW LAW WILL PUNISH MUSLIM Migrants…Assimilate Or Get Out!
+Logistic Regression,11745,fake,real,false REAL,0.740626877970578,politics,593,500-999,213,False,False,False,BREAKING: IRAN Tests Cruise Missile…Trump WARNS…They’re “Playing with fire…They don’t appreciate how ‘kind’ President Obama was to them. Not Me!” [VIDEO]
+Logistic Regression,7638,fake,real,false REAL,0.7401778540281242,News,422,200-499,162,True,False,False, The World Speaks Out On Trump — Top Foreign Diplomats Unite Against Him
+Logistic Regression,15825,fake,real,false REAL,0.7385205446419997,politics,251,200-499,88,False,False,False,CUBA STILL A COMMIE HELLHOLE AFTER OBAMA’S “NORMALIZATION”: 4 YEARS IN THE SLAMMER FOR “SOCIAL DANGEROUSNESS”
+Logistic Regression,38764,real,fake,false FAKE,0.7279901224718461,worldnews,439,200-499,107,True,True,True,Mother's fight to discover fate of dead baby's body finds empty coffin
+Logistic Regression,25192,real,fake,false FAKE,0.7273081687794343,politicsNews,1326,1000+,392,True,False,False,"Expert Views: What will be the impact of Trump presidency on immigration, refugees?"
+Logistic Regression,11157,fake,real,false REAL,0.7226288552767404,politics,355,200-499,120,False,False,False,MUSLIMS OUTRAGED: MUNICH ARTIST DISPLAYS “Funny” Racy Bare-Legged “Burka Barbies” [Video]
+Logistic Regression,25779,real,fake,false FAKE,0.720190373667168,politicsNews,841,500-999,220,False,False,False,Commentary: Manic or evasive - these veep guys sure don’t feel like leaders
+Logistic Regression,10178,fake,real,false REAL,0.7193179999506601,politics,507,500-999,149,False,False,False,OKLAHOMA Supreme Court Rules Punishing Smokers With Cigarette Tax “Unconstitutional”…Lawmakers Forced To Fill SHOCKING Hole In State Budget
+Logistic Regression,33298,real,fake,false FAKE,0.708326252722465,worldnews,415,200-499,123,True,True,True,Hungarians take walking tour to overcome fears of Muslims
+Logistic Regression,16405,fake,real,false REAL,0.7061462518615618,Government News,302,200-499,74,False,False,False,IRANIAN NAVY FIRES WARNING SHOTS ON AND SEIZES CARGO SHIP; U.S. NAVY SENDS DESTROYER
+Logistic Regression,15227,fake,real,false REAL,0.6964818334891287,politics,259,200-499,83,True,False,False,"IN A RULING THAT WILL MAKE OBAMA’S HEAD SPIN, Fed Judge Says Telling Illegals “Show Us Your Papers” Is Not Discriminatory"
+Logistic Regression,25958,real,fake,false FAKE,0.6963719387357128,politicsNews,488,200-499,146,True,True,True,"Trump gets skewered, Clinton finds support at TV's Emmy awards"
+Logistic Regression,13171,fake,real,false REAL,0.6950024618951625,politics,194,50-199,67,False,False,False,EPIPEN CEO UNDER FIRE FOR PRICE GOUGING Is Daughter Of US Senator
+Logistic Regression,27001,real,fake,false FAKE,0.6935542157309005,politicsNews,182,50-199,72,True,True,True,"Trump, on CNN, faults Muslim community for not reporting people like Orlando shooter"
+Logistic Regression,9550,fake,real,false REAL,0.6896560153334621,politics,518,500-999,150,False,False,False,JUST IN: Senior GOP Rep Announces His Retirement…A BIG LOSS
+Logistic Regression,26858,real,fake,false FAKE,0.6782890463786874,politicsNews,436,200-499,138,True,True,False,Democrat gun control sit-in sparks social media sensation
+Logistic Regression,14996,fake,real,false REAL,0.6727755989945143,politics,318,200-499,115,False,False,False,WOW! Just When We Thought Obama’s Global Relationships Couldn’t Get Any Worse…Europe Threatens This…
+Logistic Regression,10147,fake,real,false REAL,0.6662845361123421,politics,267,200-499,68,False,False,False,"NORTH KOREA BLINKS After Threats From POTUS and “Mad Dog” Mattis: “If they do that, then it’s game on”"
+Logistic Regression,13623,fake,real,false REAL,0.6635783185319489,politics,457,200-499,147,False,False,False,ICELAND’S STUNNING ELECTION OF ANTI-ESTABLISHMENT Political Novice Should Have Hillary Shaking In Her Pants Suit
+Logistic Regression,22389,real,fake,false FAKE,0.6561185238926204,politicsNews,39,<50,19,True,True,False,ADVISORY: Story on Kushner visiting Iraq withdrawn
+Logistic Regression,14376,fake,real,false REAL,0.6500786509285063,politics,1254,1000+,249,False,False,False,DELEGATES FOR DUMMIES: How They’re Awarded…And How Many Your Candidate Needs To Win [VIDEO]
+Logistic Regression,25464,real,fake,false FAKE,0.6465614034681566,politicsNews,357,200-499,120,True,True,True,Ku Klux Klan newspaper declares support for Trump
+Logistic Regression,9092,fake,real,false REAL,0.6451313374893796,politics,747,500-999,199,False,False,False,JUST IN: TRUMP ENDS FREE MONEY TRAIN After Pakistan Refuses To Stop Housing Terrorists…Cuts STUNNING About Of Military Aid 
+Logistic Regression,10716,fake,real,false REAL,0.6436174931198582,politics,380,200-499,104,False,False,False,BOOM! 4 VENUES CANCEL KATHY GRIFFIN Appearances After She Blames Trump For Her Career Ending Decision To Pose With His Severed Head
+Logistic Regression,16380,fake,real,false REAL,0.6366143513042765,Government News,251,200-499,72,False,False,False,"BREAKING: THIEVES STEAL IRS INFO FROM 100,000 TAXPAYERS"
+Logistic Regression,27844,real,fake,false FAKE,0.6356748292760406,politicsNews,229,200-499,80,True,True,True,Chicago finance committee approves payouts for police custody deaths
+Logistic Regression,12201,fake,real,false REAL,0.6205893790163632,politics,783,500-999,171,False,False,False,BREAKING: MI Court Of Appeals Orders Vote Recount To STOP…Jill Stein’s Democrat Activist Attorney Says Count Must Go On
+Logistic Regression,15572,fake,real,false REAL,0.6166102160044978,politics,693,500-999,202,False,False,False,ARMY THREATENS GREEN BERET WAR HERO WITH COURT MARTIAL For Whistleblowing On Failed Hostage Rescue
+Logistic Regression,10233,fake,real,false REAL,0.6109542839080077,politics,192,50-199,68,False,False,False,AG JEFF SESSIONS Warns Leakers…Taking Steps to Stop the Leaks that “Hurt Our Country” [Video]
+Logistic Regression,10603,fake,real,false REAL,0.6088443936928897,politics,338,200-499,114,False,False,False,"DEM PARTY OFFICIAL, Chair Of Black Caucus, Bernie Sanders Supporter Calls Reactions To Shooting Of Republican Steve Scalise, “So Funny”…REFUSES To Resign"
+Logistic Regression,15992,fake,real,false REAL,0.6061460582545505,Government News,385,200-499,128,False,False,False,HOUSE TAKES Measures To Impeach IRS Chief After Stubborn Refusal To Cooperate…Who Do These People Think They Are? The IRS?
+Logistic Regression,27644,real,fake,false FAKE,0.6053226308873189,politicsNews,444,200-499,106,True,True,True,U.S. justices mull propriety of recalling discharged jury to duty
+Logistic Regression,10320,fake,real,false REAL,0.6029534024425125,politics,583,500-999,163,False,False,False,HEARTBREAKING: Baby Charlie Gard’s Parents End Legal Battle to Come to the US [Video]
+Logistic Regression,11253,fake,real,false REAL,0.5991236985306854,politics,311,200-499,133,False,False,False,REPORT: FBI DIRECTOR COMEY Blocked By Obama Administration Last Summer On Supposed Russian “Influence” In 2016 Election
+Logistic Regression,16131,fake,real,false REAL,0.5932896767820826,Government News,135,50-199,35,False,False,False,"BAN THE BURQA! Women Wearing A Burqa In Switzerland Could Face $9,000 Fine"
+Logistic Regression,10965,fake,real,false REAL,0.593191134798001,politics,339,200-499,70,False,False,False,WOW! HERE’S THE LIST Of Obamacare Taxes Abolished By The House…Reduces Taxes By Over $1 TRILLION
+Logistic Regression,12757,fake,real,false REAL,0.5919017909139822,politics,247,200-499,100,False,False,False,WIKILEAKS EXPOSES Clinton Campaign In Cahoots With Corrupt DOJ On Email Scandal
+Logistic Regression,25033,real,fake,false FAKE,0.5898311475638616,politicsNews,384,200-499,111,True,True,False,"Factbox: The nasty things Trump, Romney have said about each other"
+Logistic Regression,15524,fake,real,false REAL,0.5865165663453628,politics,567,500-999,160,False,False,False,TRUMP RESPONSE TO LEFTIST THREATS: “Get Off My Lawn”
+Logistic Regression,9348,fake,real,false REAL,0.5859291250569204,politics,380,200-499,115,False,False,False,SOUTH KOREA Uses Hilarious Technique To TAUNT North Korea After Soldier Escapes Kim Jong Un’s Hell [VIDEO]
+Logistic Regression,22275,real,fake,false FAKE,0.5815425876703094,politicsNews,622,500-999,199,True,True,False,Instant View: Trump orders military strikes on Syrian air base
+Logistic Regression,16211,fake,real,false REAL,0.5752480197485029,Government News,721,500-999,193,False,False,False,CANADA’S OBAMA? WATCH New Prime Minister Call Himself A “Proud Feminist”…Promises To Raise Taxes On Wealthy And Welcome More Syrian “Refugees” [Video]
+Logistic Regression,22952,real,fake,false FAKE,0.5752438820544505,politicsNews,430,200-499,108,True,True,True,Massa fastest as testing resumes in Barcelona
+Logistic Regression,12219,fake,real,false REAL,0.5721079481469205,politics,305,200-499,115,False,False,False,BREAKING: OBAMA-APPOINTED JUDGE ORDERS Vote Recount To Begin At Noon On Monday
+Logistic Regression,15787,fake,real,false REAL,0.5715226953616911,politics,423,200-499,101,False,False,False,HE WAS WARNED AGAINST NEGOTIATING WITH TERRORISTS: Iran Says They Won’t Permit Foreigners “to inspect the most normal military site in their dreams.”
+Logistic Regression,1679,fake,real,false REAL,0.5677862283605981,News,536,500-999,188,False,False,False, Court Slams Down Trump’s Order Blocking Funding To Sanctuary Cities
+Logistic Regression,10357,fake,real,false REAL,0.5657525490007981,politics,518,500-999,148,False,False,False,DETROIT: IMMIGRANT STEALS $132 MILLION From Medicare…Owns $7 Million Mansion With Indoor Basketball Court…Defense Lawyer Mohammed Nasser Says He’s “Not a flight risk”
+Logistic Regression,14788,fake,real,false REAL,0.5582766152912161,politics,393,200-499,97,False,False,False,OHIO SEC OF STATE Explains How He Will Prevent Trump From Running Third Party
+Logistic Regression,15733,fake,real,false REAL,0.5533556980514166,politics,245,200-499,81,False,False,False,CLINTON GRIFTERS UNDER SCRUTINY: CLINTON GLOBAL INITIATIVE DUMPED BY EXXON MOBIL
+Logistic Regression,25499,real,fake,false FAKE,0.5528822360683213,politicsNews,679,500-999,191,True,True,True,Factbox - How Carlos Danger got tangled up in the Clinton email scandal
+Logistic Regression,17729,fake,real,false REAL,0.5525540115458197,US_News,372,200-499,105,False,False,False,Brief Overview: US Military Sales to Lebanon
+Logistic Regression,12080,fake,real,false REAL,0.5506286551386217,politics,307,200-499,79,False,False,False,PRESIDENT-ELECT TRUMP’S INAUGURAL COMMITTEE Announces Schedule Of Events
+Logistic Regression,28910,real,fake,false FAKE,0.550359033758308,politicsNews,1271,1000+,281,True,True,True,Campaigning in style: How Jeb Bush blew through his war chest 
+Logistic Regression,20961,real,fake,false FAKE,0.5475756132618428,politicsNews,434,200-499,142,True,True,False,Pew U.S. survey finds agreement on some gun-control proposals
+Logistic Regression,28949,real,fake,false FAKE,0.54658865246756,politicsNews,456,200-499,137,True,True,False,Trump polls Twitter about 'biased' Fox debate moderator Kelly
+Logistic Regression,16267,fake,real,false REAL,0.5446870435923814,Government News,413,200-499,123,False,False,False,MILITARY LEADERS SPEAK UP: IRAN DEAL MAKES WAR MORE LIKELY
+Logistic Regression,417,fake,real,false REAL,0.5445932718513429,News,372,200-499,139,True,False,False, BREAKING: Under Trump’s Leadership FEMA Could Run Out Of Money By Tomorrow
+Logistic Regression,11240,fake,real,false REAL,0.5445741632706855,politics,137,50-199,51,False,False,False,TWO DEMOCRATS Announce Plan To Vote For Neil Gorsuch For Supreme Court [Video]
+Logistic Regression,32864,real,fake,false FAKE,0.5439795803813499,worldnews,537,500-999,144,True,True,True,Venezuelan crisis spawns boom in gambling
+Logistic Regression,15909,fake,real,false REAL,0.543589746162922,Government News,249,200-499,65,False,False,False,MAN WHO ROBBED A BANK To Get Away From His Wife Gets The Ultimate Punishment
+Logistic Regression,25971,real,fake,false FAKE,0.5401023103585161,politicsNews,493,200-499,166,True,True,False,Popular Michelle Obama courts young people for Clinton
+Logistic Regression,9172,fake,real,false REAL,0.5392831291498318,politics,573,500-999,150,False,False,False,JUST IN: Fusion GPS Sued By 3 Billionaires Over Their “Defamation” In War Against Trump
+Logistic Regression,15826,fake,real,false REAL,0.5391033768367635,politics,320,200-499,99,False,False,False,THEIR EVIL KNOWS NO BOUNDS: TALIBAN EXECUTES 5 “SAVE THE CHILDREN WORKERS” AS ISIS KIDNAPS 120 SCHOOLCHILDREN TO BE TRAINED AS TERRORISTS
+Logistic Regression,15251,fake,real,false REAL,0.5368048652261773,politics,522,500-999,136,False,False,False,SERIOUSLY? Mexico Is Threatening Texas With A Law Suit?
+Logistic Regression,15005,fake,real,false REAL,0.5364531453723194,politics,515,500-999,117,False,False,False,UK SAYS “NO” TO ECONOMIC MIGRANTS: Shocking Video Shows How African “Refugees” Are Using Asylum Loophole To Move Around Europe
+Logistic Regression,10902,fake,real,false REAL,0.5268718714993444,politics,773,500-999,202,False,False,False,PRESIDENT TRUMP WARNS Comey…Tweets Veiled Threat To Former FBI Director
+Logistic Regression,15934,fake,real,false REAL,0.5266126167219187,Government News,230,200-499,86,False,False,False,BAM! Commie Scammer Mustafa Ali…The EPA’s “Environmental Justice” GURU Is GONE! [Video]
+Logistic Regression,9637,fake,real,false REAL,0.5256590671017843,politics,954,500-999,227,True,False,False,AUDIT REVEALS: 150 AFGHAN TROOPS Have Gone AWOL In U.S. During Training…Some Still Missing
+Logistic Regression,16954,fake,real,false REAL,0.5216756278966898,left-news,251,200-499,68,False,False,False,"KARMA: Manufactured Race War Backfires…Missou Loses Top Football Recruit, Says “Their campus is out of control.”"
+Logistic Regression,10516,fake,real,false REAL,0.5215248011853082,politics,213,200-499,93,True,False,False,TRUMP ADVISOR Has Warning For Syria That Has Saved Lives [Video]
+Logistic Regression,16286,fake,real,false REAL,0.5200464302662668,Government News,730,500-999,203,False,False,False,"ATTORNEYS ASK TO DIAL BACK SECURITY AT TRIAL FOR 7 TERROR SUSPECTS IN MN, Fears It Will Influence Jury: Argues ISIL Not A Terrorist Group"
+Logistic Regression,17039,fake,real,false REAL,0.5171931764673698,left-news,301,200-499,72,False,False,False,POPE TAKES COMMUNIST CRUCIFIX GIFT HOME: Says He Was Not Offended By It [VIDEO]
+Logistic Regression,15168,fake,real,false REAL,0.5164950447159339,politics,549,500-999,146,False,False,False,POPE MAKES VISIT TO NUNS OBAMA REGIME IS SUING For Not Conforming To Obamacare Contraception Mandate
+Logistic Regression,22553,real,fake,false FAKE,0.5139996626641622,politicsNews,307,200-499,107,True,True,False,Trump on Obamacare repeal: from boasts of greatness to lessons learned
+Logistic Regression,37901,real,fake,false FAKE,0.513245846853247,worldnews,214,200-499,68,True,True,True,UK police release new image of jogger in London bus mystery
+Logistic Regression,16568,fake,real,false REAL,0.5031680784617142,left-news,339,200-499,107,False,False,False,"CHINESE IMMIGRANT BEHEADS, CANNIBALIZES Total Stranger On Greyhound Bus…Granted TOTAL FREEDOM…NO Monitoring Necessary"
+Logistic Regression,13686,fake,real,false REAL,0.5019836921762854,politics,386,200-499,101,False,False,False,NOT NEWS: 7 DEAD…35 Wounded In Obama’s Hometown In 2 Days…WATCH: BLACK CHICAGO RESIDENTS Blame Barack Obama [VIDEO]
+Logistic Regression,15427,fake,real,false REAL,0.5012255401280976,politics,715,500-999,193,False,False,False,NEWSFLASH FOR OUR IMPERIAL PRESIDENT: STATES CAN REFUSE IRAN DEAL [Video]
+Naive Bayes,17285,fake,real,false REAL,0.9998193408002001,US_News,1091,1000+,305,False,False,False,NORTH KOREA: Trump’s Recklessness Could Trigger All-Out Conflict on Korean Peninsula
+Naive Bayes,10277,fake,real,false REAL,0.9997069358341947,politics,1184,1000+,323,False,False,False,EXPERT CLAIMS N. KOREA’S SECOND MISSILE Test Demonstrates They Now Have Ability To Hit 3 Major Cities On U.S. Mainland
+Naive Bayes,14743,fake,real,false REAL,0.9973018890279568,politics,1827,1000+,434,True,False,False,"IS OBAMA’S RADICAL AGENDA Responsible For State Department’s Misleading Report On Forced Labor, Prostitution And Human Slavery?"
+Naive Bayes,25958,real,fake,false FAKE,0.9921958477590163,politicsNews,488,200-499,146,True,True,True,"Trump gets skewered, Clinton finds support at TV's Emmy awards"
+Naive Bayes,17296,fake,real,false REAL,0.9910862500622278,US_News,857,500-999,238,False,False,False,"US Coalition Airstrike on Syrian Army in Al-Tanf is Another Calculated War Crime, Aims to Destroy Arab Unity"
+Naive Bayes,9130,fake,real,false REAL,0.9906243889467152,politics,623,500-999,188,False,False,False,MARINE CORPS GENERAL WARNS U.S. TROOPS: “There’s A War Coming”
+Naive Bayes,14051,fake,real,false REAL,0.9889293654666439,politics,514,500-999,179,False,False,False,NEW LAW WILL PUNISH MUSLIM Migrants…Assimilate Or Get Out!
+Naive Bayes,9692,fake,real,false REAL,0.9881785383691288,politics,581,500-999,162,False,False,False,CONGRESS WARNED Threat of Nuclear EMP Attack Has Never Been Higher: “N. Korean EMP Attack Would Kill ‘90% of All Americans’
+Naive Bayes,9348,fake,real,false REAL,0.9875961960868785,politics,380,200-499,115,False,False,False,SOUTH KOREA Uses Hilarious Technique To TAUNT North Korea After Soldier Escapes Kim Jong Un’s Hell [VIDEO]
+Naive Bayes,15427,fake,real,false REAL,0.9872153575385713,politics,715,500-999,193,False,False,False,NEWSFLASH FOR OUR IMPERIAL PRESIDENT: STATES CAN REFUSE IRAN DEAL [Video]
+Naive Bayes,11745,fake,real,false REAL,0.986002048093373,politics,593,500-999,213,False,False,False,BREAKING: IRAN Tests Cruise Missile…Trump WARNS…They’re “Playing with fire…They don’t appreciate how ‘kind’ President Obama was to them. Not Me!” [VIDEO]
+Naive Bayes,17121,fake,real,false REAL,0.9859562837498672,US_News,828,500-999,223,False,False,False,How Trump is Accelerating the Decline of US Global Influence
+Naive Bayes,24958,real,fake,false FAKE,0.985477156572309,politicsNews,433,200-499,173,True,True,False,Conservatives bristle as Trump backs off Clinton prosecution
+Naive Bayes,28906,real,fake,false FAKE,0.9851408838546016,politicsNews,970,500-999,300,True,True,True,Trump steps up attacks with 'bimbo' tweet before Fox News debate
+Naive Bayes,19622,real,fake,false FAKE,0.9844709773735627,politicsNews,329,200-499,129,True,True,True,Trump says violence by anti-fascists proves him right on Charlottesville
+Naive Bayes,26554,real,fake,false FAKE,0.9833937903963577,politicsNews,818,500-999,216,True,True,True,Melania Trump's speech has an echo of Michelle Obama words
+Naive Bayes,12208,fake,real,false REAL,0.9808840373356315,politics,243,200-499,97,False,False,False,"ANGELA MERKEL Running For Re-Election Makes Stunning Announcement To BAN BURKAS, After Flooding Nation With 2 Million (Mostly Muslim) Migrants"
+Naive Bayes,20675,real,fake,false FAKE,0.9804215875496488,politicsNews,576,500-999,196,True,True,True,Kid Rock hints online he will run for U.S. Senate
+Naive Bayes,17171,fake,real,false REAL,0.9797507753374028,US_News,2120,1000+,459,False,False,False,Reflections on a World Gone Mad and Pushing Back against Neocolonialist Thuggery
+Naive Bayes,20064,real,fake,false FAKE,0.9789737216356175,politicsNews,541,500-999,165,True,True,False,"Charlottesville schools, parents address children's fears after violence"
+Naive Bayes,17729,fake,real,false REAL,0.9780330800725783,US_News,372,200-499,105,False,False,False,Brief Overview: US Military Sales to Lebanon
+Naive Bayes,13283,fake,real,false REAL,0.9760110528989803,politics,308,200-499,88,False,False,False,"How Is Panama’s “Migrant Crisis” Giving A FREE PASS TO THE U.S. To Anyone From Asia, Cuba, Africa, Haiti…When Did We Become The World’s Dumping Ground?"
+Naive Bayes,17646,fake,real,false REAL,0.9758876659663217,US_News,1991,1000+,486,False,False,False,"US-Saudi Plan: Let 9,000 ISIS Fighters Walk Free from Mosul – to Fight in Syria"
+Naive Bayes,12652,fake,real,false REAL,0.9756102253432856,politics,1038,1000+,342,False,False,False,28 THINGS TRUMP PROMISES To Do As President…A Must Read For ALL Voters!
+Naive Bayes,13355,fake,real,false REAL,0.9750399814273247,politics,547,500-999,165,False,False,False,YOU LIE! OBAMA SECRETLY PAID $400 MILLION Ransom To IRAN For Release Of Americans…BRAGGED About “Diplomatic Breakthrough” With Iran
+Naive Bayes,28994,real,fake,false FAKE,0.974276520402127,politicsNews,1017,1000+,281,True,True,False,"Factbox: Trump seen from Davos: 'unbelievable', 'embarrassing' but candor 'hit a vein'"
+Naive Bayes,27939,real,fake,false FAKE,0.9742244225387849,politicsNews,966,500-999,275,True,True,True,Bernie Sanders' ghost tweeter keeps his Brooklyn accent
+Naive Bayes,28691,real,fake,false FAKE,0.9734878130655206,politicsNews,919,500-999,249,True,True,False,"From a river town in Slovenia to Trump Tower, and the White House?"
+Naive Bayes,19980,real,fake,false FAKE,0.9703061203292692,politicsNews,721,500-999,227,True,True,True,Prominent U.S. religious conservatives defend Trump after Charlottesville
+Naive Bayes,11185,fake,real,false REAL,0.9699202091882748,politics,193,50-199,68,False,False,False,SEC OF STATE REX TILLERSON: “Steps Are Under Way” To Remove Syria’s Bashar al-Assad…“Russian Government” Should “Consider Carefully Continued Support For Assad Regime” [VIDEO]
+Naive Bayes,26544,real,fake,false FAKE,0.9697048761231611,politicsNews,1022,1000+,275,True,True,True,Trump employee apologizes for Melania speech 'chaos'
+Naive Bayes,15005,fake,real,false REAL,0.969643850628187,politics,515,500-999,117,False,False,False,UK SAYS “NO” TO ECONOMIC MIGRANTS: Shocking Video Shows How African “Refugees” Are Using Asylum Loophole To Move Around Europe
+Naive Bayes,15836,fake,real,false REAL,0.967565377693165,politics,671,500-999,193,True,False,False,EGYPTIAN COURT SENTENCES MUSLIM BROTHERHOOD LEADER AND 13 OTHERS TO DEATH AND LEADER’S “Peaceful” U.S.-Egyptian Brother To Life In Prison
+Naive Bayes,21584,real,fake,false FAKE,0.9668823386069472,politicsNews,837,500-999,280,True,True,True,"For Trump's defenders, White House turmoil is politics as usual"
+Naive Bayes,9092,fake,real,false REAL,0.9661106327207412,politics,747,500-999,199,False,False,False,JUST IN: TRUMP ENDS FREE MONEY TRAIN After Pakistan Refuses To Stop Housing Terrorists…Cuts STUNNING About Of Military Aid 
+Naive Bayes,28194,real,fake,false FAKE,0.9649630551225041,politicsNews,432,200-499,134,True,True,False,Graphic account of Hulk Hogan sex tape read in Florida court
+Naive Bayes,25968,real,fake,false FAKE,0.9631321176633528,politicsNews,463,200-499,164,True,True,True,Trump proposes disarming Clinton guards: 'Let's see what happens to her'
+Naive Bayes,28949,real,fake,false FAKE,0.962295849931534,politicsNews,456,200-499,137,True,True,False,Trump polls Twitter about 'biased' Fox debate moderator Kelly
+Naive Bayes,27790,real,fake,false FAKE,0.9622844143815404,politicsNews,381,200-499,114,True,True,False,Trump's 'Paterno' comment sparks jeers on social media
+Naive Bayes,16267,fake,real,false REAL,0.9617484746540358,Government News,413,200-499,123,False,False,False,MILITARY LEADERS SPEAK UP: IRAN DEAL MAKES WAR MORE LIKELY
+Naive Bayes,10822,fake,real,false REAL,0.9590822786437921,politics,218,200-499,82,False,False,False,LIVE STREAM: PRESIDENT TRUMP’S Historic Speech To The Muslim World: “Honestly confronting Islamist extremism” [Video]
+Naive Bayes,25971,real,fake,false FAKE,0.9582321083416481,politicsNews,493,200-499,166,True,True,False,Popular Michelle Obama courts young people for Clinton
+Naive Bayes,14588,fake,real,false REAL,0.9579787818978861,politics,503,500-999,141,False,False,False,WARNING: FEDS PREDICT $30 TRILLION DOLLAR DEBT Because Of These Two Key Things
+Naive Bayes,29059,real,fake,false FAKE,0.957187042818221,politicsNews,472,200-499,159,True,True,False,Trump fans in Iowa cheer his debate performance
+Naive Bayes,25779,real,fake,false FAKE,0.9566549623769203,politicsNews,841,500-999,220,False,False,False,Commentary: Manic or evasive - these veep guys sure don’t feel like leaders
+Naive Bayes,24181,real,fake,false FAKE,0.9560391210558375,politicsNews,618,500-999,206,True,True,True,Trump attacks civil rights leader who questioned his election win
+Naive Bayes,38764,real,fake,false FAKE,0.9556007124581428,worldnews,439,200-499,107,True,True,True,Mother's fight to discover fate of dead baby's body finds empty coffin
+Naive Bayes,9847,fake,real,false REAL,0.9551893962885526,politics,328,200-499,133,True,True,False,Why John McCain Will Never Vote to Repeal and Replace Obamacare
+Naive Bayes,17308,fake,real,false REAL,0.9538568808950953,US_News,1803,1000+,393,False,False,False,FORSAKEN SULTAN: Erdogan Isolated Ahead Trump Meeting in Washington
+Naive Bayes,27471,real,fake,false FAKE,0.9535675083156929,politicsNews,1185,1000+,318,False,False,False,Commentary: Party leaders often disliked their nominee. It’s the public vitriol that’s new.
+Naive Bayes,25710,real,fake,false FAKE,0.9528498497609228,politicsNews,408,200-499,125,True,True,False,Obama tells students at town hall about how failures have shaped him
+Naive Bayes,27558,real,fake,false FAKE,0.9525699399307412,politicsNews,344,200-499,116,True,True,True,Cruz unleashes fury at Trump over Lee Harvey Oswald comment
+Naive Bayes,25464,real,fake,false FAKE,0.9505756107978527,politicsNews,357,200-499,120,True,True,True,Ku Klux Klan newspaper declares support for Trump
+Naive Bayes,11694,fake,real,false REAL,0.9489619704552401,politics,207,200-499,92,False,False,False,BREAKING: Activist Appeals Court Rules Against Trump…Trump Comes Out Swinging…Tweets Awesome Reply
+Naive Bayes,26124,real,fake,false FAKE,0.9476051291067895,politicsNews,703,500-999,209,True,True,True,Trump allies falsely link Reuters to claim Detroit video feed was cut short
+Naive Bayes,8458,fake,real,false REAL,0.9471660820844161,News,948,500-999,278,False,False,False, The Boycott Of Israel Just Got A Major Helping Hand – From President Obama
+Naive Bayes,10516,fake,real,false REAL,0.9470986488266203,politics,213,200-499,93,True,False,False,TRUMP ADVISOR Has Warning For Syria That Has Saved Lives [Video]
+Naive Bayes,20458,real,fake,false FAKE,0.9463650638490115,politicsNews,473,200-499,143,True,True,False,Trump gives Boy Scouts at jamboree a taste of Washington politics
+Naive Bayes,26438,real,fake,false FAKE,0.9435941700495573,politicsNews,418,200-499,145,True,True,False,Trump to Clinton: 'No more Mr. Nice Guy'
+Naive Bayes,27590,real,fake,false FAKE,0.9427599066016314,politicsNews,129,50-199,62,False,False,False,Jenner uses women's restroom at Trump property
+Naive Bayes,10178,fake,real,false REAL,0.9425756011994635,politics,507,500-999,149,False,False,False,OKLAHOMA Supreme Court Rules Punishing Smokers With Cigarette Tax “Unconstitutional”…Lawmakers Forced To Fill SHOCKING Hole In State Budget
+Naive Bayes,10571,fake,real,false REAL,0.9409134426649332,politics,315,200-499,106,False,False,False,FORD’S NEW CEO SNUBS President Trump…Will Build Focus In China…Export To U.S.
+Naive Bayes,26858,real,fake,false FAKE,0.940271171186443,politicsNews,436,200-499,138,True,True,False,Democrat gun control sit-in sparks social media sensation
+Naive Bayes,21433,real,fake,false FAKE,0.9401945424091769,politicsNews,544,500-999,128,True,True,True,"Before the White House, Kennedy was a high-school prankster"
+Naive Bayes,18120,real,fake,false FAKE,0.9375905676038581,politicsNews,1076,1000+,236,True,True,False,Factbox: Women who have accused Trump of inappropriate conduct
+Naive Bayes,16241,fake,real,false REAL,0.9365664237470264,Government News,342,200-499,108,False,False,False,BREAKING: Putin Tramples Obama’s Imaginary Red Line With Airstrikes In Syria
+Naive Bayes,27001,real,fake,false FAKE,0.9364781898208593,politicsNews,182,50-199,72,True,True,True,"Trump, on CNN, faults Muslim community for not reporting people like Orlando shooter"
+Naive Bayes,28876,real,fake,false FAKE,0.9362120372491631,politicsNews,733,500-999,209,True,True,False,"Clinton's 'girl power' push wins over women in their 30s, not 20s"
+Naive Bayes,17804,fake,real,false REAL,0.9333851003124454,US_News,935,500-999,228,False,False,False,IRAQ 1991: US Carpet Bombs ‘Highway of Death’
+Naive Bayes,17657,fake,real,false REAL,0.9323433693561347,US_News,1945,1000+,466,False,False,False,"Diplomatic Frauds: Kerry, Power, Kirby Lying and Shilling for ‘Body Bags’ and War in Syria"
+Naive Bayes,25612,real,fake,false FAKE,0.9311098527302517,politicsNews,1090,1000+,306,True,True,False,"'Absolutely false,' Trump says defiantly after women's groping allegations"
+Naive Bayes,28969,real,fake,false FAKE,0.9305460750246726,politicsNews,828,500-999,264,True,True,False,Confident Trump says could 'shoot somebody' and not lose voters
+Naive Bayes,15572,fake,real,false REAL,0.9294114751237686,politics,693,500-999,202,False,False,False,ARMY THREATENS GREEN BERET WAR HERO WITH COURT MARTIAL For Whistleblowing On Failed Hostage Rescue
+Naive Bayes,28965,real,fake,false FAKE,0.9276062135532861,politicsNews,662,500-999,230,True,True,True,"Watch out frontrunners, over 1,500 candidates vying for White House"
+Naive Bayes,13635,fake,real,false REAL,0.9266757223423132,politics,666,500-999,188,False,False,False,THE “OBAMA BOUNCE”: UKIP Leader Claims Obama’s Insulting Threat To UK Voters BACKFIRED…Actually Drove Voters To Support “Leave EU” Movement
+Naive Bayes,441,fake,real,false REAL,0.9258490620564741,News,340,200-499,101,False,False,False, Defense Secretary Mattis Speaks Over Incompetent Trump’s Threats To North Korea (VIDEO)
+Naive Bayes,11660,fake,real,false REAL,0.9257010050749247,politics,525,500-999,200,False,False,False,BREAKING: GEN MICHAEL FLYNN RESIGNS After Close Friend Steve Bannon Reportedly Offered These 4 Words Of Advice
+Naive Bayes,12046,fake,real,false REAL,0.9246861908330277,politics,381,200-499,130,False,False,False,NO MORE MR. NICE GUY: TRUMP Takes Off The Gloves…HAMMERS Obama On Twitter
+Naive Bayes,19481,real,fake,false FAKE,0.9245083278102473,politicsNews,711,500-999,221,True,True,False,Trump renews clash with U.S. sports world
+Naive Bayes,6570,fake,real,false REAL,0.9236569623741586,News,372,200-499,98,False,False,False," Look Out, Big Oil: ‘Job Creation’ No Longer An Argument As Solar Outpaces Oil"
+Naive Bayes,16282,fake,real,false REAL,0.9211970585260104,Government News,1406,1000+,321,False,False,False,FOLLOW THE MONEY: MEXICAN GIVEAWAY OF MILLIONS OF FLAT SCREEN TV’S TO THE POOR RAISES QUESTIONS
+Naive Bayes,12198,fake,real,false REAL,0.9206288038436823,politics,213,200-499,90,False,False,False,GREAT! PRO-COAL OKLAHOMA AG Tapped For Head Of EPA
+Naive Bayes,17312,fake,real,false REAL,0.9200214748591824,US_News,1163,1000+,268,False,False,False,Washington’s Criminal Activities Are Only Getting Messier
+Naive Bayes,9550,fake,real,false REAL,0.9191310986956375,politics,518,500-999,150,False,False,False,JUST IN: Senior GOP Rep Announces His Retirement…A BIG LOSS
+Naive Bayes,1759,fake,real,false REAL,0.9179102583418157,News,493,200-499,157,False,False,False," Mike Pence Just Dropped A TERRIFYING Bombshell On North Korea, Threatens War (VIDEO)"
+Naive Bayes,25630,real,fake,false FAKE,0.9149463954338563,politicsNews,489,200-499,163,True,True,True,Pro-Trump group ad seeks to pit Michelle Obama against Clinton
+Naive Bayes,15512,fake,real,false REAL,0.9135025619093079,politics,315,200-499,96,False,False,False,CASTRO DEMANDS THE RETURN OF “ILLEGALLY OCCUPIED” GITMO BEFORE RESTORING DIPLOMATIC RELATIONS
+Naive Bayes,18716,real,fake,false FAKE,0.9091199576732745,politicsNews,434,200-499,152,True,True,True,Ex-Democratic leader who mulled dropping Clinton spurns critics
+Naive Bayes,23145,real,fake,false FAKE,0.9067870472347802,politicsNews,419,200-499,142,True,True,False,"Caitlyn Jenner, teen singer appeal to Trump on transgender rights"
+Naive Bayes,22756,real,fake,false FAKE,0.9046060364173056,politicsNews,639,500-999,194,True,True,True,"McDonald's deletes Trump tweet, says Twitter account compromised"
+Naive Bayes,6090,fake,real,false REAL,0.9041019450191978,News,708,500-999,215,False,False,False, Kim Jong Un And North Korean Media Enthusiastically Want Trump To Become President
+Naive Bayes,11157,fake,real,false REAL,0.9037840929358859,politics,355,200-499,120,False,False,False,MUSLIMS OUTRAGED: MUNICH ARTIST DISPLAYS “Funny” Racy Bare-Legged “Burka Barbies” [Video]
+Naive Bayes,16001,fake,real,false REAL,0.9025722223916433,Government News,493,200-499,148,False,False,False,OBAMA’S BAILOUT OF PUERTO RICO: TAXPAYERS Take A BIG Hit But Rewards Go To Political And Financial Players
+Naive Bayes,27737,real,fake,false FAKE,0.8963583992164047,politicsNews,478,200-499,156,True,True,True,"Immigration overhaul backers sing, dance, chant at U.S. Supreme Court"
+Naive Bayes,11240,fake,real,false REAL,0.8956393789872348,politics,137,50-199,51,False,False,False,TWO DEMOCRATS Announce Plan To Vote For Neil Gorsuch For Supreme Court [Video]
+Naive Bayes,12466,fake,real,false REAL,0.8955066537328328,politics,359,200-499,126,False,False,False,OBAMA UNLEASHES HUNDREDS Of Intelligence Agents To “Protect Elections” From Outside Forces…Hacker known as “Guccifer 2.0” Warns Of Threat “From INSIDE The System”
+Naive Bayes,17626,fake,real,false REAL,0.8944752119712728,US_News,794,500-999,230,False,False,False,Paul Craig Roberts: ‘By Cooperating with Washington on Syria & Russia Walked Into a Trap’
+Naive Bayes,27372,real,fake,false FAKE,0.8929936359142429,politicsNews,397,200-499,124,True,True,True,Former Trump girlfriend rebuts NY Times story on history with women
+Naive Bayes,9866,fake,real,false REAL,0.8928417253189709,politics,4671,1000+,821,False,False,False,‘One for the Ages’ Full Video and Transcript of Trump’s Incredible UN Speech [Video]
+Naive Bayes,27120,real,fake,false FAKE,0.8924735207891218,politicsNews,682,500-999,234,True,True,True,Which ‘La Raza’? Trump comments cause confusion over group's role
+Naive Bayes,25499,real,fake,false FAKE,0.8923143592010156,politicsNews,679,500-999,191,True,True,True,Factbox - How Carlos Danger got tangled up in the Clinton email scandal
+Naive Bayes,25811,real,fake,false FAKE,0.8917538908028055,politicsNews,976,500-999,303,True,True,True,"Trump goes on offensive against former beauty queen, Clinton calls him 'unhinged'"
+Naive Bayes,27824,real,fake,false FAKE,0.8902096045700493,politicsNews,394,200-499,128,True,True,True,"Hillary Clinton, NYC mayor assailed for racially charged joke"
+Naive Bayes,23929,real,fake,false FAKE,0.8885814288300484,politicsNews,512,500-999,145,True,True,False,Crowd controversy: The making of an Inauguration Day photo
+Naive Bayes,1120,fake,real,false REAL,0.8885169537716304,News,375,200-499,103,False,False,False, Russia Claims They May Have Killed ISIS Leader Al-Baghdadi
+Naive Bayes,16405,fake,real,false REAL,0.8878267505802059,Government News,302,200-499,74,False,False,False,IRANIAN NAVY FIRES WARNING SHOTS ON AND SEIZES CARGO SHIP; U.S. NAVY SENDS DESTROYER
+Naive Bayes,3426,fake,real,false REAL,0.8858126429303677,News,777,500-999,235,False,False,False, Trump Just Got SMACKED By Newsweek For Putting His Wallet Ahead Of Our Nation’s Best Interests
+Naive Bayes,25560,real,fake,false FAKE,0.8838722205839425,politicsNews,675,500-999,196,True,True,False,Highlights from Reuters' exclusive interview with Donald Trump
+Naive Bayes,14203,fake,real,false REAL,0.8826504162637275,politics,622,500-999,151,False,False,False,DONALD TRUMP WAS RIGHT AGAIN: U.S. Funds NATO In The Hundreds Of Billions
+Naive Bayes,13673,fake,real,false REAL,0.882348613717805,politics,429,200-499,130,False,False,False,MUSLIM INVASION OF AMERICA In Full Swing: Obama On Pace To Issue Over 1 Million Green Cards To Migrants From Muslim Majority Nations
+Naive Bayes,17532,fake,real,false REAL,0.8816080349531525,US_News,534,500-999,157,True,False,False,Fake ‘US embassy’ Bust in Ghana Exposes Danger of EU Schengen Deal with Turkey
+Naive Bayes,15787,fake,real,false REAL,0.8811640793687419,politics,423,200-499,101,False,False,False,HE WAS WARNED AGAINST NEGOTIATING WITH TERRORISTS: Iran Says They Won’t Permit Foreigners “to inspect the most normal military site in their dreams.”
+Naive Bayes,8717,fake,real,false REAL,0.8811189061785567,News,792,500-999,229,False,False,False, Iran Proves Republicans Are Full Of Crap As United Nations Says Nuclear Deal Has Been Honored
+Naive Bayes,14325,fake,real,false REAL,0.8811085384587477,politics,181,50-199,60,False,False,False,OBAMA’S DOJ TO BLAME IRAN FOR CYBER-ATTACK On NY Dam In 2013…Wait…What About That Deal With Obama’s Ally In 2015?
+Naive Bayes,28956,real,fake,false FAKE,0.8771731309248944,politicsNews,392,200-499,129,True,True,False,Trump says not entirely sure he will attend Fox News debate
+Naive Bayes,10965,fake,real,false REAL,0.8768440479217178,politics,339,200-499,70,False,False,False,WOW! HERE’S THE LIST Of Obamacare Taxes Abolished By The House…Reduces Taxes By Over $1 TRILLION
+Naive Bayes,28404,real,fake,false FAKE,0.8749186920714498,politicsNews,626,500-999,185,True,True,True,"Another debate brawl? Fox News, Kelly set for Trump rematch"
+Naive Bayes,28206,real,fake,false FAKE,0.8747434274307295,politicsNews,838,500-999,268,True,True,False,Anti-Trump protesters: patchwork of people and Facebook pages
+Naive Bayes,11739,fake,real,false REAL,0.8740176704709967,politics,703,500-999,215,False,False,False,BOOM! Fed Judge Ruling UNBLOCKS Trump Travel Ban…Asks ACLU Lawyer: “Where Does It Say Muslim Countries?”
+Naive Bayes,15568,fake,real,false REAL,0.871554638847668,politics,683,500-999,177,False,False,False,HILLARY’S IMMORAL REIGN AS SEC. STATE: U.S. Sold $60 MILLION In Chemical Arms To Clinton Foundation Donors Used To Gas Citizens
+Naive Bayes,13623,fake,real,false REAL,0.8714092182817085,politics,457,200-499,147,False,False,False,ICELAND’S STUNNING ELECTION OF ANTI-ESTABLISHMENT Political Novice Should Have Hillary Shaking In Her Pants Suit
+Naive Bayes,15826,fake,real,false REAL,0.8713170884317549,politics,320,200-499,99,False,False,False,THEIR EVIL KNOWS NO BOUNDS: TALIBAN EXECUTES 5 “SAVE THE CHILDREN WORKERS” AS ISIS KIDNAPS 120 SCHOOLCHILDREN TO BE TRAINED AS TERRORISTS
+Naive Bayes,15934,fake,real,false REAL,0.8696051500367419,Government News,230,200-499,86,False,False,False,BAM! Commie Scammer Mustafa Ali…The EPA’s “Environmental Justice” GURU Is GONE! [Video]
+Naive Bayes,22990,real,fake,false FAKE,0.8687114265389386,politicsNews,293,200-499,94,True,True,True,"Schwarzenegger fired, didn't quit 'Apprentice': Trump"
+Naive Bayes,15979,fake,real,false REAL,0.8665810155495896,Government News,314,200-499,99,False,False,False,"SHOCKING VIDEO! SWARM OF OVER 20,000 AFRICAN FREELOADERS Flooding Mexico To Get Into The US…#OpenBordersHillary"
+Naive Bayes,24027,real,fake,false FAKE,0.8661820364191226,politicsNews,841,500-999,264,True,True,True,Trump backers' disparate hopes coalesce around promise of change
+Naive Bayes,16268,fake,real,false REAL,0.8637838749971175,Government News,328,200-499,104,False,False,False,UNREAL! RETIRING SENATOR IS 34TH VOTE TO CLINCH OBAMA WIN ON IRAN DEAL
+Naive Bayes,23136,real,fake,false FAKE,0.8586383178580816,politicsNews,580,500-999,188,True,True,True,White House bars some news organizations from briefing
+Naive Bayes,14114,fake,real,false REAL,0.8548442188719658,politics,481,200-499,135,False,False,False,OBAMA PRESSURED U.S. SHOE COMPANY To Keep Their Mouths Shut…But Now The Deal is OFF…And So Are The Gloves!
+Naive Bayes,24046,real,fake,false FAKE,0.8525173040110517,politicsNews,411,200-499,123,True,True,False,Facts about the inauguration of Donald Trump as U.S. president
+Naive Bayes,25033,real,fake,false FAKE,0.8521318715238579,politicsNews,384,200-499,111,True,True,False,"Factbox: The nasty things Trump, Romney have said about each other"
+Naive Bayes,26509,real,fake,false FAKE,0.8507279806747896,politicsNews,767,500-999,237,True,True,False,Kaine's crime-busting past may hurt Clinton's outreach to blacks
+Naive Bayes,28108,real,fake,false FAKE,0.849293544869869,politicsNews,626,500-999,216,True,True,False,Anti-Trump protesters block Arizona road; march in New York
+Naive Bayes,26557,real,fake,false FAKE,0.8486696409212111,politicsNews,351,200-499,109,True,True,False,Melania Trump's RNC speech produces so-so TV audience
+Naive Bayes,16387,fake,real,false REAL,0.8474543824212892,Government News,1364,1000+,332,False,False,False,BEWARE THE UNITED NATIONS PUSH FOR “GLOBAL GOVERNANCE” FOR THE “GOOD OF THE PLANET”
+Naive Bayes,15825,fake,real,false REAL,0.8467875324165618,politics,251,200-499,88,False,False,False,CUBA STILL A COMMIE HELLHOLE AFTER OBAMA’S “NORMALIZATION”: 4 YEARS IN THE SLAMMER FOR “SOCIAL DANGEROUSNESS”
+Naive Bayes,25524,real,fake,false FAKE,0.8459890286269047,politicsNews,248,200-499,76,True,True,False,Donald Trump throws counter punch after Joe Biden comments
+Naive Bayes,1089,fake,real,false REAL,0.8456542539952057,News,758,500-999,216,False,False,False, Trump Cares More About His Businesses In The Middle East Than The American People
+Naive Bayes,16923,fake,real,false REAL,0.8433958877979515,left-news,494,200-499,133,False,False,False,"SWEDEN LOSES 14,000 Refugees Slated For Deportation: “We simply do not know where they are”"
+Naive Bayes,14472,fake,real,false REAL,0.8427410631689206,politics,481,200-499,128,False,False,False,DISTURBING TRUTH ABOUT How The UN Decides Which Muslim “REFUGEES” Will Be Your New Neighbor [VIDEO]
+Naive Bayes,26346,real,fake,false FAKE,0.8401694550576815,politicsNews,531,500-999,189,True,True,False,Trump seeks to raise fresh ethical questions about Clinton
+Naive Bayes,404,fake,real,false REAL,0.8395138521440895,News,542,500-999,171,False,False,False, Two Florida Lawmakers Just Voted Against Hurricane Relief As Irma Strikes Their State
+Naive Bayes,17416,fake,real,false REAL,0.837514325222666,US_News,583,500-999,151,False,False,False,Two-thirds of US Navy Strike Fighter Jets Grounded: Navy Claims No Money to Fix Them
+Naive Bayes,16286,fake,real,false REAL,0.8348426895278642,Government News,730,500-999,203,False,False,False,"ATTORNEYS ASK TO DIAL BACK SECURITY AT TRIAL FOR 7 TERROR SUSPECTS IN MN, Fears It Will Influence Jury: Argues ISIL Not A Terrorist Group"
+Naive Bayes,27766,real,fake,false FAKE,0.8344349597349725,politicsNews,361,200-499,131,True,True,True,U.N. rights chief decries 'bigotry' in U.S. presidential race
+Naive Bayes,11774,fake,real,false REAL,0.833475013564792,politics,321,200-499,120,False,False,False,BOOM! CUSTOMS AGENTS IGNORE Obama Appointed Judge’s Court Order…ENFORCE Trump’s Travel Ban
+Naive Bayes,24185,real,fake,false FAKE,0.8326875204029338,politicsNews,439,200-499,107,True,True,True,Women knit pink 'pussyhats' for rally after Trump inauguration
+Naive Bayes,19014,real,fake,false FAKE,0.8308302271250637,politicsNews,301,200-499,107,True,True,True,Trump launches petition against NFL players' anthem protests
+Naive Bayes,28407,real,fake,false FAKE,0.8298985016829941,politicsNews,428,200-499,142,True,True,True,Emotions run high outside courthouse for abortion showdown
+Naive Bayes,25979,real,fake,false FAKE,0.8292254451095498,politicsNews,935,500-999,283,True,True,True,"In Pennsylvania Senate race, unfamiliar battle lines on gun rights"
+Naive Bayes,26267,real,fake,false FAKE,0.8284232270255092,politicsNews,632,500-999,249,True,True,False,Trump calls for special prosecutor to investigate Clinton Foundation
+Naive Bayes,11371,fake,real,false REAL,0.8264309312551159,politics,22,<50,10,False,False,False,NIGEL FARAGE ON TRUMP/MERKEL POWWOW: Merkel’s decision for mass migration the “worst decision by European leader in 70 years” [Video]
+Naive Bayes,18432,real,fake,false FAKE,0.8244310330411492,politicsNews,98,50-199,40,True,False,False,Factbox: Trump on Twitter (Nov 27) - Networks
+Naive Bayes,14623,fake,real,false REAL,0.8244150035600217,politics,626,500-999,187,False,False,False,HOLY BETRAYAL OF AMERICA’S NATIONAL SECURITY: New Evidence Shows Hillary Emailed “Most Secretive” Classified Material On Private Unsecured Server
+Naive Bayes,1474,fake,real,false REAL,0.8240171834757782,News,405,200-499,135,False,False,False, Half The World’s Salmon Supply Threatened As Trump’s EPA Withdraws Alaskan Mining Restrictions
+Naive Bayes,27118,real,fake,false FAKE,0.8238098438116255,politicsNews,274,200-499,78,True,True,True,"Obama lauds Denver Broncos, Peyton Manning for Super Bowl win"
+Naive Bayes,15761,fake,real,false REAL,0.8212249418811148,politics,308,200-499,84,False,False,False,BREAKING ENERGY DEPARTMENT AUDIT REVEALS SHOCKING PRICE TAG AND LIABILITY FOR OBAMA’S GREEN ENERGY FAILURES
+Naive Bayes,13518,fake,real,false REAL,0.8167138901948655,politics,277,200-499,91,False,False,False,SAY “HELLO” TO YOUR NEW NEIGHBORS! Clooney Begged For Open Borders…Now Massive Refugee Camp Is Erected In His Front Yard
+Naive Bayes,10188,fake,real,false REAL,0.8165083661620618,politics,560,500-999,161,False,False,False,CANADA SENDS TROOPS TO U.S. BORDER To Deal With Illegals and Asylum Seekers Running From Trump’s New Policies On Immigration
+Naive Bayes,14099,fake,real,false REAL,0.8142611511254898,politics,569,500-999,86,False,False,False,WHO WILL SUPPORT “THE BERN”? New Numbers Show OBAMA STOLE An EXTRA 6 Months Income From Average Working American Since Bush Years
+Naive Bayes,28223,real,fake,false FAKE,0.8132254574460148,politicsNews,998,500-999,309,True,True,False,New disturbance at Trump rally as crucial Republican contests near
+Naive Bayes,1787,fake,real,false REAL,0.813043367239594,News,435,200-499,133,False,False,False," BREAKING: Trump Is Playing With Fire, And He Just Brought Us One Step Closer To Nuclear War"
+Naive Bayes,27690,real,fake,false FAKE,0.8119747194876675,politicsNews,354,200-499,115,True,True,True,U.S. Capitol replacing flag display over Confederate imagery
+Naive Bayes,11344,fake,real,false REAL,0.8107150042630161,politics,306,200-499,111,False,False,False,WATCH: KIM JONG-UN Blows Up US Aircraft Carrier In Newly Released Video
+Naive Bayes,16371,fake,real,false REAL,0.8098761208501221,Government News,956,500-999,252,False,False,False,AFGHAN INTERPRETER FOR US MURDERED BY TALIBAN WHILE WAITING 4 YRS FOR PROMISED VISA [Video]
+Naive Bayes,15379,fake,real,false REAL,0.8089570173034544,politics,1868,1000+,369,False,False,False,ZIMBABWE’S CORRUPT GOVERNMENT SEEKS EXTRADITION OF AMERICAN LION HUNTER: Secret Memo Shows U.S. Was Aware Of $45-$60 Million Trophy Hunting Business
+Naive Bayes,9637,fake,real,false REAL,0.8061880778732591,politics,954,500-999,227,True,False,False,AUDIT REVEALS: 150 AFGHAN TROOPS Have Gone AWOL In U.S. During Training…Some Still Missing
+Naive Bayes,13772,fake,real,false REAL,0.805546833750422,politics,536,500-999,176,False,False,False,"¡VIVA LA REVOLUTION! As Venezuela Collapses Under Socialist Rule, Dictator Maduro Endorses Fellow Socialist Bernie Sanders"
+Naive Bayes,25531,real,fake,false FAKE,0.8039154255089846,politicsNews,810,500-999,249,True,True,True,"In breathless U.S. election, Twitter generates buzz not cash"
+Naive Bayes,33525,real,fake,false FAKE,0.802219605363354,worldnews,537,500-999,116,True,True,False,A Picture and its Story: Reaching out to rescue a Rohingya woman
+Naive Bayes,16131,fake,real,false REAL,0.8020753814449751,Government News,135,50-199,35,False,False,False,"BAN THE BURQA! Women Wearing A Burqa In Switzerland Could Face $9,000 Fine"
+Naive Bayes,28880,real,fake,false FAKE,0.8020737476527187,politicsNews,805,500-999,270,True,True,False,America's angry voters divvied up by Trump and Sanders: poll
+Naive Bayes,27564,real,fake,false FAKE,0.8020315063802774,politicsNews,886,500-999,282,True,True,True,Indiana puts Donald Trump’s evangelical support to test
+Naive Bayes,13025,fake,real,false REAL,0.7959942722623194,politics,290,200-499,104,False,False,False,BREAKING: OBAMA WILL VETO BILL Unanimously Passed By Congress Allowing 9-11 Victims To Sue Saudi Arabia
+Naive Bayes,5442,fake,real,false REAL,0.7943364554875773,News,423,200-499,110,False,False,False, Federal Court Bans US Navy From Using Sonar That Harms Marine Mammals
+Naive Bayes,18196,real,fake,false FAKE,0.7916902184507323,politicsNews,880,500-999,258,True,True,False,Alabama Democrat turns up attacks on Roy Moore in Senate race's final stretch
+Naive Bayes,28692,real,fake,false FAKE,0.7897744241084501,politicsNews,986,500-999,290,True,True,False,Young blacks more open to Bernie Sanders' White House bid
+Naive Bayes,16211,fake,real,false REAL,0.7893864547582251,Government News,721,500-999,193,False,False,False,CANADA’S OBAMA? WATCH New Prime Minister Call Himself A “Proud Feminist”…Promises To Raise Taxes On Wealthy And Welcome More Syrian “Refugees” [Video]
+Naive Bayes,11253,fake,real,false REAL,0.7843300327341157,politics,311,200-499,133,False,False,False,REPORT: FBI DIRECTOR COMEY Blocked By Obama Administration Last Summer On Supposed Russian “Influence” In 2016 Election
+Naive Bayes,17450,fake,real,false REAL,0.7838245426131731,US_News,239,200-499,103,False,False,False,Trump Moves Ahead with ‘The Wall’ Between US and Mexico
+Naive Bayes,27194,real,fake,false FAKE,0.782592996476857,politicsNews,442,200-499,121,True,True,True,Supreme Court rejects constitutional challenge to death penalty
+Naive Bayes,24921,real,fake,false FAKE,0.780254008825802,politicsNews,1177,1000+,323,True,True,False,"Blue-collar Democrats to party: It's still the economy, stupid"
+Naive Bayes,33105,real,fake,false FAKE,0.7800650577419912,worldnews,737,500-999,194,True,True,True,"Berlusconi eyes political resurrection, unhindered by sex scandals"
+Naive Bayes,27337,real,fake,false FAKE,0.7797427312667173,politicsNews,329,200-499,122,True,True,False,Potential Trump high court nominee mocked him on Twitter
+Naive Bayes,17197,fake,real,false REAL,0.7795300892012834,US_News,1261,1000+,327,False,False,False,Undercutting the Nation State? Chicago Group Suggests ‘Global Cities’ Should Run World Affairs
+Naive Bayes,10704,fake,real,false REAL,0.7780221689644641,politics,259,200-499,99,False,False,False,PRESIDENT TRUMP Tweets Awesome Message to People of London…NBC REFUSES TO RETWEET
+Naive Bayes,17881,fake,real,false REAL,0.7777329226769335,US_News,501,500-999,157,False,False,False,‘There’ll be boots on the ground’: US making noises about ‘doing more’ in Syria and Iraq
+Naive Bayes,13127,fake,real,false REAL,0.7775564813096774,politics,397,200-499,131,False,False,False,OCTOBER 1st Could Mark End Of Free Speech On The Internet: How Obama Regime May Be Turning Control Of Internet Over To U.N.
+Naive Bayes,11372,fake,real,false REAL,0.7764291843756295,politics,294,200-499,92,False,False,False,POLITICO DOWNGRADES AMERICA: Declares Germany’s “Open-Borders” Angela Merkel “Leader Of The Free World” In Anti-American Headline
+Naive Bayes,13154,fake,real,false REAL,0.7760307575274622,politics,208,200-499,75,False,False,False,DELAY OF RELEASE OF CLINTON SCHEDULES Until After Election Could Backfire…Feds Out Of Control
+Naive Bayes,19255,real,fake,false FAKE,0.7736931153694999,politicsNews,750,500-999,228,True,True,True,NRA opposes outright U.S. ban on gun devices used by Las Vegas killer
+Naive Bayes,11795,fake,real,false REAL,0.7729267597526007,politics,263,200-499,79,False,False,False,TRUMP’S UN AMBASSADOR Nikki Haley Warns UN Members: “We’re Taking Names”
+Naive Bayes,18455,real,fake,false FAKE,0.7728313133608281,politicsNews,385,200-499,131,True,True,False,Trump: Father of UCLA player in shoplifting case is 'ungrateful fool'
+Naive Bayes,26629,real,fake,false FAKE,0.7727374828114815,politicsNews,218,200-499,80,True,True,True,U.S. judge to mull release of Trump video testimony
+Naive Bayes,26945,real,fake,false FAKE,0.7715474565299801,politicsNews,569,500-999,193,True,True,True,"Trumped by candidate's rhetoric, Republican lawmakers at a loss for words"
+Naive Bayes,37901,real,fake,false FAKE,0.7715326772073955,worldnews,214,200-499,68,True,True,True,UK police release new image of jogger in London bus mystery
+Naive Bayes,12448,fake,real,false REAL,0.771444391640235,politics,122,50-199,48,False,False,False,"MARK CUBAN: “In The Event Donald Wins, I Have No Doubt The Market Tanks”…So Here’s What Really Happened [VIDEO]"
+Naive Bayes,11922,fake,real,false REAL,0.769668938438019,politics,692,500-999,200,False,False,False,"IS OBAMA PUNISHING Fiat-Chrysler For 2,000 US Jobs, $1 Billion US Investment Announcement? Fiat-Chrysler CEO Says EPA Allegations Are ‘Absolute Nonsense’ [VIDEO]"
+Naive Bayes,16173,fake,real,false REAL,0.7693787743127579,Government News,174,50-199,53,False,False,False,“Unvetted” Illegals Turn Germany Into A Third-World Trash Heap…Sound Familiar? [Video]
+Naive Bayes,20036,real,fake,false FAKE,0.7688641914264428,politicsNews,103,50-199,42,True,True,False,Phoenix mayor calls on Trump to postpone rally planned for next week
+Naive Bayes,29073,real,fake,false FAKE,0.7657712321480847,politicsNews,772,500-999,268,True,True,False,"Trump, Cruz tensions may provide liveliest Republican debate yet"
+Naive Bayes,10147,fake,real,false REAL,0.765427569562881,politics,267,200-499,68,False,False,False,"NORTH KOREA BLINKS After Threats From POTUS and “Mad Dog” Mattis: “If they do that, then it’s game on”"
+Naive Bayes,20961,real,fake,false FAKE,0.7651964815298591,politicsNews,434,200-499,142,True,True,False,Pew U.S. survey finds agreement on some gun-control proposals
+Naive Bayes,9042,fake,real,false REAL,0.7651340321215085,News,355,200-499,93,False,False,False, Here’s What The Fracking Industry Gave To Oklahoma In 2015 (IMAGES)
+Naive Bayes,8738,fake,real,false REAL,0.7637974027532596,News,454,200-499,143,True,False,False," President Obama Just Sent The Climate Change Industry Some Very, Very Bad News"
+Naive Bayes,9702,fake,real,false REAL,0.7632625931583089,politics,462,200-499,121,False,False,False,"BREAKING NEWS: N. AMERICAN FAMILY Held Hostage During Obama Presidency RESCUED In Pakistan: “This is a country that did not respect us, this is a country that respects us now” [VIDEO]"
+Naive Bayes,16309,fake,real,false REAL,0.7625362384051773,Government News,347,200-499,82,False,False,False,OBAMA RELEASES TOP IRANIAN SCIENTIST…LEAVES 4 AMERICANS TO FEND FOR THEMSELVES IN IRANIAN PRISONS As Part Of Nuke Deal
+Naive Bayes,9832,fake,real,false REAL,0.7617895403728319,politics,648,500-999,230,False,False,False,REVEALED: HOW BARACK OBAMA IS FUNDING The “Resistance” Movement Against President Trump
+Naive Bayes,11664,fake,real,false REAL,0.7612619269475823,politics,878,500-999,207,False,False,False,"FEDS, CA STATE OFFICIALS IGNORED OROVILLE DAM WARNINGS…While Obama, CA Gov Brown Obsessed Over Spending $15 BILLION To Dig Two Controversial Tunnels"
+Naive Bayes,17699,fake,real,false REAL,0.7604775026528773,US_News,2513,1000+,597,False,False,False,"UNHOLY ALLIANCE: Hillary Clinton’s Saudi Sponsors Support Terrorism, Islamist Extremism"
+Naive Bayes,28242,real,fake,false FAKE,0.7599317011308386,politicsNews,189,50-199,82,True,True,True,TV audience for CNN Republican presidential debate down from last week
+Naive Bayes,11801,fake,real,false REAL,0.7596404050470071,politics,476,200-499,144,False,False,False,BREAKING: Mexico’s President Cancels Visit With Trump Over Defending Our US Border From Lawbreakers…But Wrongfully Imprisoning US Marine Tahmooressi For “Border Violation” Was No Big Deal
+Naive Bayes,27254,real,fake,false FAKE,0.7595804151018376,politicsNews,308,200-499,111,True,True,False,"Protesters throw rocks, bottles at police outside Trump rally in New Mexico"
+Naive Bayes,28797,real,fake,false FAKE,0.7589309896945822,politicsNews,334,200-499,121,True,True,False,Trump says will attend March Fox debate with Megyn Kelly: report
+Naive Bayes,31164,real,fake,false FAKE,0.7584830180732608,worldnews,295,200-499,97,True,True,True,"In court first, Swede jailed for rape of children online"
+Naive Bayes,13171,fake,real,false REAL,0.7575713070375216,politics,194,50-199,67,False,False,False,EPIPEN CEO UNDER FIRE FOR PRICE GOUGING Is Daughter Of US Senator
+Naive Bayes,26676,real,fake,false FAKE,0.757479006956653,politicsNews,555,500-999,165,True,True,False,"U.S. Women's Open must leave Trump National, says Burk"
+Naive Bayes,26638,real,fake,false FAKE,0.7574582213751262,politicsNews,742,500-999,213,True,True,False,New Black Panther Party says to carry arms in Cleveland if legal
+Naive Bayes,28389,real,fake,false FAKE,0.7572670839273956,politicsNews,532,500-999,178,True,True,True,Romney's anti-Trump speech ignites social media debate
+Naive Bayes,25990,real,fake,false FAKE,0.7555571831539055,politicsNews,321,200-499,125,True,True,True,Trump believes Obama was born in the United States: campaign
+Naive Bayes,32864,real,fake,false FAKE,0.7547467136050586,worldnews,537,500-999,144,True,True,True,Venezuelan crisis spawns boom in gambling
+Naive Bayes,11608,fake,real,false REAL,0.7545243795026615,politics,165,50-199,61,True,False,False,WHOA! FRANCE’S CONSERVATIVE PRESIDENTIAL CANDIDATE Refuses To Cover Her Head With Muslim Veil…Walks Out Of Meeting! [Video]
+Naive Bayes,9759,fake,real,false REAL,0.7540912048308088,politics,472,200-499,154,False,False,False,PRESIDENT TRUMP WEIGHS Executive Order On WELFARE REFORM: If You’re an Able Bodied American Who Wants A Paycheck…Find A Job
+Naive Bayes,5486,fake,real,false REAL,0.7505674503309038,News,462,200-499,160,False,False,False, Collapse: ISIS Now Admits Obama’s Strategy Is DESTROYING Them
+Naive Bayes,22952,real,fake,false FAKE,0.7504901349737538,politicsNews,430,200-499,108,True,True,True,Massa fastest as testing resumes in Barcelona
+Naive Bayes,11692,fake,real,false REAL,0.7498357617324384,politics,154,50-199,58,False,False,False,LOL! OBAMA’S RADICAL EPA CHIEF Says There Was No “War On Coal”…But OOPS…That’s Not What The Poster Behind Her Says!
+Naive Bayes,26121,real,fake,false FAKE,0.7477259611539723,politicsNews,952,500-999,271,True,True,True,U.S. conservative activist Phyllis Schlafly dead at 92
+Naive Bayes,26500,real,fake,false FAKE,0.7466615280574822,politicsNews,384,200-499,137,True,True,True,Obama's brother plans to vote for Trump
+Naive Bayes,19444,real,fake,false FAKE,0.7462455764878935,politicsNews,393,200-499,139,True,True,True,U.S. Attorney General defends Trump on NFL protests at free-speech talk
+Naive Bayes,16157,fake,real,false REAL,0.7452758899742203,Government News,509,500-999,158,False,False,False,CONGRESSMAN SOUNDS ALERT TO CYBER SNOOPING LAW SNUCK INTO BUDGET BILL
+Naive Bayes,14369,fake,real,false REAL,0.7447112188674317,politics,617,500-999,168,True,True,False,INVASION OF AMERICA: POSSIBILITY OF A TRUMP WALL Has Illegals Racing To Across The Border In Record Numbers
+Naive Bayes,25611,real,fake,false FAKE,0.7434059657027554,politicsNews,886,500-999,202,True,True,False,Factbox: Women who have alleged inappropriate conduct by Trump
+Naive Bayes,26485,real,fake,false FAKE,0.7426679069131901,politicsNews,886,500-999,255,True,True,True,Some in Sanders' army seem determined to march on without him
+Naive Bayes,28788,real,fake,false FAKE,0.7425700726924327,politicsNews,511,500-999,134,True,True,True,"Rubio, Christie and Kasich get more debate traction on social media"
+Naive Bayes,26915,real,fake,false FAKE,0.7407489280583344,politicsNews,821,500-999,266,True,True,True,"American Muslims see Trump rhetoric fueling prejudice, hate incidents"
+Naive Bayes,16238,fake,real,false REAL,0.7395543838041074,Government News,292,200-499,92,False,False,False,Obama’s Legacy Before American Safety: Feds Looking At Different States For GITMO Terrorists
+Naive Bayes,27199,real,fake,false FAKE,0.7378452919560323,politicsNews,233,200-499,89,True,True,False,Animal rights activists briefly disrupt Sanders' rally in California
+Naive Bayes,25213,real,fake,false FAKE,0.7371060106574614,politicsNews,917,500-999,261,True,True,False,'Rage against the machine': U.S. voters reject a 'rigged' system
+Naive Bayes,19428,real,fake,false FAKE,0.7370688319750112,politicsNews,601,500-999,211,True,True,False,Conservative firebrand defeats Trump pick in Alabama primary for U.S. Senate
+Naive Bayes,27243,real,fake,false FAKE,0.7345453974364555,politicsNews,224,200-499,74,True,True,False,'Little House' star drops bid for U.S. congressional seat
+Naive Bayes,22860,real,fake,false FAKE,0.7309785708602724,politicsNews,534,500-999,187,True,True,True,U.S. lawmaker's controversial tweet on immigration draws fire
+Naive Bayes,27021,real,fake,false FAKE,0.7307859152814032,politicsNews,807,500-999,231,True,True,True,Assault rifle used in Florida shooting drives gun control debate
+Naive Bayes,23349,real,fake,false FAKE,0.725705852108409,politicsNews,187,50-199,59,True,True,False,Burlington to drop Ivanka Trump brand online: Business Insider
+Naive Bayes,14996,fake,real,false REAL,0.7231561188905046,politics,318,200-499,115,False,False,False,WOW! Just When We Thought Obama’s Global Relationships Couldn’t Get Any Worse…Europe Threatens This…
+Naive Bayes,2720,fake,real,false REAL,0.7214641330744521,News,594,500-999,175,False,False,False, Virginia Seeks To Hold Trump In Contempt For Ignoring Federal Court Order Against Muslim Ban
+Naive Bayes,18764,real,fake,false FAKE,0.7213831594591378,politicsNews,424,200-499,124,True,True,False,"Factbox: Belgian mother of two, young New Yorker among victims of truck attack"
+Naive Bayes,24492,real,fake,false FAKE,0.7211627955495874,politicsNews,296,200-499,121,True,True,True,"Trump, Bill Clinton trade insults in unusual exchange"
+Naive Bayes,27553,real,fake,false FAKE,0.7206650639935597,politicsNews,603,500-999,201,True,True,False,"Exiting 2016 race, Republican Cruz leaves himself a path forward"
+Naive Bayes,1625,fake,real,false REAL,0.7193639649295555,News,361,200-499,92,False,False,False, Trump Administration Just Pressured Argentina Into Not Honoring Jimmy Carter With An Award
+Naive Bayes,7616,fake,real,false REAL,0.7182840858681693,News,646,500-999,220,False,False,False, Benjamin Netanyahu Just Snubbed Obama AGAIN – And In The Scummiest Way Possible
+Naive Bayes,27046,real,fake,false FAKE,0.7175907455341138,politicsNews,351,200-499,142,True,True,True,Warren to keep up assault on White House hopeful Trump over judge comments
+Naive Bayes,33298,real,fake,false FAKE,0.7168069186120667,worldnews,415,200-499,123,True,True,True,Hungarians take walking tour to overcome fears of Muslims
+Naive Bayes,11333,fake,real,false REAL,0.7152883628364289,politics,167,50-199,70,False,False,False,WOW! HOUSE INTELLIGENCE Chair CONFIRMS Trump Was Correct…Trump Transition Team WAS Surveilled By Obama [VIDEO]
+Naive Bayes,23890,real,fake,false FAKE,0.7149834418212577,politicsNews,46,<50,28,True,False,False,"Factbox: Trump on Twitter (Jan 25) - ABC interview, voter fraud, Supreme Court pick"
+Naive Bayes,28910,real,fake,false FAKE,0.7107763552348907,politicsNews,1271,1000+,281,True,True,True,Campaigning in style: How Jeb Bush blew through his war chest 
+Naive Bayes,16133,fake,real,false REAL,0.709606376061287,Government News,847,500-999,214,False,False,False,REVOLUTION: The Patriot Spring Is Coming
+Naive Bayes,9262,fake,real,false REAL,0.7060678397858587,politics,256,200-499,94,False,False,False,SECRETARY OF STATE REX TILLERSON Shuts Down Obnoxious Press Asking Why He ‘Puts Up With’ Trump [Video]
+Naive Bayes,8429,fake,real,false REAL,0.7060553991031071,News,757,500-999,189,False,False,False, Netanyahu Says ‘Respected Western Opinion Leaders’ Hate The Jewish People (VIDEO)
+Naive Bayes,13851,fake,real,false REAL,0.7057911701383484,politics,300,200-499,98,False,False,False,DOJ Funneled Housing Crisis Money To Immigrant Activist Groups Like La Raza
+Naive Bayes,28849,real,fake,false FAKE,0.7049737194326825,politicsNews,492,200-499,166,True,True,True,Republican Cruz apologizes for email implying Carson might exit race
+Naive Bayes,1667,fake,real,false REAL,0.7034466331479595,News,445,200-499,127,False,False,False, Trump Considers ‘Terminating NAFTA’ With Executive Order (DETAILS)
+Naive Bayes,12027,fake,real,false REAL,0.7002641779569626,politics,232,200-499,69,False,False,False,PUTIN PUSHES His Own Reset Button With America In A Very Surprising Move
+Naive Bayes,16370,fake,real,false REAL,0.6990888227821505,Government News,332,200-499,111,False,False,False,NSA ARCHITECT: NSA SNOOPING EXPIRES BUT FEDS WILL CONTINUE SURVEILLANCE OF AMERICANS’ PHONE RECORDS
+Naive Bayes,28830,real,fake,false FAKE,0.6976378240923751,politicsNews,772,500-999,262,True,True,False,Republican campaign for White House turns nastier as field narrows
+Naive Bayes,18595,real,fake,false FAKE,0.6965039940212825,politicsNews,171,50-199,76,True,True,False,Trump would want Moore to step aside if sexual misconduct allegations true: White House
+Naive Bayes,27644,real,fake,false FAKE,0.6948794648339811,politicsNews,444,200-499,106,True,True,True,U.S. justices mull propriety of recalling discharged jury to duty
+Naive Bayes,22966,real,fake,false FAKE,0.6943913533379387,politicsNews,350,200-499,132,True,True,True,"Carson calls slaves 'immigrants' in speech, drawing criticism"
+Naive Bayes,15636,fake,real,false REAL,0.6937072805619853,politics,1574,1000+,354,False,False,False,VATICAN ADVISOR: Says Pope Will Call On World At UN To Join Crusade For a New World Order…Would Like US To Pay $845 BILLION GLOBAL TAX To Combat ‘Climate Change’
+Naive Bayes,25776,real,fake,false FAKE,0.6934632884871725,politicsNews,249,200-499,88,True,True,True,U.S. vice presidential debate watched by 37 million on TV
+Naive Bayes,20367,real,fake,false FAKE,0.6930354853275199,politicsNews,335,200-499,114,True,True,True,Boy Scouts of America apologizes for Trump's 'political rhetoric'
+Naive Bayes,15515,fake,real,false REAL,0.6891803846982604,politics,805,500-999,201,False,False,False,COINCIDENCE? CHOBANI SCORES MAJOR CONTRACT WITH MOOCH’S GOVERNMENT CONTROLLED SCHOOL LUNCH PROGRAM After Airing Naked Lesbian TV Ad To 3% Of Population [VIDEO]
+Naive Bayes,9917,fake,real,false REAL,0.6887797651579782,politics,919,500-999,245,False,False,False,Ramadan Abdullah Set Free On Bail After Police Make Shocking Discovery Of Weapons In Storage Locker Destined For Secretive Islamic Compound In Upstate NY
+Naive Bayes,27070,real,fake,false FAKE,0.6861087111370031,politicsNews,636,500-999,224,True,True,True,"Exclusive: Clinton ally Warren weighs potential VP role, sees hurdles - sources"
+Naive Bayes,593,fake,real,false REAL,0.6815637092017975,News,441,200-499,145,False,False,False, Donald Trump Doubles Down On Korea Threat; Says He Wasn’t Tough Enough
+Naive Bayes,22806,real,fake,false FAKE,0.6798322245459301,politicsNews,93,50-199,42,True,True,True,Trump suggests more information coming about wiretap claim: Fox News interview
+Naive Bayes,11261,fake,real,false REAL,0.6770930121856844,politics,481,200-499,138,False,False,False,LOL! DEM Senator Dick Durbin Voted To Confirm Circuit Judge Gorsuch In 2006…Tells CNN Host “He Can’t Remember” How He Voted [VIDEO]
+Naive Bayes,3516,fake,real,false REAL,0.6765811711423207,News,519,500-999,192,False,False,False, HUGE Campaign Promise Broken By Trump As He Stabs Working Class Americans In The Back Yet Again
+Naive Bayes,14478,fake,real,false REAL,0.6750014300418241,politics,861,500-999,188,False,False,False,HOW OBAMA Could Temporarily Fill The Vacancy Left By Justice Scalia With A RADICAL LEFTIST Judge
+Naive Bayes,30223,real,fake,false FAKE,0.6736028759387662,worldnews,292,200-499,90,True,True,True,Botswana court orders government to recognize transgender woman as female
+Naive Bayes,28593,real,fake,false FAKE,0.6731623160156643,politicsNews,809,500-999,282,True,True,True,Rubio sharpens attacks after latest Trump win in White House race
+Naive Bayes,20492,real,fake,false FAKE,0.6724814228767604,politicsNews,213,200-499,88,True,False,False,"Factbox: Trump on Twitter (July 24) - Chuck Schumer, Adam Schiff, Obamacare"
+Naive Bayes,15921,fake,real,false REAL,0.6713387321483406,Government News,278,200-499,97,False,False,False,NEW DATA RELEASED: OBAMA ADMIN “Accidentally Collected Info” On Americans During Election
+Naive Bayes,36110,real,fake,false FAKE,0.6688958098014339,worldnews,125,50-199,41,True,True,True,Poles dressed in black march in defense of women's rights
+Naive Bayes,3119,fake,real,false REAL,0.6687320523707698,News,477,200-499,156,False,False,False, Ethics Office Just Called Out GOP For Shady Schemes To Confirm Trump’s Corrupt Cabinet Picks
+Naive Bayes,29066,real,fake,false FAKE,0.6632248495287345,politicsNews,213,200-499,103,True,True,False,"Factbox: The economy, guns top on social media during U.S. Republican debate"
+Naive Bayes,32450,real,fake,false FAKE,0.6623013749559579,worldnews,367,200-499,72,True,True,True,Memories in milk bottles: Polish exhibition 'shouts out' annihilation story of Warsaw Ghetto
+Naive Bayes,11425,fake,real,false REAL,0.6622879355842097,politics,692,500-999,184,False,False,False,"WATCH: Wildly Popular, Outspoken Geert Wilders Is Being Called “The Dutch Trump”…Why His Plan To De-Islamize The Netherlands Is Resonating With Voters"
+Naive Bayes,7638,fake,real,false REAL,0.6620457522021979,News,422,200-499,162,True,False,False, The World Speaks Out On Trump — Top Foreign Diplomats Unite Against Him
+Naive Bayes,15050,fake,real,false REAL,0.661460120878895,politics,181,50-199,57,False,False,False,MUSLIM INVASION UPDATE: Gang Members In Germany On Trial For Robbing Churches And Schools To Fund ISIS
+Naive Bayes,28151,real,fake,false FAKE,0.6604377460767619,politicsNews,781,500-999,260,True,True,True,Half of U.S. women have 'very unfavorable' view of Trump: poll
+Naive Bayes,23222,real,fake,false FAKE,0.6579909252647362,politicsNews,408,200-499,129,True,True,True,Suppressing free press is 'how dictators get started': Senator McCain
+Naive Bayes,16071,fake,real,false REAL,0.6555471732470954,Government News,659,500-999,180,False,False,False,TYRANNY: Obamaphone Fraud Kept Under Wraps Until Vote To Expand Program
+Naive Bayes,12201,fake,real,false REAL,0.6554560235063468,politics,783,500-999,171,False,False,False,BREAKING: MI Court Of Appeals Orders Vote Recount To STOP…Jill Stein’s Democrat Activist Attorney Says Count Must Go On
+Naive Bayes,28995,real,fake,false FAKE,0.6544164717573546,politicsNews,777,500-999,242,True,True,False,Davos elite alarmed at prospect of nominee Trump
+Naive Bayes,12219,fake,real,false REAL,0.6527602385196509,politics,305,200-499,115,False,False,False,BREAKING: OBAMA-APPOINTED JUDGE ORDERS Vote Recount To Begin At Noon On Monday
+Naive Bayes,28208,real,fake,false FAKE,0.6510138212242379,politicsNews,1027,1000+,273,True,True,False,Inside Kasich's long-shot strategy to beat Trump to the GOP nomination
+Naive Bayes,20685,real,fake,false FAKE,0.6509961111865818,politicsNews,639,500-999,202,True,True,False,"In Trump's Ohio bastion, supporters dismiss uproar over Donald Jr."
+Naive Bayes,26362,real,fake,false FAKE,0.6491503278556388,politicsNews,491,200-499,153,True,True,True,"Icahn praises Trump economic plan, says candidate will get blue-collar vote"
+Naive Bayes,16377,fake,real,false REAL,0.648224689399823,Government News,303,200-499,99,False,False,False,"(VIDEO) WATER WARS: OBAMA’S EPA POWER GRAB TO REGULATE PUDDLES, PONDS, AND JUST ABOUT ANYTHING THAT’S WET"
+Naive Bayes,10201,fake,real,false REAL,0.6469979577306502,politics,281,200-499,92,False,False,False,WHY THE HUGE 1.1 MILLION DROP in Food Stamp Enrollment? [VIDEO]
+Naive Bayes,15954,fake,real,false REAL,0.6466595900623726,Government News,187,50-199,70,False,False,False,BATTLE OF THE “PAUL’S”: Angry Rand Paul Walks Out On Paul Ryan During Obamacare Discussion…Ryan’s Plan Would Create “New Entitlement Program”…Demands COMPLETE REPEAL
+Naive Bayes,28190,real,fake,false FAKE,0.6449021757544857,politicsNews,1463,1000+,407,True,True,True,How Rubio’s campaign failed: problems from the start
+Naive Bayes,21197,real,fake,false FAKE,0.6446535674779716,politicsNews,535,500-999,187,True,True,True,"Some toast Comey testimony, others shrug at U.S. bar 'watch parties'"
+Naive Bayes,15850,fake,real,false REAL,0.6439152828581566,politics,247,200-499,92,False,False,False,BREAKING: COURAGEOUS FEDERAL JUDGE DENIES OBAMA’S REQUEST TO LIFT STAY ON EXECUTIVE AMNESTY
+Naive Bayes,28812,real,fake,false FAKE,0.6433146359405799,politicsNews,308,200-499,117,True,True,True,"Obama says faith a cure for fears stirred by war, hard times"
+Naive Bayes,27344,real,fake,false FAKE,0.6431606248879939,politicsNews,922,500-999,257,True,True,True,"Democrats Clinton, Sanders split nominating contests in Oregon, Kentucky"
+Naive Bayes,23660,real,fake,false FAKE,0.6427965693591764,politicsNews,264,200-499,84,True,False,False,"Factbox: Trump on Twitter (Jan 31) - Pelosi, Democrats, Gorsuch"
+Naive Bayes,27636,real,fake,false FAKE,0.6418729487352768,politicsNews,442,200-499,152,True,True,True,Baltimore primary voters back reform candidate for mayor after Freddie Gray unrest
+Naive Bayes,25245,real,fake,false FAKE,0.6406719281610876,politicsNews,529,500-999,192,True,True,True,Transgender advocates fear reversal of civil rights under Trump
+Naive Bayes,12889,fake,real,false REAL,0.6397215555120076,politics,220,200-499,83,False,False,False,BREAKING: SENATE STRIKES BACK After Obama Slaps 9/11 Victim’s Families In The Face….Vote 97-1
+Naive Bayes,26838,real,fake,false FAKE,0.6372182878833433,politicsNews,576,500-999,187,True,True,True,New York LGBT bar becomes first U.S. monument to gay rights
+Naive Bayes,27024,real,fake,false FAKE,0.6365579397127132,politicsNews,72,50-199,36,True,True,True,"After Orlando shooting, Donald Trump reiterates Muslim ban"
+Naive Bayes,26668,real,fake,false FAKE,0.6361303668541085,politicsNews,560,500-999,194,True,True,True,"U.S. gun rules heighten tension between police, citizens: Obama"
+Naive Bayes,35554,real,fake,false FAKE,0.6360011332817714,worldnews,429,200-499,132,True,True,True,CIA official tells jury about day 'all hell broke loose' in Benghazi
+Naive Bayes,10357,fake,real,false REAL,0.6359088207595035,politics,518,500-999,148,False,False,False,DETROIT: IMMIGRANT STEALS $132 MILLION From Medicare…Owns $7 Million Mansion With Indoor Basketball Court…Defense Lawyer Mohammed Nasser Says He’s “Not a flight risk”
+Naive Bayes,9310,fake,real,false REAL,0.6357600577816981,politics,403,200-499,123,False,False,False,JUST IN: Flynn to Plead Guilty to Lying to the FBI
+Naive Bayes,11865,fake,real,false REAL,0.6333727932061122,politics,230,200-499,69,False,False,False,"WHOA! “Canada’s Donald Trump,” Billionaire And Shark Tank Host Kevin O’Leary Announces Run Against “Canada’s Barack Obama” [VIDEO]"
+Naive Bayes,21568,real,fake,false FAKE,0.6316429908821346,politicsNews,671,500-999,250,True,True,True,Ex-U.S. Congressman Weiner pleads guilty in teen 'sexting' case
+Naive Bayes,28963,real,fake,false FAKE,0.6295956019874035,politicsNews,501,500-999,168,True,True,True,Obama: Sanders has 'luxury' of being long shot in Democratic race
+Naive Bayes,15184,fake,real,false REAL,0.6293699492503312,politics,514,500-999,144,False,False,False,COME TO AMERICA…THEY’VE GOT MONEY GROWING ON TREES: U.S. To Provide Ridiculous Amount Of Services and Funds To Each Refugee
+Naive Bayes,9172,fake,real,false REAL,0.6288852893402525,politics,573,500-999,150,False,False,False,JUST IN: Fusion GPS Sued By 3 Billionaires Over Their “Defamation” In War Against Trump
+Naive Bayes,20317,real,fake,false FAKE,0.6271885842828914,politicsNews,400,200-499,120,True,True,True,Alien Donald Trump appears on Mexico City billboard
+Naive Bayes,28109,real,fake,false FAKE,0.6265012967456747,politicsNews,250,200-499,72,True,True,True,¿Qué bolá? Obama jokes with Cuban humorist in video
+Naive Bayes,16193,fake,real,false REAL,0.6260464110768585,Government News,382,200-499,123,False,False,False,BREAKING REPORT: Two Al Qaeda Terrorists Able To Enter U.S. As Refugees: “I wouldn’t be surprised if there were many more…”
+Naive Bayes,24251,real,fake,false FAKE,0.6252102973671749,politicsNews,746,500-999,246,True,True,False,"Obama pushes values and prods Trump in final, emotional address"
+Naive Bayes,2196,fake,real,false REAL,0.6239521956693319,News,436,200-499,151,False,False,False, Did Trump’s Former Campaign Manager Have People Killed? His Daughters Say He Did
+Naive Bayes,28385,real,fake,false FAKE,0.6234443237048517,politicsNews,243,200-499,72,True,True,False,Kentucky governor sues to close abortion clinic
+Naive Bayes,6116,fake,real,false REAL,0.6219121717249443,News,425,200-499,112,False,False,False," Missouri Legislators Took 32,138 Free Gifts From Lobbyists"
+Naive Bayes,13109,fake,real,false REAL,0.6216688431571876,politics,293,200-499,104,True,False,False,"#CrookedHillary’s Karma! NEW POLL Shows Trump Takes Lead In BLUE STATES: Michigan, Wisconsin, New Hampshire And Maine"
+Naive Bayes,1679,fake,real,false REAL,0.6200219905818315,News,536,500-999,188,False,False,False, Court Slams Down Trump’s Order Blocking Funding To Sanctuary Cities
+Naive Bayes,18593,real,fake,false FAKE,0.6167355950173812,politicsNews,941,500-999,301,True,True,False,Republican Senate candidate Moore hit by sexual misconduct allegations
+Naive Bayes,14889,fake,real,false REAL,0.6162890993186428,politics,612,500-999,177,False,False,False,FIGHTING TO WIN: Russia Annihilates Dozens Of ISIS Oil Tankers…And Shares The Video With The World
+Naive Bayes,22001,real,fake,false FAKE,0.6150636827364317,politicsNews,397,200-499,145,True,True,True,Hillary Clinton makes surprise appearance at New York film panel
+Naive Bayes,25636,real,fake,false FAKE,0.6117784852671448,politicsNews,243,200-499,80,True,True,True,Ex-Red Sox pitcher mulls run against Senator Warren in Massachusetts
+Naive Bayes,10658,fake,real,false REAL,0.6114165627775976,politics,426,200-499,152,False,False,False,WINNING! COAL MINERS CHEER When President Trump Announces First Coal Mine Opening in 6 Years Video]
+Naive Bayes,15168,fake,real,false REAL,0.6114071765719064,politics,549,500-999,146,False,False,False,POPE MAKES VISIT TO NUNS OBAMA REGIME IS SUING For Not Conforming To Obamacare Contraception Mandate
+Naive Bayes,26525,real,fake,false FAKE,0.6111891244483407,politicsNews,1184,1000+,341,True,True,True,"As Republicans anoint Trump, party grapples with identity crisis"
+Naive Bayes,19844,real,fake,false FAKE,0.6091428082486902,politicsNews,68,50-199,28,True,False,False,Factbox: Trump on Twitter (Aug 31) - Texas
+Naive Bayes,26677,real,fake,false FAKE,0.6086094686244454,politicsNews,788,500-999,241,True,True,True,Dallas attack adds to Cleveland concerns before Republican convention
+Naive Bayes,19264,real,fake,false FAKE,0.6067518925422497,politicsNews,374,200-499,131,True,True,True,Weinstein on indefinite leave as company investigates allegations
+Naive Bayes,26345,real,fake,false FAKE,0.604054036886561,politicsNews,989,500-999,321,True,True,True,"Clinton blasts Trump for 'casual inciting of violence,' Republicans shaken"
+Naive Bayes,22553,real,fake,false FAKE,0.6029953950492264,politicsNews,307,200-499,107,True,True,False,Trump on Obamacare repeal: from boasts of greatness to lessons learned
+Naive Bayes,38219,real,fake,false FAKE,0.6022489008872836,worldnews,564,500-999,153,True,True,False,Immigrants in Central Florida nervous about seeking shelter
+Naive Bayes,15992,fake,real,false REAL,0.6020447286786104,Government News,385,200-499,128,False,False,False,HOUSE TAKES Measures To Impeach IRS Chief After Stubborn Refusal To Cooperate…Who Do These People Think They Are? The IRS?
+Naive Bayes,16888,fake,real,false REAL,0.6018212078973908,left-news,497,200-499,142,False,False,False,"SAUDI BILLIONAIRE Who Used Sharia Law To Make Fortune, Donates $10 MILLION To Yale University To Build Islamic Law Center"
+Naive Bayes,16169,fake,real,false REAL,0.6014940710690764,Government News,546,500-999,177,False,False,False,BUDGET VOTE TODAY! You’ll Flip Out When You See The List Of Pork In This Bill – Call DC!
+Naive Bayes,646,fake,real,false REAL,0.601104259955451,News,530,500-999,176,False,False,False, Report: Corrupt Wall Streeters Are Three Times More Likely To Go Unpunished Under Trump
+Naive Bayes,9852,fake,real,false REAL,0.6000632279236732,politics,351,200-499,110,False,False,False,NYC: Turkish Thugs Beat Up Protesters…Deny Free Speech During Turkish President’s Speech [Video]
+Naive Bayes,24420,real,fake,false FAKE,0.5979108126946957,politicsNews,451,200-499,126,True,True,False,Mormon Tabernacle Choir member resigns rather than sing for Trump
+Naive Bayes,10181,fake,real,false REAL,0.5958527592963675,politics,327,200-499,91,False,False,False,"WATCH: CNN DOES SEGMENT From Bunker In Hawaii, Tells Viewers Hawaii’s Been Preparing For Nuclear Strike Since Trump Took Office…CNN’s Best Survival Tip: “FIND A CAVE”"
+Naive Bayes,11168,fake,real,false REAL,0.5954930358919274,politics,141,50-199,62,False,False,False,"SORE LOSER, WAR-HAWK John McCain Blames President Trump For Syrian Chemical Attack [VIDEO]"
+Naive Bayes,15227,fake,real,false REAL,0.594409033828039,politics,259,200-499,83,True,False,False,"IN A RULING THAT WILL MAKE OBAMA’S HEAD SPIN, Fed Judge Says Telling Illegals “Show Us Your Papers” Is Not Discriminatory"
+Naive Bayes,17437,fake,real,false REAL,0.5932369809072404,US_News,1708,1000+,428,False,False,False,"OPEN SOCIETY: Soros-backed, Anti-Trump Immigration Protests ‘Sprung from Nowhere’ at Airports Across America"
+Naive Bayes,1636,fake,real,false REAL,0.593175870753625,News,374,200-499,114,False,False,False, Trump’s Favorite New Dictator Just Cut Off Access To Wikipedia
+Naive Bayes,17664,fake,real,false REAL,0.5917891123832237,US_News,2126,1000+,523,False,False,False,Hillary Clinton’s ‘Presidency’ has Already Begun as Lame Ducks Promote Her War on Syria
+Naive Bayes,12288,fake,real,false REAL,0.5915636321168386,politics,130,50-199,50,False,False,False,CUBA’S FIDEL CASTRO DIES…Hundreds Dance In The Streets…What Will Obama Do? [Video]
+Naive Bayes,31514,real,fake,false FAKE,0.5898647683415532,worldnews,724,500-999,160,True,True,True,Prince Harry's engagement shows British monarchy has moved on from scandals of past
+Naive Bayes,25498,real,fake,false FAKE,0.5896844537052148,politicsNews,536,500-999,181,True,True,True,Clinton adds pop of celebrity in homestretch of campaign
+Naive Bayes,28333,real,fake,false FAKE,0.5888839356178561,politicsNews,776,500-999,223,True,True,False,"Flint becomes U.S. Democratic flash point, but residents want action"
+Naive Bayes,614,fake,real,false REAL,0.5881838892685582,News,463,200-499,164,False,False,False, It’s Happening: FBI Carries Out Predawn Raid On Trump Associate’s Home (DETAILS)
+Naive Bayes,2573,fake,real,false REAL,0.5881382386671122,News,503,500-999,150,False,False,False, BREAKING: Lithuania Warns That Russia Is Preparing For War Against Europe
+Naive Bayes,13503,fake,real,false REAL,0.5877807845649361,politics,736,500-999,197,False,False,False,“ON DAY OF #NiceAttack Hillary Announces AMNESTY For Anyone Who Stealthily Evades Our Border Patrol”
+Naive Bayes,25415,real,fake,false FAKE,0.5868113819489673,politicsNews,621,500-999,207,True,True,True,Battleground Ohio is coveted territory in election race
+Naive Bayes,16933,fake,real,false REAL,0.585647116563966,left-news,152,50-199,54,False,False,False,Why 5 Of The Wealthiest Muslim Nations Refuse To Take A Single Refugee
+Naive Bayes,26453,real,fake,false FAKE,0.5856445761048491,politicsNews,587,500-999,176,True,True,True,"Among Democrats, another convention hums in Sanders fans' phones"
+Naive Bayes,8837,fake,real,false REAL,0.5840354451810832,News,481,200-499,112,False,False,False, Experts Think Gas Prices About To Go Lower Than EVER – You Won’t Believe How Low (IMAGES)
+Naive Bayes,11393,fake,real,false REAL,0.583832769021186,politics,556,500-999,178,False,False,False,JUST IN: Criminal Hackers Who Stole Data From 500 MILLION Yahoo Email Users Were RUSSIAN Agents Obama Regime INVITED To U.S…Courted By FBI
+Naive Bayes,22334,real,fake,false FAKE,0.5837130516225899,politicsNews,378,200-499,109,True,True,True,Trump wins Scottish golf course privacy rights case
+Naive Bayes,16341,fake,real,false REAL,0.5835172228484469,Government News,357,200-499,132,False,False,False,"FEDS ISSUE TERROR ALERT FOR JULY 4TH…WAIT, I THOUGHT OBAMA SAID ISIS IS JUST A JV TEAM?!"
+Naive Bayes,27844,real,fake,false FAKE,0.5833363124893882,politicsNews,229,200-499,80,True,True,True,Chicago finance committee approves payouts for police custody deaths
+Naive Bayes,20376,real,fake,false FAKE,0.582401847109294,politicsNews,147,50-199,61,True,False,False,"Factbox: Trump on Twitter (July 27) - NY Times, Republican Senators, Healthcare"
+Naive Bayes,13884,fake,real,false REAL,0.5816432406283116,politics,304,200-499,104,False,False,False,RUBIO Sides With Democrats On Giving A Whopping $2 Billion For Zika Virus Prevention
+Naive Bayes,27942,real,fake,false FAKE,0.5812875506505775,politicsNews,317,200-499,124,True,True,True,"Clinton, Sanders audition for role as anti-Trump candidate"
+Naive Bayes,8652,fake,real,false REAL,0.5811463953076104,News,491,200-499,157,False,False,False," Republicans Tried To Kill The Clean Water Rule, But Obama’s Veto Pen Said ‘Hell No’"
+Naive Bayes,20004,real,fake,false FAKE,0.5810542413229952,politicsNews,239,200-499,96,True,True,False,Trump fires adviser Bannon
+Naive Bayes,36181,real,fake,false FAKE,0.5810540320267514,worldnews,484,200-499,144,True,True,True,Trial of alleged ringleader of Benghazi attack begins in Washington
+Naive Bayes,26819,real,fake,false FAKE,0.5796185622166725,politicsNews,697,500-999,186,True,False,False,"Advocates hail U.S. court abortion decision, predict national impact"
+Naive Bayes,26994,real,fake,false FAKE,0.5792210224183312,politicsNews,1161,1000+,328,True,True,False,Orlando killer expressed support for multiple Islamist groups
+Naive Bayes,1072,fake,real,false REAL,0.5786870863769754,News,361,200-499,106,True,False,False, Investigators Into US-Russia Ties Turn Attention To Flynn’s Business Partner
+Naive Bayes,18241,real,fake,false FAKE,0.5784319163568299,politicsNews,673,500-999,208,True,True,False,Trump lawyer's account about tweets raises questions about what president knew
+Naive Bayes,18127,real,fake,false FAKE,0.5781390009758467,politicsNews,526,500-999,174,True,True,True,Roy Moore campaign casts Alabama race as referendum on Trump
+Naive Bayes,15964,fake,real,false REAL,0.5777485576440637,Government News,349,200-499,107,False,False,False,"BREAKING: Federal Judge STOPS Obamacare Transgender, Abortion Related Protections"
+Naive Bayes,21665,real,fake,false FAKE,0.5766409422440694,politicsNews,115,50-199,51,True,True,False,Russia's response to Trump leak reports: don't read U.S. newspapers
+Naive Bayes,27881,real,fake,false FAKE,0.5740033649544676,politicsNews,115,50-199,53,True,True,False,Pennsylvania bans bias against transgender people
+Naive Bayes,10233,fake,real,false REAL,0.5739641518138134,politics,192,50-199,68,False,False,False,AG JEFF SESSIONS Warns Leakers…Taking Steps to Stop the Leaks that “Hurt Our Country” [Video]
+Naive Bayes,15687,fake,real,false REAL,0.5732941386873255,politics,940,500-999,253,False,False,False,AMTRAK FACTS AND WHY AMERICANS SHOULDN’T TRUST THE CALL FOR MORE INFRASTRUCTURE SPENDING
+Naive Bayes,9873,fake,real,false REAL,0.5731858571756262,politics,450,200-499,135,False,False,False,BREAKING: Trump Was Right! Trump Campaign Manager Wiretapped
+Naive Bayes,13835,fake,real,false REAL,0.5730361357903118,politics,273,200-499,74,False,False,False,WHOA! CLINTON GRIFTERS BAGGED $100 Million From “Blood Minerals” Firm
+Naive Bayes,13910,fake,real,false REAL,0.5720652057741289,politics,267,200-499,105,False,False,False,Does The $100 Million Given To Clintons By Gulf Sheikhs Disqualify Hillary For Candidacy?
+Naive Bayes,13774,fake,real,false REAL,0.5706615870184986,politics,365,200-499,154,False,False,False,LOL! The Woman Who Couldn’t Be Bothered With Protecting Lives Of Brave Americans Serving In Benghazi Attacks Trump On National Security
+Naive Bayes,29116,real,fake,false FAKE,0.5694348686414477,politicsNews,361,200-499,129,True,True,True,Obama jokes about a Trump State of the Union address
+Naive Bayes,20069,real,fake,false FAKE,0.567223151316592,politicsNews,238,200-499,79,True,True,False,"Organizers of white nationalist rally in Virginia, driver sued for $3 million"
+Naive Bayes,18020,real,fake,false FAKE,0.566206166749506,politicsNews,260,200-499,101,True,True,True,Senator-elect Jones not joining calls for Trump resignation
+Naive Bayes,33436,real,fake,false FAKE,0.5630388284872654,worldnews,289,200-499,84,True,True,False,"Argentine survivor of New York attack pleads for justice, love"
+Naive Bayes,15172,fake,real,false REAL,0.5623203301727645,politics,104,50-199,37,False,False,False,HERE’S THE LIST Of Heartless Senators Who Voted Against Banning Late Term Abortions
+Naive Bayes,1409,fake,real,false REAL,0.5593458493314073,News,573,500-999,159,False,False,False, Trump’s FCC Will Decimate Internet Freedom (VIDEO)
+Naive Bayes,4380,fake,real,false REAL,0.5579119088144776,News,599,500-999,156,False,False,False, BUSTED: Donald Trump Screwed Over American Steel Workers By Buying Metal From China Instead
+Naive Bayes,20348,real,fake,false FAKE,0.5575452190633418,politicsNews,415,200-499,130,True,True,True,White House divisions on display with Scaramucci's comments
+Naive Bayes,30293,real,fake,false FAKE,0.5520278147897901,worldnews,462,200-499,137,True,True,True,India files sex assault case against airline passenger for allegedly molesting Bollywood actress
+Naive Bayes,12258,fake,real,false REAL,0.5488971247109119,politics,134,50-199,63,False,False,False,BREAKING: TRUMP PICKS Private Sector Titans For Trade And Commerce: ‘I did this because I believed in him’
+Naive Bayes,14451,fake,real,false REAL,0.5460142184126785,politics,57,50-199,22,False,False,False,HERE IT IS: List Of Democrat Hypocrites Who Voted To Filibuster GW Bush’s Final Supreme Court Pick
+Naive Bayes,29086,real,fake,false FAKE,0.5452490499715752,politicsNews,987,500-999,291,True,True,False,"For Republican Rubio, a moment of truth in race to lead U.S."
+Naive Bayes,33843,real,fake,false FAKE,0.5450249271560998,worldnews,433,200-499,108,True,True,True,Technicolor Thailand is back after a black-clad mourning year for late king
+Naive Bayes,35894,real,fake,false FAKE,0.5443797389277458,worldnews,234,200-499,75,True,True,True,"Amsterdam mayor Van der Laan, who once snubbed Putin, dies of cancer"
+Naive Bayes,26452,real,fake,false FAKE,0.543018119442267,politicsNews,964,500-999,297,True,True,True,"For inspiration, new Democratic stars look to Elizabeth Warren"
+Naive Bayes,442,fake,real,false REAL,0.5428475346759417,News,422,200-499,138,False,False,False, Trump Administration Is Already Talking About Withholding Harvey Aid
+Naive Bayes,13959,fake,real,false REAL,0.5421454474322018,politics,9,<50,8,False,False,False,POLL: Who Should Donald Trump Choose For Vice President?
+Naive Bayes,28596,real,fake,false FAKE,0.5406734242595198,politicsNews,635,500-999,184,True,True,True,Wealthy donors drawn to Rubio White House bid after Bush drops out
+Naive Bayes,27752,real,fake,false FAKE,0.5394290323017701,politicsNews,625,500-999,200,True,True,True,Cruz adviser says Trump campaign taking 'banana republic' approach
+Naive Bayes,19504,real,fake,false FAKE,0.5392981578668232,politicsNews,185,50-199,77,True,False,False,"Factbox: Trump on Twitter (Sept 22) - North Korea, Ads on Facebook, Luther Strange"
+Naive Bayes,18454,real,fake,false FAKE,0.5389519117716994,politicsNews,833,500-999,262,True,True,False,"In Trump strongholds, Democrats walk tightrope ahead of 2018 elections"
+Naive Bayes,28003,real,fake,false FAKE,0.5388993945067612,politicsNews,149,50-199,62,True,True,False,Virginia governor vetoes bill cutting Planned Parenthood funding
+Naive Bayes,12183,fake,real,false REAL,0.5386306958815041,politics,1149,1000+,221,False,False,False,WOW! GEORGIA Refused Election Cyber-Support From Obama’s DHS…Now Sec Of State Demands Answers After Claiming DHS Tried To Breach His Office’s Firewall
+Naive Bayes,12132,fake,real,false REAL,0.538311006258517,politics,14,<50,8,False,False,False,OOPS! ATTORNEY GENERAL LYNCH Slips Up: No Sign Of ‘Technical Interference’ From The Russians
+Naive Bayes,14153,fake,real,false REAL,0.5373993523781205,politics,492,200-499,144,False,False,False,WHY IS THE MEDIA SILENT As Hillary Cackles About Her Key Role In Muslim Invasion Of Europe? [VIDEO]
+Naive Bayes,25673,real,fake,false FAKE,0.5372982516308167,politicsNews,875,500-999,242,True,True,False,"Trump hasn't sued a newspaper for libel in decades, records show"
+Naive Bayes,14963,fake,real,false REAL,0.5367022905538057,politics,506,500-999,166,False,False,False,"ILLEGAL ALIENS DEMAND NEW BILL OF RIGHTS: To Include Citizenship, End Arrests And Free Health Care"
+Naive Bayes,19488,real,fake,false FAKE,0.5360295415409413,politicsNews,750,500-999,249,True,True,False,Trump takes center stage in fractious Senate race in Alabama
+Naive Bayes,7193,fake,real,false REAL,0.5356334031192962,News,535,500-999,143,False,False,False, Israeli Minister Calls For ‘Civil Targeted Killing’ Of Human Rights Activists Leading Boycott Of Israel (VIDEO)
+Naive Bayes,17929,real,fake,false FAKE,0.5341889792628753,politicsNews,277,200-499,105,True,False,False,"Trump on Twitter (Dec 22) - Tax cut, Missile defense bill"
+Naive Bayes,6171,fake,real,false REAL,0.5301520491978935,News,342,200-499,110,False,False,False, Report Exposes How Trump Dodged $20 Million In Taxes (PHOTO EVIDENCE)
+Naive Bayes,25466,real,fake,false FAKE,0.5271524041921132,politicsNews,84,50-199,42,True,True,True,"Bill Clinton, Tim Kaine cancel Iowa event after police shooting"
+Naive Bayes,29044,real,fake,false FAKE,0.5269253426487714,politicsNews,890,500-999,296,True,True,False,Sanders lashes out at Clinton in contentious Democratic debate
+Naive Bayes,16779,fake,real,false REAL,0.5242546330919708,left-news,300,200-499,81,False,False,False,"MUSLIM MIGRANTS SHOW Appreciation To German Hosts By Spreading Feces, Vomit And Blood On Asylum Walls"
+Naive Bayes,16568,fake,real,false REAL,0.5236483058308566,left-news,339,200-499,107,False,False,False,"CHINESE IMMIGRANT BEHEADS, CANNIBALIZES Total Stranger On Greyhound Bus…Granted TOTAL FREEDOM…NO Monitoring Necessary"
+Naive Bayes,25162,real,fake,false FAKE,0.5232406313210971,politicsNews,646,500-999,227,True,True,True,Clinton blames FBI's Comey for her defeat in call with donors
+Naive Bayes,14536,fake,real,false REAL,0.5225539938410669,politics,338,200-499,99,False,False,False,"GROUP WITH TERROR TIES Encourages Muslims To Swing U.S. Presidential Elections: “Turn Your Islamic Centers, Mosques Into Registration Centers For Voters”"
+Naive Bayes,17341,fake,real,false REAL,0.5225348937080274,US_News,794,500-999,256,False,False,False,"John McCain Throws Tantrum, Decries Trump for ‘Letting Assad Stay’"
+Naive Bayes,892,fake,real,false REAL,0.5225049217903669,News,461,200-499,134,False,False,False," Marco Rubio Grows A Spine, Blasts Trump For Trying To Team Up With Putin"
+Naive Bayes,18508,real,fake,false FAKE,0.5220145692733535,politicsNews,75,50-199,33,True,True,False,Alabama Republican Party stands by U.S. Senate candidate Moore
+Naive Bayes,3444,fake,real,false REAL,0.5172587115963233,News,559,500-999,199,False,False,False, Electors Want Briefing On Russian Interference Before Electoral College Vote This Month
+Naive Bayes,28923,real,fake,false FAKE,0.5169809428953162,politicsNews,112,50-199,48,True,True,False,Clinton: DNC should authorize additional Democratic debate next week
+Naive Bayes,10229,fake,real,false REAL,0.5157335433524642,politics,334,200-499,91,False,False,False,AUDIT: Obama’s IRS ‘Misled’ Americans to Get Them to Sign Up for Obamacare
+Naive Bayes,16893,fake,real,false REAL,0.5141290066718928,left-news,416,200-499,123,False,False,False,OOPS! NASA Makes Shocking Claim: Burning Fossil Fuels “Cools Planet”
+Naive Bayes,26907,real,fake,false FAKE,0.5135263385590092,politicsNews,89,50-199,49,True,True,True,"Warren, Kaine, Castro on Clinton running-mate short list: AP"
+Naive Bayes,28801,real,fake,false FAKE,0.513215428122581,politicsNews,943,500-999,282,True,True,False,"In contentious debate, Clinton and Sanders both claim 'progressive' mantle "
+Naive Bayes,15751,fake,real,false REAL,0.5128028002439656,politics,347,200-499,97,False,False,False,GUESS WHERE THE BALTIMORE SCHOOL SYSTEM RANKS AMONG THE NATION’S 100 LARGEST SCHOOL DISTRICTS?
+Naive Bayes,22633,real,fake,false FAKE,0.5125826847210609,politicsNews,378,200-499,146,True,True,True,"Black lawmakers meet with Trump about infrastructure, reducing crime"
+Naive Bayes,17282,fake,real,false REAL,0.5120155992551709,US_News,960,500-999,277,False,False,False,Hersh: Trump Knew ‘Assad Sarin Attack’ Story Was Fairy Tale – But Launched Cruise Missile Strike Anyway
+Naive Bayes,23981,real,fake,false FAKE,0.5114490450132173,politicsNews,141,50-199,64,True,True,True,White House defends statement on audience for Trump's inaugural
+Naive Bayes,17704,fake,real,false REAL,0.5110712419968898,US_News,1205,1000+,293,False,False,False,Falling Apart: West’s Media-Driven Deception in Syria
+Naive Bayes,28561,real,fake,false FAKE,0.5101373540277073,politicsNews,423,200-499,173,True,True,True,"Cruz says would deport illegal immigrants, sharpens immigration stance"
+Naive Bayes,27580,real,fake,false FAKE,0.5101229560064469,politicsNews,652,500-999,210,True,True,True,Trump praises Sanders but may struggle to win over his voters
+Naive Bayes,28925,real,fake,false FAKE,0.5078056745566467,politicsNews,403,200-499,109,True,True,False,GOP voters like Trump despite seeing him as not religious: poll
+Naive Bayes,24233,real,fake,false FAKE,0.5072441276829645,politicsNews,665,500-999,223,True,True,True,Democrats press U.S. housing nominee Carson on potential Trump conflicts
+Naive Bayes,10775,fake,real,false REAL,0.5060617855391771,politics,137,50-199,47,False,False,False,PRICELESS! Nancy Pelosi Complains Trump Not Visiting Countries in Alphabetical Order [Video]
+Naive Bayes,9154,fake,real,false REAL,0.505387623443594,politics,261,200-499,91,False,False,False,MCCONNELL PUSHES BACK ON MEDIA: I Understand ‘Your Job Is to Use the Democratic Talking Points’ [Video]
+Naive Bayes,25182,real,fake,false FAKE,0.5036517788152843,politicsNews,931,500-999,258,True,True,False,"In rural-urban divide, U.S. voters are worlds apart"
+Naive Bayes,10320,fake,real,false REAL,0.5029518543585297,politics,583,500-999,163,False,False,False,HEARTBREAKING: Baby Charlie Gard’s Parents End Legal Battle to Come to the US [Video]
+Naive Bayes,21526,real,fake,false FAKE,0.5021018746362689,politicsNews,422,200-499,142,True,True,False,"Trump can't stop American progress on climate, Al Gore tells Cannes"
+Naive Bayes,24105,real,fake,false FAKE,0.5009912631174562,politicsNews,541,500-999,176,True,True,False,Ex-president George H.W. Bush moved to intensive care; wife hospitalized
+Naive Bayes,25577,real,fake,false FAKE,0.5001413666071532,politicsNews,774,500-999,228,True,True,True,Negative tone of White House race sours young voters
+"SVM (Linear, calibrated)",17039,fake,real,false REAL,,left-news,301,200-499,72,False,False,False,POPE TAKES COMMUNIST CRUCIFIX GIFT HOME: Says He Was Not Offended By It [VIDEO]
+"SVM (Linear, calibrated)",25192,real,fake,false FAKE,,politicsNews,1326,1000+,392,True,False,False,"Expert Views: What will be the impact of Trump presidency on immigration, refugees?"
+"SVM (Linear, calibrated)",9348,fake,real,false REAL,,politics,380,200-499,115,False,False,False,SOUTH KOREA Uses Hilarious Technique To TAUNT North Korea After Soldier Escapes Kim Jong Un’s Hell [VIDEO]
+"SVM (Linear, calibrated)",15909,fake,real,false REAL,,Government News,249,200-499,65,False,False,False,MAN WHO ROBBED A BANK To Get Away From His Wife Gets The Ultimate Punishment
+"SVM (Linear, calibrated)",25636,real,fake,false FAKE,,politicsNews,243,200-499,80,True,True,True,Ex-Red Sox pitcher mulls run against Senator Warren in Massachusetts
+"SVM (Linear, calibrated)",16380,fake,real,false REAL,,Government News,251,200-499,72,False,False,False,"BREAKING: THIEVES STEAL IRS INFO FROM 100,000 TAXPAYERS"
+"SVM (Linear, calibrated)",15524,fake,real,false REAL,,politics,567,500-999,160,False,False,False,TRUMP RESPONSE TO LEFTIST THREATS: “Get Off My Lawn”
+"SVM (Linear, calibrated)",28194,real,fake,false FAKE,,politicsNews,432,200-499,134,True,True,False,Graphic account of Hulk Hogan sex tape read in Florida court
+"SVM (Linear, calibrated)",27590,real,fake,false FAKE,,politicsNews,129,50-199,62,False,False,False,Jenner uses women's restroom at Trump property
+"SVM (Linear, calibrated)",11897,fake,real,false REAL,,politics,76,50-199,35,True,True,False,BRILLIANT NEWT GINGRICH: Here’s Why Trump Should NOT Trust Intel Community Right Now [Video]
+"SVM (Linear, calibrated)",10716,fake,real,false REAL,,politics,380,200-499,104,False,False,False,BOOM! 4 VENUES CANCEL KATHY GRIFFIN Appearances After She Blames Trump For Her Career Ending Decision To Pose With His Severed Head
+"SVM (Linear, calibrated)",25033,real,fake,false FAKE,,politicsNews,384,200-499,111,True,True,False,"Factbox: The nasty things Trump, Romney have said about each other"
+"SVM (Linear, calibrated)",13109,fake,real,false REAL,,politics,293,200-499,104,True,False,False,"#CrookedHillary’s Karma! NEW POLL Shows Trump Takes Lead In BLUE STATES: Michigan, Wisconsin, New Hampshire And Maine"
+"SVM (Linear, calibrated)",11660,fake,real,false REAL,,politics,525,500-999,200,False,False,False,BREAKING: GEN MICHAEL FLYNN RESIGNS After Close Friend Steve Bannon Reportedly Offered These 4 Words Of Advice
+"SVM (Linear, calibrated)",16405,fake,real,false REAL,,Government News,302,200-499,74,False,False,False,IRANIAN NAVY FIRES WARNING SHOTS ON AND SEIZES CARGO SHIP; U.S. NAVY SENDS DESTROYER
+"SVM (Linear, calibrated)",25560,real,fake,false FAKE,,politicsNews,675,500-999,196,True,True,False,Highlights from Reuters' exclusive interview with Donald Trump
+"SVM (Linear, calibrated)",10178,fake,real,false REAL,,politics,507,500-999,149,False,False,False,OKLAHOMA Supreme Court Rules Punishing Smokers With Cigarette Tax “Unconstitutional”…Lawmakers Forced To Fill SHOCKING Hole In State Budget
+"SVM (Linear, calibrated)",11694,fake,real,false REAL,,politics,207,200-499,92,False,False,False,BREAKING: Activist Appeals Court Rules Against Trump…Trump Comes Out Swinging…Tweets Awesome Reply
+"SVM (Linear, calibrated)",14051,fake,real,false REAL,,politics,514,500-999,179,False,False,False,NEW LAW WILL PUNISH MUSLIM Migrants…Assimilate Or Get Out!
+"SVM (Linear, calibrated)",14369,fake,real,false REAL,,politics,617,500-999,168,True,True,False,INVASION OF AMERICA: POSSIBILITY OF A TRUMP WALL Has Illegals Racing To Across The Border In Record Numbers
+"SVM (Linear, calibrated)",27194,real,fake,false FAKE,,politicsNews,442,200-499,121,True,True,True,Supreme Court rejects constitutional challenge to death penalty
+"SVM (Linear, calibrated)",27844,real,fake,false FAKE,,politicsNews,229,200-499,80,True,True,True,Chicago finance committee approves payouts for police custody deaths
+"SVM (Linear, calibrated)",24958,real,fake,false FAKE,,politicsNews,433,200-499,173,True,True,False,Conservatives bristle as Trump backs off Clinton prosecution
+"SVM (Linear, calibrated)",23222,real,fake,false FAKE,,politicsNews,408,200-499,129,True,True,True,Suppressing free press is 'how dictators get started': Senator McCain
+"SVM (Linear, calibrated)",15836,fake,real,false REAL,,politics,671,500-999,193,True,False,False,EGYPTIAN COURT SENTENCES MUSLIM BROTHERHOOD LEADER AND 13 OTHERS TO DEATH AND LEADER’S “Peaceful” U.S.-Egyptian Brother To Life In Prison
+"SVM (Linear, calibrated)",10603,fake,real,false REAL,,politics,338,200-499,114,False,False,False,"DEM PARTY OFFICIAL, Chair Of Black Caucus, Bernie Sanders Supporter Calls Reactions To Shooting Of Republican Steve Scalise, “So Funny”…REFUSES To Resign"
+"SVM (Linear, calibrated)",25779,real,fake,false FAKE,,politicsNews,841,500-999,220,False,False,False,Commentary: Manic or evasive - these veep guys sure don’t feel like leaders
+"SVM (Linear, calibrated)",13672,fake,real,false REAL,,politics,425,200-499,117,False,False,False,ARIZONA BIKERS ARE ABOUT To Become Violent “Dreamers” Worst Nightmare At Upcoming Phoenix Trump Rally
+"SVM (Linear, calibrated)",10571,fake,real,false REAL,,politics,315,200-499,106,False,False,False,FORD’S NEW CEO SNUBS President Trump…Will Build Focus In China…Export To U.S.
+"SVM (Linear, calibrated)",28994,real,fake,false FAKE,,politicsNews,1017,1000+,281,True,True,False,"Factbox: Trump seen from Davos: 'unbelievable', 'embarrassing' but candor 'hit a vein'"
+"SVM (Linear, calibrated)",13171,fake,real,false REAL,,politics,194,50-199,67,False,False,False,EPIPEN CEO UNDER FIRE FOR PRICE GOUGING Is Daughter Of US Senator
+"SVM (Linear, calibrated)",22952,real,fake,false FAKE,,politicsNews,430,200-499,108,True,True,True,Massa fastest as testing resumes in Barcelona
+"SVM (Linear, calibrated)",12466,fake,real,false REAL,,politics,359,200-499,126,False,False,False,OBAMA UNLEASHES HUNDREDS Of Intelligence Agents To “Protect Elections” From Outside Forces…Hacker known as “Guccifer 2.0” Warns Of Threat “From INSIDE The System”
+"SVM (Linear, calibrated)",20675,real,fake,false FAKE,,politicsNews,576,500-999,196,True,True,True,Kid Rock hints online he will run for U.S. Senate
+"SVM (Linear, calibrated)",21665,real,fake,false FAKE,,politicsNews,115,50-199,51,True,True,False,Russia's response to Trump leak reports: don't read U.S. newspapers
+"SVM (Linear, calibrated)",21433,real,fake,false FAKE,,politicsNews,544,500-999,128,True,True,True,"Before the White House, Kennedy was a high-school prankster"
+"SVM (Linear, calibrated)",14743,fake,real,false REAL,,politics,1827,1000+,434,True,False,False,"IS OBAMA’S RADICAL AGENDA Responsible For State Department’s Misleading Report On Forced Labor, Prostitution And Human Slavery?"
+"SVM (Linear, calibrated)",33298,real,fake,false FAKE,,worldnews,415,200-499,123,True,True,True,Hungarians take walking tour to overcome fears of Muslims
+"SVM (Linear, calibrated)",27471,real,fake,false FAKE,,politicsNews,1185,1000+,318,False,False,False,Commentary: Party leaders often disliked their nominee. It’s the public vitriol that’s new.
+"SVM (Linear, calibrated)",15227,fake,real,false REAL,,politics,259,200-499,83,True,False,False,"IN A RULING THAT WILL MAKE OBAMA’S HEAD SPIN, Fed Judge Says Telling Illegals “Show Us Your Papers” Is Not Discriminatory"
+"SVM (Linear, calibrated)",15825,fake,real,false REAL,,politics,251,200-499,88,False,False,False,CUBA STILL A COMMIE HELLHOLE AFTER OBAMA’S “NORMALIZATION”: 4 YEARS IN THE SLAMMER FOR “SOCIAL DANGEROUSNESS”
+"SVM (Linear, calibrated)",11157,fake,real,false REAL,,politics,355,200-499,120,False,False,False,MUSLIMS OUTRAGED: MUNICH ARTIST DISPLAYS “Funny” Racy Bare-Legged “Burka Barbies” [Video]
+"SVM (Linear, calibrated)",13283,fake,real,false REAL,,politics,308,200-499,88,False,False,False,"How Is Panama’s “Migrant Crisis” Giving A FREE PASS TO THE U.S. To Anyone From Asia, Cuba, Africa, Haiti…When Did We Become The World’s Dumping Ground?"
+"SVM (Linear, calibrated)",15572,fake,real,false REAL,,politics,693,500-999,202,False,False,False,ARMY THREATENS GREEN BERET WAR HERO WITH COURT MARTIAL For Whistleblowing On Failed Hostage Rescue
+"SVM (Linear, calibrated)",22275,real,fake,false FAKE,,politicsNews,622,500-999,199,True,True,False,Instant View: Trump orders military strikes on Syrian air base
+"SVM (Linear, calibrated)",9172,fake,real,false REAL,,politics,573,500-999,150,False,False,False,JUST IN: Fusion GPS Sued By 3 Billionaires Over Their “Defamation” In War Against Trump
+"SVM (Linear, calibrated)",9847,fake,real,false REAL,,politics,328,200-499,133,True,True,False,Why John McCain Will Never Vote to Repeal and Replace Obamacare
+"SVM (Linear, calibrated)",16282,fake,real,false REAL,,Government News,1406,1000+,321,False,False,False,FOLLOW THE MONEY: MEXICAN GIVEAWAY OF MILLIONS OF FLAT SCREEN TV’S TO THE POOR RAISES QUESTIONS
+"SVM (Linear, calibrated)",33525,real,fake,false FAKE,,worldnews,537,500-999,116,True,True,False,A Picture and its Story: Reaching out to rescue a Rohingya woman
+"SVM (Linear, calibrated)",24233,real,fake,false FAKE,,politicsNews,665,500-999,223,True,True,True,Democrats press U.S. housing nominee Carson on potential Trump conflicts
+"SVM (Linear, calibrated)",14588,fake,real,false REAL,,politics,503,500-999,141,False,False,False,WARNING: FEDS PREDICT $30 TRILLION DOLLAR DEBT Because Of These Two Key Things
+"SVM (Linear, calibrated)",2196,fake,real,false REAL,,News,436,200-499,151,False,False,False, Did Trump’s Former Campaign Manager Have People Killed? His Daughters Say He Did
+"SVM (Linear, calibrated)",7638,fake,real,false REAL,,News,422,200-499,162,True,False,False, The World Speaks Out On Trump — Top Foreign Diplomats Unite Against Him
+"SVM (Linear, calibrated)",10233,fake,real,false REAL,,politics,192,50-199,68,False,False,False,AG JEFF SESSIONS Warns Leakers…Taking Steps to Stop the Leaks that “Hurt Our Country” [Video]
+"SVM (Linear, calibrated)",10277,fake,real,false REAL,,politics,1184,1000+,323,False,False,False,EXPERT CLAIMS N. KOREA’S SECOND MISSILE Test Demonstrates They Now Have Ability To Hit 3 Major Cities On U.S. Mainland
+"SVM (Linear, calibrated)",12208,fake,real,false REAL,,politics,243,200-499,97,False,False,False,"ANGELA MERKEL Running For Re-Election Makes Stunning Announcement To BAN BURKAS, After Flooding Nation With 2 Million (Mostly Muslim) Migrants"
+"SVM (Linear, calibrated)",25165,real,fake,false FAKE,,politicsNews,339,200-499,126,True,True,True,U.S. to push ahead on climate pact before Trump takes over: Kerry
+"SVM (Linear, calibrated)",11253,fake,real,false REAL,,politics,311,200-499,133,False,False,False,REPORT: FBI DIRECTOR COMEY Blocked By Obama Administration Last Summer On Supposed Russian “Influence” In 2016 Election
+"SVM (Linear, calibrated)",29047,real,fake,false FAKE,,politicsNews,314,200-499,105,False,False,False,Obama unveils wage insurance plan to spur job seekers
+"SVM (Linear, calibrated)",38764,real,fake,false FAKE,,worldnews,439,200-499,107,True,True,True,Mother's fight to discover fate of dead baby's body finds empty coffin
+"SVM (Linear, calibrated)",17285,fake,real,false REAL,,US_News,1091,1000+,305,False,False,False,NORTH KOREA: Trump’s Recklessness Could Trigger All-Out Conflict on Korean Peninsula

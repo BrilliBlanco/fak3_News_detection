@@ -1,0 +1,4 @@
+model,errors,shared_by_all,shared_by_all_%,unique_to_model,unique_%
+Naive Bayes,452,42,9.29203539823009,361,79.86725663716814
+"SVM (Linear, calibrated)",61,42,68.85245901639344,3,4.918032786885246
+Logistic Regression,104,42,40.38461538461539,11,10.576923076923077

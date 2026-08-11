@@ -1,0 +1,476 @@
+article_index,actual,models_wrong,n_models_wrong,subject,n_words,n_matched_features,mentions_reuters,title
+9348,fake,nb+svm+lr,3,politics,380,115,False,SOUTH KOREA Uses Hilarious Technique To TAUNT North Korea After Soldier Escapes Kim Jong Un’s Hell [VIDEO]
+11660,fake,nb+svm+lr,3,politics,525,200,False,BREAKING: GEN MICHAEL FLYNN RESIGNS After Close Friend Steve Bannon Reportedly Offered These 4 Words Of Advice
+16405,fake,nb+svm+lr,3,Government News,302,74,False,IRANIAN NAVY FIRES WARNING SHOTS ON AND SEIZES CARGO SHIP; U.S. NAVY SENDS DESTROYER
+10178,fake,nb+svm+lr,3,politics,507,149,False,OKLAHOMA Supreme Court Rules Punishing Smokers With Cigarette Tax “Unconstitutional”…Lawmakers Forced To Fill SHOCKING Hole In State Budget
+11694,fake,nb+svm+lr,3,politics,207,92,False,BREAKING: Activist Appeals Court Rules Against Trump…Trump Comes Out Swinging…Tweets Awesome Reply
+14051,fake,nb+svm+lr,3,politics,514,179,False,NEW LAW WILL PUNISH MUSLIM Migrants…Assimilate Or Get Out!
+14369,fake,nb+svm+lr,3,politics,617,168,True,INVASION OF AMERICA: POSSIBILITY OF A TRUMP WALL Has Illegals Racing To Across The Border In Record Numbers
+15836,fake,nb+svm+lr,3,politics,671,193,True,EGYPTIAN COURT SENTENCES MUSLIM BROTHERHOOD LEADER AND 13 OTHERS TO DEATH AND LEADER’S “Peaceful” U.S.-Egyptian Brother To Life In Prison
+10571,fake,nb+svm+lr,3,politics,315,106,False,FORD’S NEW CEO SNUBS President Trump…Will Build Focus In China…Export To U.S.
+13171,fake,nb+svm+lr,3,politics,194,67,False,EPIPEN CEO UNDER FIRE FOR PRICE GOUGING Is Daughter Of US Senator
+12466,fake,nb+svm+lr,3,politics,359,126,False,OBAMA UNLEASHES HUNDREDS Of Intelligence Agents To “Protect Elections” From Outside Forces…Hacker known as “Guccifer 2.0” Warns Of Threat “From INSIDE The System”
+14743,fake,nb+svm+lr,3,politics,1827,434,True,"IS OBAMA’S RADICAL AGENDA Responsible For State Department’s Misleading Report On Forced Labor, Prostitution And Human Slavery?"
+15227,fake,nb+svm+lr,3,politics,259,83,True,"IN A RULING THAT WILL MAKE OBAMA’S HEAD SPIN, Fed Judge Says Telling Illegals “Show Us Your Papers” Is Not Discriminatory"
+15825,fake,nb+svm+lr,3,politics,251,88,False,CUBA STILL A COMMIE HELLHOLE AFTER OBAMA’S “NORMALIZATION”: 4 YEARS IN THE SLAMMER FOR “SOCIAL DANGEROUSNESS”
+11157,fake,nb+svm+lr,3,politics,355,120,False,MUSLIMS OUTRAGED: MUNICH ARTIST DISPLAYS “Funny” Racy Bare-Legged “Burka Barbies” [Video]
+13283,fake,nb+svm+lr,3,politics,308,88,False,"How Is Panama’s “Migrant Crisis” Giving A FREE PASS TO THE U.S. To Anyone From Asia, Cuba, Africa, Haiti…When Did We Become The World’s Dumping Ground?"
+15572,fake,nb+svm+lr,3,politics,693,202,False,ARMY THREATENS GREEN BERET WAR HERO WITH COURT MARTIAL For Whistleblowing On Failed Hostage Rescue
+9172,fake,nb+svm+lr,3,politics,573,150,False,JUST IN: Fusion GPS Sued By 3 Billionaires Over Their “Defamation” In War Against Trump
+9847,fake,nb+svm+lr,3,politics,328,133,True,Why John McCain Will Never Vote to Repeal and Replace Obamacare
+16282,fake,nb+svm+lr,3,Government News,1406,321,False,FOLLOW THE MONEY: MEXICAN GIVEAWAY OF MILLIONS OF FLAT SCREEN TV’S TO THE POOR RAISES QUESTIONS
+14588,fake,nb+svm+lr,3,politics,503,141,False,WARNING: FEDS PREDICT $30 TRILLION DOLLAR DEBT Because Of These Two Key Things
+7638,fake,nb+svm+lr,3,News,422,162,True, The World Speaks Out On Trump — Top Foreign Diplomats Unite Against Him
+10233,fake,nb+svm+lr,3,politics,192,68,False,AG JEFF SESSIONS Warns Leakers…Taking Steps to Stop the Leaks that “Hurt Our Country” [Video]
+10277,fake,nb+svm+lr,3,politics,1184,323,False,EXPERT CLAIMS N. KOREA’S SECOND MISSILE Test Demonstrates They Now Have Ability To Hit 3 Major Cities On U.S. Mainland
+12208,fake,nb+svm+lr,3,politics,243,97,False,"ANGELA MERKEL Running For Re-Election Makes Stunning Announcement To BAN BURKAS, After Flooding Nation With 2 Million (Mostly Muslim) Migrants"
+11253,fake,nb+svm+lr,3,politics,311,133,False,REPORT: FBI DIRECTOR COMEY Blocked By Obama Administration Last Summer On Supposed Russian “Influence” In 2016 Election
+17285,fake,nb+svm+lr,3,US_News,1091,305,False,NORTH KOREA: Trump’s Recklessness Could Trigger All-Out Conflict on Korean Peninsula
+28194,real,nb+svm+lr,3,politicsNews,432,134,True,Graphic account of Hulk Hogan sex tape read in Florida court
+27590,real,nb+svm+lr,3,politicsNews,129,62,False,Jenner uses women's restroom at Trump property
+25033,real,nb+svm+lr,3,politicsNews,384,111,True,"Factbox: The nasty things Trump, Romney have said about each other"
+25560,real,nb+svm+lr,3,politicsNews,675,196,True,Highlights from Reuters' exclusive interview with Donald Trump
+27844,real,nb+svm+lr,3,politicsNews,229,80,True,Chicago finance committee approves payouts for police custody deaths
+24958,real,nb+svm+lr,3,politicsNews,433,173,True,Conservatives bristle as Trump backs off Clinton prosecution
+23222,real,nb+svm+lr,3,politicsNews,408,129,True,Suppressing free press is 'how dictators get started': Senator McCain
+25779,real,nb+svm+lr,3,politicsNews,841,220,False,Commentary: Manic or evasive - these veep guys sure don’t feel like leaders
+28994,real,nb+svm+lr,3,politicsNews,1017,281,True,"Factbox: Trump seen from Davos: 'unbelievable', 'embarrassing' but candor 'hit a vein'"
+22952,real,nb+svm+lr,3,politicsNews,430,108,True,Massa fastest as testing resumes in Barcelona
+21665,real,nb+svm+lr,3,politicsNews,115,51,True,Russia's response to Trump leak reports: don't read U.S. newspapers
+21433,real,nb+svm+lr,3,politicsNews,544,128,True,"Before the White House, Kennedy was a high-school prankster"
+33298,real,nb+svm+lr,3,worldnews,415,123,True,Hungarians take walking tour to overcome fears of Muslims
+33525,real,nb+svm+lr,3,worldnews,537,116,True,A Picture and its Story: Reaching out to rescue a Rohingya woman
+38764,real,nb+svm+lr,3,worldnews,439,107,True,Mother's fight to discover fate of dead baby's body finds empty coffin
+17729,fake,nb+lr,2,US_News,372,105,False,Brief Overview: US Military Sales to Lebanon
+17039,fake,svm+lr,2,left-news,301,72,False,POPE TAKES COMMUNIST CRUCIFIX GIFT HOME: Says He Was Not Offended By It [VIDEO]
+9550,fake,nb+lr,2,politics,518,150,False,JUST IN: Senior GOP Rep Announces His Retirement…A BIG LOSS
+15909,fake,svm+lr,2,Government News,249,65,False,MAN WHO ROBBED A BANK To Get Away From His Wife Gets The Ultimate Punishment
+16380,fake,svm+lr,2,Government News,251,72,False,"BREAKING: THIEVES STEAL IRS INFO FROM 100,000 TAXPAYERS"
+15524,fake,svm+lr,2,politics,567,160,False,TRUMP RESPONSE TO LEFTIST THREATS: “Get Off My Lawn”
+15787,fake,nb+lr,2,politics,423,101,False,HE WAS WARNED AGAINST NEGOTIATING WITH TERRORISTS: Iran Says They Won’t Permit Foreigners “to inspect the most normal military site in their dreams.”
+10357,fake,nb+lr,2,politics,518,148,False,DETROIT: IMMIGRANT STEALS $132 MILLION From Medicare…Owns $7 Million Mansion With Indoor Basketball Court…Defense Lawyer Mohammed Nasser Says He’s “Not a flight risk”
+10716,fake,svm+lr,2,politics,380,104,False,BOOM! 4 VENUES CANCEL KATHY GRIFFIN Appearances After She Blames Trump For Her Career Ending Decision To Pose With His Severed Head
+16131,fake,nb+lr,2,Government News,135,35,False,"BAN THE BURQA! Women Wearing A Burqa In Switzerland Could Face $9,000 Fine"
+13109,fake,nb+svm,2,politics,293,104,True,"#CrookedHillary’s Karma! NEW POLL Shows Trump Takes Lead In BLUE STATES: Michigan, Wisconsin, New Hampshire And Maine"
+9092,fake,nb+lr,2,politics,747,199,False,JUST IN: TRUMP ENDS FREE MONEY TRAIN After Pakistan Refuses To Stop Housing Terrorists…Cuts STUNNING About Of Military Aid 
+15934,fake,nb+lr,2,Government News,230,86,False,BAM! Commie Scammer Mustafa Ali…The EPA’s “Environmental Justice” GURU Is GONE! [Video]
+14996,fake,nb+lr,2,politics,318,115,False,WOW! Just When We Thought Obama’s Global Relationships Couldn’t Get Any Worse…Europe Threatens This…
+12201,fake,nb+lr,2,politics,783,171,False,BREAKING: MI Court Of Appeals Orders Vote Recount To STOP…Jill Stein’s Democrat Activist Attorney Says Count Must Go On
+15826,fake,nb+lr,2,politics,320,99,False,THEIR EVIL KNOWS NO BOUNDS: TALIBAN EXECUTES 5 “SAVE THE CHILDREN WORKERS” AS ISIS KIDNAPS 120 SCHOOLCHILDREN TO BE TRAINED AS TERRORISTS
+16568,fake,nb+lr,2,left-news,339,107,False,"CHINESE IMMIGRANT BEHEADS, CANNIBALIZES Total Stranger On Greyhound Bus…Granted TOTAL FREEDOM…NO Monitoring Necessary"
+10516,fake,nb+lr,2,politics,213,93,True,TRUMP ADVISOR Has Warning For Syria That Has Saved Lives [Video]
+1679,fake,nb+lr,2,News,536,188,False, Court Slams Down Trump’s Order Blocking Funding To Sanctuary Cities
+10603,fake,svm+lr,2,politics,338,114,False,"DEM PARTY OFFICIAL, Chair Of Black Caucus, Bernie Sanders Supporter Calls Reactions To Shooting Of Republican Steve Scalise, “So Funny”…REFUSES To Resign"
+13672,fake,svm+lr,2,politics,425,117,False,ARIZONA BIKERS ARE ABOUT To Become Violent “Dreamers” Worst Nightmare At Upcoming Phoenix Trump Rally
+15005,fake,nb+lr,2,politics,515,117,False,UK SAYS “NO” TO ECONOMIC MIGRANTS: Shocking Video Shows How African “Refugees” Are Using Asylum Loophole To Move Around Europe
+16211,fake,nb+lr,2,Government News,721,193,False,CANADA’S OBAMA? WATCH New Prime Minister Call Himself A “Proud Feminist”…Promises To Raise Taxes On Wealthy And Welcome More Syrian “Refugees” [Video]
+12219,fake,nb+lr,2,politics,305,115,False,BREAKING: OBAMA-APPOINTED JUDGE ORDERS Vote Recount To Begin At Noon On Monday
+15168,fake,nb+lr,2,politics,549,146,False,POPE MAKES VISIT TO NUNS OBAMA REGIME IS SUING For Not Conforming To Obamacare Contraception Mandate
+16286,fake,nb+lr,2,Government News,730,203,False,"ATTORNEYS ASK TO DIAL BACK SECURITY AT TRIAL FOR 7 TERROR SUSPECTS IN MN, Fears It Will Influence Jury: Argues ISIL Not A Terrorist Group"
+13623,fake,nb+lr,2,politics,457,147,False,ICELAND’S STUNNING ELECTION OF ANTI-ESTABLISHMENT Political Novice Should Have Hillary Shaking In Her Pants Suit
+10965,fake,nb+lr,2,politics,339,70,False,WOW! HERE’S THE LIST Of Obamacare Taxes Abolished By The House…Reduces Taxes By Over $1 TRILLION
+9637,fake,nb+lr,2,politics,954,227,True,AUDIT REVEALS: 150 AFGHAN TROOPS Have Gone AWOL In U.S. During Training…Some Still Missing
+11240,fake,nb+lr,2,politics,137,51,False,TWO DEMOCRATS Announce Plan To Vote For Neil Gorsuch For Supreme Court [Video]
+10147,fake,nb+lr,2,politics,267,68,False,"NORTH KOREA BLINKS After Threats From POTUS and “Mad Dog” Mattis: “If they do that, then it’s game on”"
+15992,fake,nb+lr,2,Government News,385,128,False,HOUSE TAKES Measures To Impeach IRS Chief After Stubborn Refusal To Cooperate…Who Do These People Think They Are? The IRS?
+10320,fake,nb+lr,2,politics,583,163,False,HEARTBREAKING: Baby Charlie Gard’s Parents End Legal Battle to Come to the US [Video]
+2196,fake,nb+svm,2,News,436,151,False, Did Trump’s Former Campaign Manager Have People Killed? His Daughters Say He Did
+16267,fake,nb+lr,2,Government News,413,123,False,MILITARY LEADERS SPEAK UP: IRAN DEAL MAKES WAR MORE LIKELY
+11745,fake,nb+lr,2,politics,593,213,False,BREAKING: IRAN Tests Cruise Missile…Trump WARNS…They’re “Playing with fire…They don’t appreciate how ‘kind’ President Obama was to them. Not Me!” [VIDEO]
+15427,fake,nb+lr,2,politics,715,193,False,NEWSFLASH FOR OUR IMPERIAL PRESIDENT: STATES CAN REFUSE IRAN DEAL [Video]
+25192,real,svm+lr,2,politicsNews,1326,392,True,"Expert Views: What will be the impact of Trump presidency on immigration, refugees?"
+25636,real,nb+svm,2,politicsNews,243,80,True,Ex-Red Sox pitcher mulls run against Senator Warren in Massachusetts
+28949,real,nb+lr,2,politicsNews,456,137,True,Trump polls Twitter about 'biased' Fox debate moderator Kelly
+25971,real,nb+lr,2,politicsNews,493,166,True,Popular Michelle Obama courts young people for Clinton
+27194,real,nb+svm,2,politicsNews,442,121,True,Supreme Court rejects constitutional challenge to death penalty
+25499,real,nb+lr,2,politicsNews,679,191,True,Factbox - How Carlos Danger got tangled up in the Clinton email scandal
+28910,real,nb+lr,2,politicsNews,1271,281,True,Campaigning in style: How Jeb Bush blew through his war chest 
+32864,real,nb+lr,2,worldnews,537,144,True,Venezuelan crisis spawns boom in gambling
+22553,real,nb+lr,2,politicsNews,307,107,True,Trump on Obamacare repeal: from boasts of greatness to lessons learned
+26858,real,nb+lr,2,politicsNews,436,138,True,Democrat gun control sit-in sparks social media sensation
+37901,real,nb+lr,2,worldnews,214,68,True,UK police release new image of jogger in London bus mystery
+25958,real,nb+lr,2,politicsNews,488,146,True,"Trump gets skewered, Clinton finds support at TV's Emmy awards"
+20675,real,nb+svm,2,politicsNews,576,196,True,Kid Rock hints online he will run for U.S. Senate
+27001,real,nb+lr,2,politicsNews,182,72,True,"Trump, on CNN, faults Muslim community for not reporting people like Orlando shooter"
+27471,real,nb+svm,2,politicsNews,1185,318,False,Commentary: Party leaders often disliked their nominee. It’s the public vitriol that’s new.
+22275,real,svm+lr,2,politicsNews,622,199,True,Instant View: Trump orders military strikes on Syrian air base
+20961,real,nb+lr,2,politicsNews,434,142,True,Pew U.S. survey finds agreement on some gun-control proposals
+25464,real,nb+lr,2,politicsNews,357,120,True,Ku Klux Klan newspaper declares support for Trump
+24233,real,nb+svm,2,politicsNews,665,223,True,Democrats press U.S. housing nominee Carson on potential Trump conflicts
+28109,real,nb+lr,2,politicsNews,250,72,True,¿Qué bolá? Obama jokes with Cuban humorist in video
+27644,real,nb+lr,2,politicsNews,444,106,True,U.S. justices mull propriety of recalling discharged jury to duty
+16241,fake,nb,1,Government News,342,108,False,BREAKING: Putin Tramples Obama’s Imaginary Red Line With Airstrikes In Syria
+593,fake,nb,1,News,441,145,False, Donald Trump Doubles Down On Korea Threat; Says He Wasn’t Tough Enough
+1474,fake,nb,1,News,405,135,False, Half The World’s Salmon Supply Threatened As Trump’s EPA Withdraws Alaskan Mining Restrictions
+17437,fake,nb,1,US_News,1708,428,False,"OPEN SOCIETY: Soros-backed, Anti-Trump Immigration Protests ‘Sprung from Nowhere’ at Airports Across America"
+16377,fake,nb,1,Government News,303,99,False,"(VIDEO) WATER WARS: OBAMA’S EPA POWER GRAB TO REGULATE PUDDLES, PONDS, AND JUST ABOUT ANYTHING THAT’S WET"
+8738,fake,nb,1,News,454,143,True," President Obama Just Sent The Climate Change Industry Some Very, Very Bad News"
+10775,fake,nb,1,politics,137,47,False,PRICELESS! Nancy Pelosi Complains Trump Not Visiting Countries in Alphabetical Order [Video]
+15921,fake,nb,1,Government News,278,97,False,NEW DATA RELEASED: OBAMA ADMIN “Accidentally Collected Info” On Americans During Election
+13686,fake,lr,1,politics,386,101,False,NOT NEWS: 7 DEAD…35 Wounded In Obama’s Hometown In 2 Days…WATCH: BLACK CHICAGO RESIDENTS Blame Barack Obama [VIDEO]
+15251,fake,lr,1,politics,522,136,False,SERIOUSLY? Mexico Is Threatening Texas With A Law Suit?
+17341,fake,nb,1,US_News,794,256,False,"John McCain Throws Tantrum, Decries Trump for ‘Letting Assad Stay’"
+14451,fake,nb,1,politics,57,22,False,HERE IT IS: List Of Democrat Hypocrites Who Voted To Filibuster GW Bush’s Final Supreme Court Pick
+15515,fake,nb,1,politics,805,201,False,COINCIDENCE? CHOBANI SCORES MAJOR CONTRACT WITH MOOCH’S GOVERNMENT CONTROLLED SCHOOL LUNCH PROGRAM After Airing Naked Lesbian TV Ad To 3% Of Population [VIDEO]
+1667,fake,nb,1,News,445,127,False, Trump Considers ‘Terminating NAFTA’ With Executive Order (DETAILS)
+646,fake,nb,1,News,530,176,False, Report: Corrupt Wall Streeters Are Three Times More Likely To Go Unpunished Under Trump
+9832,fake,nb,1,politics,648,230,False,REVEALED: HOW BARACK OBAMA IS FUNDING The “Resistance” Movement Against President Trump
+9759,fake,nb,1,politics,472,154,False,PRESIDENT TRUMP WEIGHS Executive Order On WELFARE REFORM: If You’re an Able Bodied American Who Wants A Paycheck…Find A Job
+16888,fake,nb,1,left-news,497,142,False,"SAUDI BILLIONAIRE Who Used Sharia Law To Make Fortune, Donates $10 MILLION To Yale University To Build Islamic Law Center"
+6171,fake,nb,1,News,342,110,False, Report Exposes How Trump Dodged $20 Million In Taxes (PHOTO EVIDENCE)
+4380,fake,nb,1,News,599,156,False, BUSTED: Donald Trump Screwed Over American Steel Workers By Buying Metal From China Instead
+16893,fake,nb,1,left-news,416,123,False,OOPS! NASA Makes Shocking Claim: Burning Fossil Fuels “Cools Planet”
+13910,fake,nb,1,politics,267,105,False,Does The $100 Million Given To Clintons By Gulf Sheikhs Disqualify Hillary For Candidacy?
+15568,fake,nb,1,politics,683,177,False,HILLARY’S IMMORAL REIGN AS SEC. STATE: U.S. Sold $60 MILLION In Chemical Arms To Clinton Foundation Donors Used To Gas Citizens
+6090,fake,nb,1,News,708,215,False, Kim Jong Un And North Korean Media Enthusiastically Want Trump To Become President
+17197,fake,nb,1,US_News,1261,327,False,Undercutting the Nation State? Chicago Group Suggests ‘Global Cities’ Should Run World Affairs
+12132,fake,nb,1,politics,14,8,False,OOPS! ATTORNEY GENERAL LYNCH Slips Up: No Sign Of ‘Technical Interference’ From The Russians
+10181,fake,nb,1,politics,327,91,False,"WATCH: CNN DOES SEGMENT From Bunker In Hawaii, Tells Viewers Hawaii’s Been Preparing For Nuclear Strike Since Trump Took Office…CNN’s Best Survival Tip: “FIND A CAVE”"
+5486,fake,nb,1,News,462,160,False, Collapse: ISIS Now Admits Obama’s Strategy Is DESTROYING Them
+11371,fake,nb,1,politics,22,10,False,NIGEL FARAGE ON TRUMP/MERKEL POWWOW: Merkel’s decision for mass migration the “worst decision by European leader in 70 years” [Video]
+15751,fake,nb,1,politics,347,97,False,GUESS WHERE THE BALTIMORE SCHOOL SYSTEM RANKS AMONG THE NATION’S 100 LARGEST SCHOOL DISTRICTS?
+15761,fake,nb,1,politics,308,84,False,BREAKING ENERGY DEPARTMENT AUDIT REVEALS SHOCKING PRICE TAG AND LIABILITY FOR OBAMA’S GREEN ENERGY FAILURES
+13355,fake,nb,1,politics,547,165,False,YOU LIE! OBAMA SECRETLY PAID $400 MILLION Ransom To IRAN For Release Of Americans…BRAGGED About “Diplomatic Breakthrough” With Iran
+11897,fake,svm,1,politics,76,35,True,BRILLIANT NEWT GINGRICH: Here’s Why Trump Should NOT Trust Intel Community Right Now [Video]
+16923,fake,nb,1,left-news,494,133,False,"SWEDEN LOSES 14,000 Refugees Slated For Deportation: “We simply do not know where they are”"
+17664,fake,nb,1,US_News,2126,523,False,Hillary Clinton’s ‘Presidency’ has Already Begun as Lame Ducks Promote Her War on Syria
+12258,fake,nb,1,politics,134,63,False,BREAKING: TRUMP PICKS Private Sector Titans For Trade And Commerce: ‘I did this because I believed in him’
+11393,fake,nb,1,politics,556,178,False,JUST IN: Criminal Hackers Who Stole Data From 500 MILLION Yahoo Email Users Were RUSSIAN Agents Obama Regime INVITED To U.S…Courted By FBI
+15733,fake,lr,1,politics,245,81,False,CLINTON GRIFTERS UNDER SCRUTINY: CLINTON GLOBAL INITIATIVE DUMPED BY EXXON MOBIL
+15172,fake,nb,1,politics,104,37,False,HERE’S THE LIST Of Heartless Senators Who Voted Against Banning Late Term Abortions
+13127,fake,nb,1,politics,397,131,False,OCTOBER 1st Could Mark End Of Free Speech On The Internet: How Obama Regime May Be Turning Control Of Internet Over To U.N.
+10229,fake,nb,1,politics,334,91,False,AUDIT: Obama’s IRS ‘Misled’ Americans to Get Them to Sign Up for Obamacare
+8717,fake,nb,1,News,792,229,False, Iran Proves Republicans Are Full Of Crap As United Nations Says Nuclear Deal Has Been Honored
+9692,fake,nb,1,politics,581,162,False,CONGRESS WARNED Threat of Nuclear EMP Attack Has Never Been Higher: “N. Korean EMP Attack Would Kill ‘90% of All Americans’
+13025,fake,nb,1,politics,290,104,False,BREAKING: OBAMA WILL VETO BILL Unanimously Passed By Congress Allowing 9-11 Victims To Sue Saudi Arabia
+1072,fake,nb,1,News,361,106,True, Investigators Into US-Russia Ties Turn Attention To Flynn’s Business Partner
+16933,fake,nb,1,left-news,152,54,False,Why 5 Of The Wealthiest Muslim Nations Refuse To Take A Single Refugee
+11185,fake,nb,1,politics,193,68,False,SEC OF STATE REX TILLERSON: “Steps Are Under Way” To Remove Syria’s Bashar al-Assad…“Russian Government” Should “Consider Carefully Continued Support For Assad Regime” [VIDEO]
+16071,fake,nb,1,Government News,659,180,False,TYRANNY: Obamaphone Fraud Kept Under Wraps Until Vote To Expand Program
+9042,fake,nb,1,News,355,93,False, Here’s What The Fracking Industry Gave To Oklahoma In 2015 (IMAGES)
+13959,fake,nb,1,politics,9,8,False,POLL: Who Should Donald Trump Choose For Vice President?
+14203,fake,nb,1,politics,622,151,False,DONALD TRUMP WAS RIGHT AGAIN: U.S. Funds NATO In The Hundreds Of Billions
+16371,fake,nb,1,Government News,956,252,False,AFGHAN INTERPRETER FOR US MURDERED BY TALIBAN WHILE WAITING 4 YRS FOR PROMISED VISA [Video]
+17416,fake,nb,1,US_News,583,151,False,Two-thirds of US Navy Strike Fighter Jets Grounded: Navy Claims No Money to Fix Them
+15636,fake,nb,1,politics,1574,354,False,VATICAN ADVISOR: Says Pope Will Call On World At UN To Join Crusade For a New World Order…Would Like US To Pay $845 BILLION GLOBAL TAX To Combat ‘Climate Change’
+12027,fake,nb,1,politics,232,69,False,PUTIN PUSHES His Own Reset Button With America In A Very Surprising Move
+614,fake,nb,1,News,463,164,False, It’s Happening: FBI Carries Out Predawn Raid On Trump Associate’s Home (DETAILS)
+10658,fake,nb,1,politics,426,152,False,WINNING! COAL MINERS CHEER When President Trump Announces First Coal Mine Opening in 6 Years Video]
+17646,fake,nb,1,US_News,1991,486,False,"US-Saudi Plan: Let 9,000 ISIS Fighters Walk Free from Mosul – to Fight in Syria"
+12757,fake,lr,1,politics,247,100,False,WIKILEAKS EXPOSES Clinton Campaign In Cahoots With Corrupt DOJ On Email Scandal
+17657,fake,nb,1,US_News,1945,466,False,"Diplomatic Frauds: Kerry, Power, Kirby Lying and Shilling for ‘Body Bags’ and War in Syria"
+13635,fake,nb,1,politics,666,188,False,THE “OBAMA BOUNCE”: UKIP Leader Claims Obama’s Insulting Threat To UK Voters BACKFIRED…Actually Drove Voters To Support “Leave EU” Movement
+1409,fake,nb,1,News,573,159,False, Trump’s FCC Will Decimate Internet Freedom (VIDEO)
+11739,fake,nb,1,politics,703,215,False,BOOM! Fed Judge Ruling UNBLOCKS Trump Travel Ban…Asks ACLU Lawyer: “Where Does It Say Muslim Countries?”
+12183,fake,nb,1,politics,1149,221,False,WOW! GEORGIA Refused Election Cyber-Support From Obama’s DHS…Now Sec Of State Demands Answers After Claiming DHS Tried To Breach His Office’s Firewall
+13851,fake,nb,1,politics,300,98,False,DOJ Funneled Housing Crisis Money To Immigrant Activist Groups Like La Raza
+6116,fake,nb,1,News,425,112,False," Missouri Legislators Took 32,138 Free Gifts From Lobbyists"
+9130,fake,nb,1,politics,623,188,False,MARINE CORPS GENERAL WARNS U.S. TROOPS: “There’s A War Coming”
+15184,fake,nb,1,politics,514,144,False,COME TO AMERICA…THEY’VE GOT MONEY GROWING ON TREES: U.S. To Provide Ridiculous Amount Of Services and Funds To Each Refugee
+13503,fake,nb,1,politics,736,197,False,“ON DAY OF #NiceAttack Hillary Announces AMNESTY For Anyone Who Stealthily Evades Our Border Patrol”
+12046,fake,nb,1,politics,381,130,False,NO MORE MR. NICE GUY: TRUMP Takes Off The Gloves…HAMMERS Obama On Twitter
+16268,fake,nb,1,Government News,328,104,False,UNREAL! RETIRING SENATOR IS 34TH VOTE TO CLINCH OBAMA WIN ON IRAN DEAL
+10188,fake,nb,1,politics,560,161,False,CANADA SENDS TROOPS TO U.S. BORDER To Deal With Illegals and Asylum Seekers Running From Trump’s New Policies On Immigration
+10704,fake,nb,1,politics,259,99,False,PRESIDENT TRUMP Tweets Awesome Message to People of London…NBC REFUSES TO RETWEET
+13835,fake,nb,1,politics,273,74,False,WHOA! CLINTON GRIFTERS BAGGED $100 Million From “Blood Minerals” Firm
+11333,fake,nb,1,politics,167,70,False,WOW! HOUSE INTELLIGENCE Chair CONFIRMS Trump Was Correct…Trump Transition Team WAS Surveilled By Obama [VIDEO]
+16341,fake,nb,1,Government News,357,132,False,"FEDS ISSUE TERROR ALERT FOR JULY 4TH…WAIT, I THOUGHT OBAMA SAID ISIS IS JUST A JV TEAM?!"
+11774,fake,nb,1,politics,321,120,False,BOOM! CUSTOMS AGENTS IGNORE Obama Appointed Judge’s Court Order…ENFORCE Trump’s Travel Ban
+16238,fake,nb,1,Government News,292,92,False,Obama’s Legacy Before American Safety: Feds Looking At Different States For GITMO Terrorists
+1759,fake,nb,1,News,493,157,False," Mike Pence Just Dropped A TERRIFYING Bombshell On North Korea, Threatens War (VIDEO)"
+1787,fake,nb,1,News,435,133,False," BREAKING: Trump Is Playing With Fire, And He Just Brought Us One Step Closer To Nuclear War"
+1636,fake,nb,1,News,374,114,False, Trump’s Favorite New Dictator Just Cut Off Access To Wikipedia
+15850,fake,nb,1,politics,247,92,False,BREAKING: COURAGEOUS FEDERAL JUDGE DENIES OBAMA’S REQUEST TO LIFT STAY ON EXECUTIVE AMNESTY
+9873,fake,nb,1,politics,450,135,False,BREAKING: Trump Was Right! Trump Campaign Manager Wiretapped
+1625,fake,nb,1,News,361,92,False, Trump Administration Just Pressured Argentina Into Not Honoring Jimmy Carter With An Award
+16157,fake,nb,1,Government News,509,158,False,CONGRESSMAN SOUNDS ALERT TO CYBER SNOOPING LAW SNUCK INTO BUDGET BILL
+16173,fake,nb,1,Government News,174,53,False,“Unvetted” Illegals Turn Germany Into A Third-World Trash Heap…Sound Familiar? [Video]
+17450,fake,nb,1,US_News,239,103,False,Trump Moves Ahead with ‘The Wall’ Between US and Mexico
+17282,fake,nb,1,US_News,960,277,False,Hersh: Trump Knew ‘Assad Sarin Attack’ Story Was Fairy Tale – But Launched Cruise Missile Strike Anyway
+13518,fake,nb,1,politics,277,91,False,SAY “HELLO” TO YOUR NEW NEIGHBORS! Clooney Begged For Open Borders…Now Massive Refugee Camp Is Erected In His Front Yard
+11664,fake,nb,1,politics,878,207,False,"FEDS, CA STATE OFFICIALS IGNORED OROVILLE DAM WARNINGS…While Obama, CA Gov Brown Obsessed Over Spending $15 BILLION To Dig Two Controversial Tunnels"
+12080,fake,lr,1,politics,307,79,False,PRESIDENT-ELECT TRUMP’S INAUGURAL COMMITTEE Announces Schedule Of Events
+17121,fake,nb,1,US_News,828,223,False,How Trump is Accelerating the Decline of US Global Influence
+16169,fake,nb,1,Government News,546,177,False,BUDGET VOTE TODAY! You’ll Flip Out When You See The List Of Pork In This Bill – Call DC!
+16370,fake,nb,1,Government News,332,111,False,NSA ARCHITECT: NSA SNOOPING EXPIRES BUT FEDS WILL CONTINUE SURVEILLANCE OF AMERICANS’ PHONE RECORDS
+5442,fake,nb,1,News,423,110,False, Federal Court Bans US Navy From Using Sonar That Harms Marine Mammals
+9310,fake,nb,1,politics,403,123,False,JUST IN: Flynn to Plead Guilty to Lying to the FBI
+7616,fake,nb,1,News,646,220,False, Benjamin Netanyahu Just Snubbed Obama AGAIN – And In The Scummiest Way Possible
+3444,fake,nb,1,News,559,199,False, Electors Want Briefing On Russian Interference Before Electoral College Vote This Month
+3426,fake,nb,1,News,777,235,False, Trump Just Got SMACKED By Newsweek For Putting His Wallet Ahead Of Our Nation’s Best Interests
+12198,fake,nb,1,politics,213,90,False,GREAT! PRO-COAL OKLAHOMA AG Tapped For Head Of EPA
+14478,fake,nb,1,politics,861,188,False,HOW OBAMA Could Temporarily Fill The Vacancy Left By Justice Scalia With A RADICAL LEFTIST Judge
+11865,fake,nb,1,politics,230,69,False,"WHOA! “Canada’s Donald Trump,” Billionaire And Shark Tank Host Kevin O’Leary Announces Run Against “Canada’s Barack Obama” [VIDEO]"
+14536,fake,nb,1,politics,338,99,False,"GROUP WITH TERROR TIES Encourages Muslims To Swing U.S. Presidential Elections: “Turn Your Islamic Centers, Mosques Into Registration Centers For Voters”"
+8652,fake,nb,1,News,491,157,False," Republicans Tried To Kill The Clean Water Rule, But Obama’s Veto Pen Said ‘Hell No’"
+14788,fake,lr,1,politics,393,97,False,OHIO SEC OF STATE Explains How He Will Prevent Trump From Running Third Party
+11922,fake,nb,1,politics,692,200,False,"IS OBAMA PUNISHING Fiat-Chrysler For 2,000 US Jobs, $1 Billion US Investment Announcement? Fiat-Chrysler CEO Says EPA Allegations Are ‘Absolute Nonsense’ [VIDEO]"
+16193,fake,nb,1,Government News,382,123,False,BREAKING REPORT: Two Al Qaeda Terrorists Able To Enter U.S. As Refugees: “I wouldn’t be surprised if there were many more…”
+17308,fake,nb,1,US_News,1803,393,False,FORSAKEN SULTAN: Erdogan Isolated Ahead Trump Meeting in Washington
+6570,fake,nb,1,News,372,98,False," Look Out, Big Oil: ‘Job Creation’ No Longer An Argument As Solar Outpaces Oil"
+13673,fake,nb,1,politics,429,130,False,MUSLIM INVASION OF AMERICA In Full Swing: Obama On Pace To Issue Over 1 Million Green Cards To Migrants From Muslim Majority Nations
+8837,fake,nb,1,News,481,112,False, Experts Think Gas Prices About To Go Lower Than EVER – You Won’t Believe How Low (IMAGES)
+11372,fake,nb,1,politics,294,92,False,POLITICO DOWNGRADES AMERICA: Declares Germany’s “Open-Borders” Angela Merkel “Leader Of The Free World” In Anti-American Headline
+14325,fake,nb,1,politics,181,60,False,OBAMA’S DOJ TO BLAME IRAN FOR CYBER-ATTACK On NY Dam In 2013…Wait…What About That Deal With Obama’s Ally In 2015?
+11344,fake,nb,1,politics,306,111,False,WATCH: KIM JONG-UN Blows Up US Aircraft Carrier In Newly Released Video
+3516,fake,nb,1,News,519,192,False, HUGE Campaign Promise Broken By Trump As He Stabs Working Class Americans In The Back Yet Again
+13772,fake,nb,1,politics,536,176,False,"¡VIVA LA REVOLUTION! As Venezuela Collapses Under Socialist Rule, Dictator Maduro Endorses Fellow Socialist Bernie Sanders"
+15964,fake,nb,1,Government News,349,107,False,"BREAKING: Federal Judge STOPS Obamacare Transgender, Abortion Related Protections"
+11608,fake,nb,1,politics,165,61,True,WHOA! FRANCE’S CONSERVATIVE PRESIDENTIAL CANDIDATE Refuses To Cover Her Head With Muslim Veil…Walks Out Of Meeting! [Video]
+16954,fake,lr,1,left-news,251,68,False,"KARMA: Manufactured Race War Backfires…Missou Loses Top Football Recruit, Says “Their campus is out of control.”"
+13774,fake,nb,1,politics,365,154,False,LOL! The Woman Who Couldn’t Be Bothered With Protecting Lives Of Brave Americans Serving In Benghazi Attacks Trump On National Security
+892,fake,nb,1,News,461,134,False," Marco Rubio Grows A Spine, Blasts Trump For Trying To Team Up With Putin"
+11168,fake,nb,1,politics,141,62,False,"SORE LOSER, WAR-HAWK John McCain Blames President Trump For Syrian Chemical Attack [VIDEO]"
+404,fake,nb,1,News,542,171,False, Two Florida Lawmakers Just Voted Against Hurricane Relief As Irma Strikes Their State
+14153,fake,nb,1,politics,492,144,False,WHY IS THE MEDIA SILENT As Hillary Cackles About Her Key Role In Muslim Invasion Of Europe? [VIDEO]
+13884,fake,nb,1,politics,304,104,False,RUBIO Sides With Democrats On Giving A Whopping $2 Billion For Zika Virus Prevention
+12448,fake,nb,1,politics,122,48,False,"MARK CUBAN: “In The Event Donald Wins, I Have No Doubt The Market Tanks”…So Here’s What Really Happened [VIDEO]"
+17699,fake,nb,1,US_News,2513,597,False,"UNHOLY ALLIANCE: Hillary Clinton’s Saudi Sponsors Support Terrorism, Islamist Extremism"
+15954,fake,nb,1,Government News,187,70,False,BATTLE OF THE “PAUL’S”: Angry Rand Paul Walks Out On Paul Ryan During Obamacare Discussion…Ryan’s Plan Would Create “New Entitlement Program”…Demands COMPLETE REPEAL
+10902,fake,lr,1,politics,773,202,False,PRESIDENT TRUMP WARNS Comey…Tweets Veiled Threat To Former FBI Director
+1120,fake,nb,1,News,375,103,False, Russia Claims They May Have Killed ISIS Leader Al-Baghdadi
+15687,fake,nb,1,politics,940,253,False,AMTRAK FACTS AND WHY AMERICANS SHOULDN’T TRUST THE CALL FOR MORE INFRASTRUCTURE SPENDING
+15512,fake,nb,1,politics,315,96,False,CASTRO DEMANDS THE RETURN OF “ILLEGALLY OCCUPIED” GITMO BEFORE RESTORING DIPLOMATIC RELATIONS
+441,fake,nb,1,News,340,101,False, Defense Secretary Mattis Speaks Over Incompetent Trump’s Threats To North Korea (VIDEO)
+9852,fake,nb,1,politics,351,110,False,NYC: Turkish Thugs Beat Up Protesters…Deny Free Speech During Turkish President’s Speech [Video]
+15979,fake,nb,1,Government News,314,99,False,"SHOCKING VIDEO! SWARM OF OVER 20,000 AFRICAN FREELOADERS Flooding Mexico To Get Into The US…#OpenBordersHillary"
+2720,fake,nb,1,News,594,175,False, Virginia Seeks To Hold Trump In Contempt For Ignoring Federal Court Order Against Muslim Ban
+17532,fake,nb,1,US_News,534,157,True,Fake ‘US embassy’ Bust in Ghana Exposes Danger of EU Schengen Deal with Turkey
+11801,fake,nb,1,politics,476,144,False,BREAKING: Mexico’s President Cancels Visit With Trump Over Defending Our US Border From Lawbreakers…But Wrongfully Imprisoning US Marine Tahmooressi For “Border Violation” Was No Big Deal
+14376,fake,lr,1,politics,1254,249,False,DELEGATES FOR DUMMIES: How They’re Awarded…And How Many Your Candidate Needs To Win [VIDEO]
+16309,fake,nb,1,Government News,347,82,False,OBAMA RELEASES TOP IRANIAN SCIENTIST…LEAVES 4 AMERICANS TO FEND FOR THEMSELVES IN IRANIAN PRISONS As Part Of Nuke Deal
+16779,fake,nb,1,left-news,300,81,False,"MUSLIM MIGRANTS SHOW Appreciation To German Hosts By Spreading Feces, Vomit And Blood On Asylum Walls"
+7193,fake,nb,1,News,535,143,False, Israeli Minister Calls For ‘Civil Targeted Killing’ Of Human Rights Activists Leading Boycott Of Israel (VIDEO)
+417,fake,lr,1,News,372,139,True, BREAKING: Under Trump’s Leadership FEMA Could Run Out Of Money By Tomorrow
+3119,fake,nb,1,News,477,156,False, Ethics Office Just Called Out GOP For Shady Schemes To Confirm Trump’s Corrupt Cabinet Picks
+9154,fake,nb,1,politics,261,91,False,MCCONNELL PUSHES BACK ON MEDIA: I Understand ‘Your Job Is to Use the Democratic Talking Points’ [Video]
+17626,fake,nb,1,US_News,794,230,False,Paul Craig Roberts: ‘By Cooperating with Washington on Syria & Russia Walked Into a Trap’
+11425,fake,nb,1,politics,692,184,False,"WATCH: Wildly Popular, Outspoken Geert Wilders Is Being Called “The Dutch Trump”…Why His Plan To De-Islamize The Netherlands Is Resonating With Voters"
+17296,fake,nb,1,US_News,857,238,False,"US Coalition Airstrike on Syrian Army in Al-Tanf is Another Calculated War Crime, Aims to Destroy Arab Unity"
+15379,fake,nb,1,politics,1868,369,False,ZIMBABWE’S CORRUPT GOVERNMENT SEEKS EXTRADITION OF AMERICAN LION HUNTER: Secret Memo Shows U.S. Was Aware Of $45-$60 Million Trophy Hunting Business
+10201,fake,nb,1,politics,281,92,False,WHY THE HUGE 1.1 MILLION DROP in Food Stamp Enrollment? [VIDEO]
+14114,fake,nb,1,politics,481,135,False,OBAMA PRESSURED U.S. SHOE COMPANY To Keep Their Mouths Shut…But Now The Deal is OFF…And So Are The Gloves!
+11795,fake,nb,1,politics,263,79,False,TRUMP’S UN AMBASSADOR Nikki Haley Warns UN Members: “We’re Taking Names”
+12288,fake,nb,1,politics,130,50,False,CUBA’S FIDEL CASTRO DIES…Hundreds Dance In The Streets…What Will Obama Do? [Video]
+9702,fake,nb,1,politics,462,121,False,"BREAKING NEWS: N. AMERICAN FAMILY Held Hostage During Obama Presidency RESCUED In Pakistan: “This is a country that did not respect us, this is a country that respects us now” [VIDEO]"
+9917,fake,nb,1,politics,919,245,False,Ramadan Abdullah Set Free On Bail After Police Make Shocking Discovery Of Weapons In Storage Locker Destined For Secretive Islamic Compound In Upstate NY
+14099,fake,nb,1,politics,569,86,False,WHO WILL SUPPORT “THE BERN”? New Numbers Show OBAMA STOLE An EXTRA 6 Months Income From Average Working American Since Bush Years
+17312,fake,nb,1,US_News,1163,268,False,Washington’s Criminal Activities Are Only Getting Messier
+17804,fake,nb,1,US_News,935,228,False,IRAQ 1991: US Carpet Bombs ‘Highway of Death’
+17171,fake,nb,1,US_News,2120,459,False,Reflections on a World Gone Mad and Pushing Back against Neocolonialist Thuggery
+14963,fake,nb,1,politics,506,166,False,"ILLEGAL ALIENS DEMAND NEW BILL OF RIGHTS: To Include Citizenship, End Arrests And Free Health Care"
+16387,fake,nb,1,Government News,1364,332,False,BEWARE THE UNITED NATIONS PUSH FOR “GLOBAL GOVERNANCE” FOR THE “GOOD OF THE PLANET”
+16001,fake,nb,1,Government News,493,148,False,OBAMA’S BAILOUT OF PUERTO RICO: TAXPAYERS Take A BIG Hit But Rewards Go To Political And Financial Players
+15050,fake,nb,1,politics,181,57,False,MUSLIM INVASION UPDATE: Gang Members In Germany On Trial For Robbing Churches And Schools To Fund ISIS
+8429,fake,nb,1,News,757,189,False, Netanyahu Says ‘Respected Western Opinion Leaders’ Hate The Jewish People (VIDEO)
+11261,fake,nb,1,politics,481,138,False,LOL! DEM Senator Dick Durbin Voted To Confirm Circuit Judge Gorsuch In 2006…Tells CNN Host “He Can’t Remember” How He Voted [VIDEO]
+14472,fake,nb,1,politics,481,128,False,DISTURBING TRUTH ABOUT How The UN Decides Which Muslim “REFUGEES” Will Be Your New Neighbor [VIDEO]
+1089,fake,nb,1,News,758,216,False, Trump Cares More About His Businesses In The Middle East Than The American People
+12889,fake,nb,1,politics,220,83,False,BREAKING: SENATE STRIKES BACK After Obama Slaps 9/11 Victim’s Families In The Face….Vote 97-1
+14889,fake,nb,1,politics,612,177,False,FIGHTING TO WIN: Russia Annihilates Dozens Of ISIS Oil Tankers…And Shares The Video With The World
+17881,fake,nb,1,US_News,501,157,False,‘There’ll be boots on the ground’: US making noises about ‘doing more’ in Syria and Iraq
+11692,fake,nb,1,politics,154,58,False,LOL! OBAMA’S RADICAL EPA CHIEF Says There Was No “War On Coal”…But OOPS…That’s Not What The Poster Behind Her Says!
+442,fake,nb,1,News,422,138,False, Trump Administration Is Already Talking About Withholding Harvey Aid
+9866,fake,nb,1,politics,4671,821,False,‘One for the Ages’ Full Video and Transcript of Trump’s Incredible UN Speech [Video]
+9262,fake,nb,1,politics,256,94,False,SECRETARY OF STATE REX TILLERSON Shuts Down Obnoxious Press Asking Why He ‘Puts Up With’ Trump [Video]
+14623,fake,nb,1,politics,626,187,False,HOLY BETRAYAL OF AMERICA’S NATIONAL SECURITY: New Evidence Shows Hillary Emailed “Most Secretive” Classified Material On Private Unsecured Server
+12652,fake,nb,1,politics,1038,342,False,28 THINGS TRUMP PROMISES To Do As President…A Must Read For ALL Voters!
+16133,fake,nb,1,Government News,847,214,False,REVOLUTION: The Patriot Spring Is Coming
+13154,fake,nb,1,politics,208,75,False,DELAY OF RELEASE OF CLINTON SCHEDULES Until After Election Could Backfire…Feds Out Of Control
+10822,fake,nb,1,politics,218,82,False,LIVE STREAM: PRESIDENT TRUMP’S Historic Speech To The Muslim World: “Honestly confronting Islamist extremism” [Video]
+2573,fake,nb,1,News,503,150,False, BREAKING: Lithuania Warns That Russia Is Preparing For War Against Europe
+8458,fake,nb,1,News,948,278,False, The Boycott Of Israel Just Got A Major Helping Hand – From President Obama
+17704,fake,nb,1,US_News,1205,293,False,Falling Apart: West’s Media-Driven Deception in Syria
+25990,real,nb,1,politicsNews,321,125,True,Trump believes Obama was born in the United States: campaign
+29066,real,nb,1,politicsNews,213,103,True,"Factbox: The economy, guns top on social media during U.S. Republican debate"
+20376,real,nb,1,politicsNews,147,61,True,"Factbox: Trump on Twitter (July 27) - NY Times, Republican Senators, Healthcare"
+19014,real,nb,1,politicsNews,301,107,True,Trump launches petition against NFL players' anthem protests
+28404,real,nb,1,politicsNews,626,185,True,"Another debate brawl? Fox News, Kelly set for Trump rematch"
+27344,real,nb,1,politicsNews,922,257,True,"Democrats Clinton, Sanders split nominating contests in Oregon, Kentucky"
+20004,real,nb,1,politicsNews,239,96,True,Trump fires adviser Bannon
+28876,real,nb,1,politicsNews,733,209,True,"Clinton's 'girl power' push wins over women in their 30s, not 20s"
+18120,real,nb,1,politicsNews,1076,236,True,Factbox: Women who have accused Trump of inappropriate conduct
+18508,real,nb,1,politicsNews,75,33,True,Alabama Republican Party stands by U.S. Senate candidate Moore
+25612,real,nb,1,politicsNews,1090,306,True,"'Absolutely false,' Trump says defiantly after women's groping allegations"
+29073,real,nb,1,politicsNews,772,268,True,"Trump, Cruz tensions may provide liveliest Republican debate yet"
+35554,real,nb,1,worldnews,429,132,True,CIA official tells jury about day 'all hell broke loose' in Benghazi
+25776,real,nb,1,politicsNews,249,88,True,U.S. vice presidential debate watched by 37 million on TV
+27737,real,nb,1,politicsNews,478,156,True,"Immigration overhaul backers sing, dance, chant at U.S. Supreme Court"
+28965,real,nb,1,politicsNews,662,230,True,"Watch out frontrunners, over 1,500 candidates vying for White House"
+31164,real,nb,1,worldnews,295,97,True,"In court first, Swede jailed for rape of children online"
+28906,real,nb,1,politicsNews,970,300,True,Trump steps up attacks with 'bimbo' tweet before Fox News debate
+26945,real,nb,1,politicsNews,569,193,True,"Trumped by candidate's rhetoric, Republican lawmakers at a loss for words"
+27199,real,nb,1,politicsNews,233,89,True,Animal rights activists briefly disrupt Sanders' rally in California
+25710,real,nb,1,politicsNews,408,125,True,Obama tells students at town hall about how failures have shaped him
+27120,real,nb,1,politicsNews,682,234,True,Which ‘La Raza’? Trump comments cause confusion over group's role
+22990,real,nb,1,politicsNews,293,94,True,"Schwarzenegger fired, didn't quit 'Apprentice': Trump"
+24181,real,nb,1,politicsNews,618,206,True,Trump attacks civil rights leader who questioned his election win
+33105,real,nb,1,worldnews,737,194,True,"Berlusconi eyes political resurrection, unhindered by sex scandals"
+26124,real,nb,1,politicsNews,703,209,True,Trump allies falsely link Reuters to claim Detroit video feed was cut short
+26907,real,nb,1,politicsNews,89,49,True,"Warren, Kaine, Castro on Clinton running-mate short list: AP"
+27254,real,nb,1,politicsNews,308,111,True,"Protesters throw rocks, bottles at police outside Trump rally in New Mexico"
+28812,real,nb,1,politicsNews,308,117,True,"Obama says faith a cure for fears stirred by war, hard times"
+28151,real,nb,1,politicsNews,781,260,True,Half of U.S. women have 'very unfavorable' view of Trump: poll
+19444,real,nb,1,politicsNews,393,139,True,U.S. Attorney General defends Trump on NFL protests at free-speech talk
+26838,real,nb,1,politicsNews,576,187,True,New York LGBT bar becomes first U.S. monument to gay rights
+29116,real,nb,1,politicsNews,361,129,True,Obama jokes about a Trump State of the Union address
+24921,real,nb,1,politicsNews,1177,323,True,"Blue-collar Democrats to party: It's still the economy, stupid"
+25673,real,nb,1,politicsNews,875,242,True,"Trump hasn't sued a newspaper for libel in decades, records show"
+25630,real,nb,1,politicsNews,489,163,True,Pro-Trump group ad seeks to pit Michelle Obama against Clinton
+28206,real,nb,1,politicsNews,838,268,True,Anti-Trump protesters: patchwork of people and Facebook pages
+26453,real,nb,1,politicsNews,587,176,True,"Among Democrats, another convention hums in Sanders fans' phones"
+21568,real,nb,1,politicsNews,671,250,True,Ex-U.S. Congressman Weiner pleads guilty in teen 'sexting' case
+19504,real,nb,1,politicsNews,185,77,True,"Factbox: Trump on Twitter (Sept 22) - North Korea, Ads on Facebook, Luther Strange"
+28596,real,nb,1,politicsNews,635,184,True,Wealthy donors drawn to Rubio White House bid after Bush drops out
+27790,real,nb,1,politicsNews,381,114,True,Trump's 'Paterno' comment sparks jeers on social media
+18196,real,nb,1,politicsNews,880,258,True,Alabama Democrat turns up attacks on Roy Moore in Senate race's final stretch
+19255,real,nb,1,politicsNews,750,228,True,NRA opposes outright U.S. ban on gun devices used by Las Vegas killer
+29086,real,nb,1,politicsNews,987,291,True,"For Republican Rubio, a moment of truth in race to lead U.S."
+28385,real,nb,1,politicsNews,243,72,True,Kentucky governor sues to close abortion clinic
+28333,real,nb,1,politicsNews,776,223,True,"Flint becomes U.S. Democratic flash point, but residents want action"
+28407,real,nb,1,politicsNews,428,142,True,Emotions run high outside courthouse for abortion showdown
+25213,real,nb,1,politicsNews,917,261,True,'Rage against the machine': U.S. voters reject a 'rigged' system
+35894,real,nb,1,worldnews,234,75,True,"Amsterdam mayor Van der Laan, who once snubbed Putin, dies of cancer"
+24105,real,nb,1,politicsNews,541,176,True,Ex-president George H.W. Bush moved to intensive care; wife hospitalized
+26544,real,nb,1,politicsNews,1022,275,True,Trump employee apologizes for Melania speech 'chaos'
+26677,real,nb,1,politicsNews,788,241,True,Dallas attack adds to Cleveland concerns before Republican convention
+19264,real,nb,1,politicsNews,374,131,True,Weinstein on indefinite leave as company investigates allegations
+18716,real,nb,1,politicsNews,434,152,True,Ex-Democratic leader who mulled dropping Clinton spurns critics
+18020,real,nb,1,politicsNews,260,101,True,Senator-elect Jones not joining calls for Trump resignation
+26509,real,nb,1,politicsNews,767,237,True,Kaine's crime-busting past may hurt Clinton's outreach to blacks
+27690,real,nb,1,politicsNews,354,115,True,U.S. Capitol replacing flag display over Confederate imagery
+23136,real,nb,1,politicsNews,580,188,True,White House bars some news organizations from briefing
+33843,real,nb,1,worldnews,433,108,True,Technicolor Thailand is back after a black-clad mourning year for late king
+23660,real,nb,1,politicsNews,264,84,True,"Factbox: Trump on Twitter (Jan 31) - Pelosi, Democrats, Gorsuch"
+28692,real,nb,1,politicsNews,986,290,True,Young blacks more open to Bernie Sanders' White House bid
+27070,real,nb,1,politicsNews,636,224,True,"Exclusive: Clinton ally Warren weighs potential VP role, sees hurdles - sources"
+25577,real,nb,1,politicsNews,774,228,True,Negative tone of White House race sours young voters
+28801,real,nb,1,politicsNews,943,282,True,"In contentious debate, Clinton and Sanders both claim 'progressive' mantle "
+25524,real,nb,1,politicsNews,248,76,True,Donald Trump throws counter punch after Joe Biden comments
+26554,real,nb,1,politicsNews,818,216,True,Melania Trump's speech has an echo of Michelle Obama words
+23929,real,nb,1,politicsNews,512,145,True,Crowd controversy: The making of an Inauguration Day photo
+26485,real,nb,1,politicsNews,886,255,True,Some in Sanders' army seem determined to march on without him
+25811,real,nb,1,politicsNews,976,303,True,"Trump goes on offensive against former beauty queen, Clinton calls him 'unhinged'"
+28880,real,nb,1,politicsNews,805,270,True,America's angry voters divvied up by Trump and Sanders: poll
+25415,real,nb,1,politicsNews,621,207,True,Battleground Ohio is coveted territory in election race
+33436,real,nb,1,worldnews,289,84,True,"Argentine survivor of New York attack pleads for justice, love"
+26452,real,nb,1,politicsNews,964,297,True,"For inspiration, new Democratic stars look to Elizabeth Warren"
+28223,real,nb,1,politicsNews,998,309,True,New disturbance at Trump rally as crucial Republican contests near
+20317,real,nb,1,politicsNews,400,120,True,Alien Donald Trump appears on Mexico City billboard
+18764,real,nb,1,politicsNews,424,124,True,"Factbox: Belgian mother of two, young New Yorker among victims of truck attack"
+26346,real,nb,1,politicsNews,531,189,True,Trump seeks to raise fresh ethical questions about Clinton
+18595,real,nb,1,politicsNews,171,76,True,Trump would want Moore to step aside if sexual misconduct allegations true: White House
+28242,real,nb,1,politicsNews,189,82,True,TV audience for CNN Republican presidential debate down from last week
+19622,real,nb,1,politicsNews,329,129,True,Trump says violence by anti-fascists proves him right on Charlottesville
+26500,real,nb,1,politicsNews,384,137,True,Obama's brother plans to vote for Trump
+26267,real,nb,1,politicsNews,632,249,True,Trump calls for special prosecutor to investigate Clinton Foundation
+28788,real,nb,1,politicsNews,511,134,True,"Rubio, Christie and Kasich get more debate traction on social media"
+22966,real,nb,1,politicsNews,350,132,True,"Carson calls slaves 'immigrants' in speech, drawing criticism"
+36110,real,nb,1,worldnews,125,41,True,Poles dressed in black march in defense of women's rights
+20367,real,nb,1,politicsNews,335,114,True,Boy Scouts of America apologizes for Trump's 'political rhetoric'
+26819,real,nb,1,politicsNews,697,186,True,"Advocates hail U.S. court abortion decision, predict national impact"
+19488,real,nb,1,politicsNews,750,249,True,Trump takes center stage in fractious Senate race in Alabama
+26915,real,nb,1,politicsNews,821,266,True,"American Muslims see Trump rhetoric fueling prejudice, hate incidents"
+25245,real,nb,1,politicsNews,529,192,True,Transgender advocates fear reversal of civil rights under Trump
+19481,real,nb,1,politicsNews,711,221,True,Trump renews clash with U.S. sports world
+22001,real,nb,1,politicsNews,397,145,True,Hillary Clinton makes surprise appearance at New York film panel
+25498,real,nb,1,politicsNews,536,181,True,Clinton adds pop of celebrity in homestretch of campaign
+19428,real,nb,1,politicsNews,601,211,True,Conservative firebrand defeats Trump pick in Alabama primary for U.S. Senate
+28593,real,nb,1,politicsNews,809,282,True,Rubio sharpens attacks after latest Trump win in White House race
+24251,real,nb,1,politicsNews,746,246,True,"Obama pushes values and prods Trump in final, emotional address"
+24492,real,nb,1,politicsNews,296,121,True,"Trump, Bill Clinton trade insults in unusual exchange"
+31514,real,nb,1,worldnews,724,160,True,Prince Harry's engagement shows British monarchy has moved on from scandals of past
+18455,real,nb,1,politicsNews,385,131,True,Trump: Father of UCLA player in shoplifting case is 'ungrateful fool'
+22633,real,nb,1,politicsNews,378,146,True,"Black lawmakers meet with Trump about infrastructure, reducing crime"
+24420,real,nb,1,politicsNews,451,126,True,Mormon Tabernacle Choir member resigns rather than sing for Trump
+38219,real,nb,1,worldnews,564,153,True,Immigrants in Central Florida nervous about seeking shelter
+20069,real,nb,1,politicsNews,238,79,True,"Organizers of white nationalist rally in Virginia, driver sued for $3 million"
+24185,real,nb,1,politicsNews,439,107,True,Women knit pink 'pussyhats' for rally after Trump inauguration
+27881,real,nb,1,politicsNews,115,53,True,Pennsylvania bans bias against transgender people
+27337,real,nb,1,politicsNews,329,122,True,Potential Trump high court nominee mocked him on Twitter
+26557,real,nb,1,politicsNews,351,109,True,Melania Trump's RNC speech produces so-so TV audience
+25968,real,nb,1,politicsNews,463,164,True,Trump proposes disarming Clinton guards: 'Let's see what happens to her'
+28389,real,nb,1,politicsNews,532,178,True,Romney's anti-Trump speech ignites social media debate
+25182,real,nb,1,politicsNews,931,258,True,"In rural-urban divide, U.S. voters are worlds apart"
+26638,real,nb,1,politicsNews,742,213,True,New Black Panther Party says to carry arms in Cleveland if legal
+28561,real,nb,1,politicsNews,423,173,True,"Cruz says would deport illegal immigrants, sharpens immigration stance"
+24027,real,nb,1,politicsNews,841,264,True,Trump backers' disparate hopes coalesce around promise of change
+27752,real,nb,1,politicsNews,625,200,True,Cruz adviser says Trump campaign taking 'banana republic' approach
+20064,real,nb,1,politicsNews,541,165,True,"Charlottesville schools, parents address children's fears after violence"
+28797,real,nb,1,politicsNews,334,121,True,Trump says will attend March Fox debate with Megyn Kelly: report
+32450,real,nb,1,worldnews,367,72,True,Memories in milk bottles: Polish exhibition 'shouts out' annihilation story of Warsaw Ghetto
+27824,real,nb,1,politicsNews,394,128,True,"Hillary Clinton, NYC mayor assailed for racially charged joke"
+27939,real,nb,1,politicsNews,966,275,True,Bernie Sanders' ghost tweeter keeps his Brooklyn accent
+20492,real,nb,1,politicsNews,213,88,True,"Factbox: Trump on Twitter (July 24) - Chuck Schumer, Adam Schiff, Obamacare"
+20685,real,nb,1,politicsNews,639,202,True,"In Trump's Ohio bastion, supporters dismiss uproar over Donald Jr."
+27024,real,nb,1,politicsNews,72,36,True,"After Orlando shooting, Donald Trump reiterates Muslim ban"
+28963,real,nb,1,politicsNews,501,168,True,Obama: Sanders has 'luxury' of being long shot in Democratic race
+27580,real,nb,1,politicsNews,652,210,True,Trump praises Sanders but may struggle to win over his voters
+26362,real,nb,1,politicsNews,491,153,True,"Icahn praises Trump economic plan, says candidate will get blue-collar vote"
+27372,real,nb,1,politicsNews,397,124,True,Former Trump girlfriend rebuts NY Times story on history with women
+26668,real,nb,1,politicsNews,560,194,True,"U.S. gun rules heighten tension between police, citizens: Obama"
+30293,real,nb,1,worldnews,462,137,True,India files sex assault case against airline passenger for allegedly molesting Bollywood actress
+36181,real,nb,1,worldnews,484,144,True,Trial of alleged ringleader of Benghazi attack begins in Washington
+20458,real,nb,1,politicsNews,473,143,True,Trump gives Boy Scouts at jamboree a taste of Washington politics
+25531,real,nb,1,politicsNews,810,249,True,"In breathless U.S. election, Twitter generates buzz not cash"
+28956,real,nb,1,politicsNews,392,129,True,Trump says not entirely sure he will attend Fox News debate
+19980,real,nb,1,politicsNews,721,227,True,Prominent U.S. religious conservatives defend Trump after Charlottesville
+28969,real,nb,1,politicsNews,828,264,True,Confident Trump says could 'shoot somebody' and not lose voters
+27243,real,nb,1,politicsNews,224,74,True,'Little House' star drops bid for U.S. congressional seat
+28830,real,nb,1,politicsNews,772,262,True,Republican campaign for White House turns nastier as field narrows
+22860,real,nb,1,politicsNews,534,187,True,U.S. lawmaker's controversial tweet on immigration draws fire
+23890,real,nb,1,politicsNews,46,28,True,"Factbox: Trump on Twitter (Jan 25) - ABC interview, voter fraud, Supreme Court pick"
+18454,real,nb,1,politicsNews,833,262,True,"In Trump strongholds, Democrats walk tightrope ahead of 2018 elections"
+27021,real,nb,1,politicsNews,807,231,True,Assault rifle used in Florida shooting drives gun control debate
+28925,real,nb,1,politicsNews,403,109,True,GOP voters like Trump despite seeing him as not religious: poll
+20036,real,nb,1,politicsNews,103,42,True,Phoenix mayor calls on Trump to postpone rally planned for next week
+24046,real,nb,1,politicsNews,411,123,True,Facts about the inauguration of Donald Trump as U.S. president
+17929,real,nb,1,politicsNews,277,105,True,"Trump on Twitter (Dec 22) - Tax cut, Missile defense bill"
+20348,real,nb,1,politicsNews,415,130,True,White House divisions on display with Scaramucci's comments
+21197,real,nb,1,politicsNews,535,187,True,"Some toast Comey testimony, others shrug at U.S. bar 'watch parties'"
+22756,real,nb,1,politicsNews,639,194,True,"McDonald's deletes Trump tweet, says Twitter account compromised"
+27553,real,nb,1,politicsNews,603,201,True,"Exiting 2016 race, Republican Cruz leaves himself a path forward"
+28995,real,nb,1,politicsNews,777,242,True,Davos elite alarmed at prospect of nominee Trump
+26121,real,nb,1,politicsNews,952,271,True,U.S. conservative activist Phyllis Schlafly dead at 92
+27046,real,nb,1,politicsNews,351,142,True,Warren to keep up assault on White House hopeful Trump over judge comments
+27558,real,nb,1,politicsNews,344,116,True,Cruz unleashes fury at Trump over Lee Harvey Oswald comment
+23145,real,nb,1,politicsNews,419,142,True,"Caitlyn Jenner, teen singer appeal to Trump on transgender rights"
+28923,real,nb,1,politicsNews,112,48,True,Clinton: DNC should authorize additional Democratic debate next week
+27564,real,nb,1,politicsNews,886,282,True,Indiana puts Donald Trump’s evangelical support to test
+26676,real,nb,1,politicsNews,555,165,True,"U.S. Women's Open must leave Trump National, says Burk"
+26994,real,nb,1,politicsNews,1161,328,True,Orlando killer expressed support for multiple Islamist groups
+23981,real,nb,1,politicsNews,141,64,True,White House defends statement on audience for Trump's inaugural
+28108,real,nb,1,politicsNews,626,216,True,Anti-Trump protesters block Arizona road; march in New York
+26629,real,nb,1,politicsNews,218,80,True,U.S. judge to mull release of Trump video testimony
+30223,real,nb,1,worldnews,292,90,True,Botswana court orders government to recognize transgender woman as female
+28190,real,nb,1,politicsNews,1463,407,True,How Rubio’s campaign failed: problems from the start
+25162,real,nb,1,politicsNews,646,227,True,Clinton blames FBI's Comey for her defeat in call with donors
+28003,real,nb,1,politicsNews,149,62,True,Virginia governor vetoes bill cutting Planned Parenthood funding
+25466,real,nb,1,politicsNews,84,42,True,"Bill Clinton, Tim Kaine cancel Iowa event after police shooting"
+21526,real,nb,1,politicsNews,422,142,True,"Trump can't stop American progress on climate, Al Gore tells Cannes"
+18241,real,nb,1,politicsNews,673,208,True,Trump lawyer's account about tweets raises questions about what president knew
+22389,real,lr,1,politicsNews,39,19,True,ADVISORY: Story on Kushner visiting Iraq withdrawn
+27766,real,nb,1,politicsNews,361,131,True,U.N. rights chief decries 'bigotry' in U.S. presidential race
+28849,real,nb,1,politicsNews,492,166,True,Republican Cruz apologizes for email implying Carson might exit race
+26438,real,nb,1,politicsNews,418,145,True,Trump to Clinton: 'No more Mr. Nice Guy'
+25979,real,nb,1,politicsNews,935,283,True,"In Pennsylvania Senate race, unfamiliar battle lines on gun rights"
+18432,real,nb,1,politicsNews,98,40,True,Factbox: Trump on Twitter (Nov 27) - Networks
+21584,real,nb,1,politicsNews,837,280,True,"For Trump's defenders, White House turmoil is politics as usual"
+28208,real,nb,1,politicsNews,1027,273,True,Inside Kasich's long-shot strategy to beat Trump to the GOP nomination
+27636,real,nb,1,politicsNews,442,152,True,Baltimore primary voters back reform candidate for mayor after Freddie Gray unrest
+25165,real,svm,1,politicsNews,339,126,True,U.S. to push ahead on climate pact before Trump takes over: Kerry
+27118,real,nb,1,politicsNews,274,78,True,"Obama lauds Denver Broncos, Peyton Manning for Super Bowl win"
+25611,real,nb,1,politicsNews,886,202,True,Factbox: Women who have alleged inappropriate conduct by Trump
+29047,real,svm,1,politicsNews,314,105,False,Obama unveils wage insurance plan to spur job seekers
+19844,real,nb,1,politicsNews,68,28,True,Factbox: Trump on Twitter (Aug 31) - Texas
+29044,real,nb,1,politicsNews,890,296,True,Sanders lashes out at Clinton in contentious Democratic debate
+29059,real,nb,1,politicsNews,472,159,True,Trump fans in Iowa cheer his debate performance
+26525,real,nb,1,politicsNews,1184,341,True,"As Republicans anoint Trump, party grapples with identity crisis"
+22806,real,nb,1,politicsNews,93,42,True,Trump suggests more information coming about wiretap claim: Fox News interview
+23349,real,nb,1,politicsNews,187,59,True,Burlington to drop Ivanka Trump brand online: Business Insider
+22334,real,nb,1,politicsNews,378,109,True,Trump wins Scottish golf course privacy rights case
+18127,real,nb,1,politicsNews,526,174,True,Roy Moore campaign casts Alabama race as referendum on Trump
+27942,real,nb,1,politicsNews,317,124,True,"Clinton, Sanders audition for role as anti-Trump candidate"
+18593,real,nb,1,politicsNews,941,301,True,Republican Senate candidate Moore hit by sexual misconduct allegations
+26345,real,nb,1,politicsNews,989,321,True,"Clinton blasts Trump for 'casual inciting of violence,' Republicans shaken"
+28691,real,nb,1,politicsNews,919,249,True,"From a river town in Slovenia to Trump Tower, and the White House?"

@@ -1,0 +1,578 @@
+{
+  "generated_utc": "2026-08-11T20:34:31+00:00",
+  "tool": "src/data_quality.py",
+  "dataset": {
+    "dir": "C:\\Users\\Zwe Nyi Nyar\\DAM\\fak3_News_detection\\data",
+    "files": [
+      {
+        "file": "Fake.csv",
+        "sha256": "bebf8bcfe95678bf2c732bf413a2ce5f621af0102c82bf08083b2e5d3c693d0c",
+        "bytes": 62789876,
+        "modified_utc": "2026-08-11T08:59:05.679516+00:00",
+        "rows": 23481
+      },
+      {
+        "file": "True.csv",
+        "sha256": "ba0844414a65dc6ae7402b8eee5306da24b6b56488d6767135af466c7dcb2775",
+        "bytes": 53582940,
+        "modified_utc": "2026-08-11T08:59:05.987556+00:00",
+        "rows": 21417
+      }
+    ],
+    "rows_profiled": 44898
+  },
+  "score": 48.15,
+  "status_counts": {
+    "PASS": 8,
+    "WARN": 7,
+    "FAIL": 6,
+    "INFO": 0
+  },
+  "gate": {
+    "strict_exit_code": 1,
+    "n_fail": 6
+  },
+  "thresholds": {
+    "empty_rate_warn": 0.001,
+    "empty_rate_fail": 0.05,
+    "dup_rate_warn": 0.01,
+    "dup_rate_fail": 0.05,
+    "dup_title_rate_warn": 0.02,
+    "dup_title_rate_fail": 0.1,
+    "near_dup_rate_warn": 0.01,
+    "near_dup_rate_fail": 0.05,
+    "unparseable_date_rate_warn": 0.0,
+    "unparseable_date_rate_fail": 0.01,
+    "encoding_bad_rate_warn": 0.001,
+    "encoding_bad_rate_fail": 0.01,
+    "short_article_rate_warn": 0.01,
+    "short_article_rate_fail": 0.05,
+    "ks_stat_warn": 0.1,
+    "ks_stat_fail": 0.25,
+    "js_distance_warn": 0.3,
+    "js_distance_fail": 0.5,
+    "subject_purity_warn": 0.8,
+    "subject_purity_fail": 0.99,
+    "single_class_month_warn": 0.05,
+    "single_class_month_fail": 0.2,
+    "marker_class_gap_warn": 0.2,
+    "marker_class_gap_fail": 0.5
+  },
+  "expected_schema": {
+    "title": {
+      "dtype": "string",
+      "nullable": false,
+      "description": "Article headline as scraped.",
+      "constraints": {
+        "min_len": 1,
+        "max_len": 600,
+        "no_urls": true
+      }
+    },
+    "text": {
+      "dtype": "string",
+      "nullable": false,
+      "description": "Article body. Concatenated with `title` to form the `content` field the models are trained on.",
+      "constraints": {
+        "min_words": 20,
+        "max_words": 6000
+      }
+    },
+    "subject": {
+      "dtype": "string",
+      "nullable": false,
+      "description": "Publisher-assigned topic category. Metadata only - never used as a feature, because it leaks the label.",
+      "constraints": {
+        "categorical": true,
+        "max_cardinality": 12
+      }
+    },
+    "date": {
+      "dtype": "string (free-text date)",
+      "nullable": false,
+      "description": "Publication date. Stored as free text in several formats ('December 31, 2017', '31-Dec-17'), so it is parsed leniently rather than typed.",
+      "constraints": {
+        "parseable": true,
+        "min": "2015-01-01",
+        "max": "2018-12-31"
+      }
+    }
+  },
+  "checks": [
+    {
+      "id": "integrity.fingerprint",
+      "category": "integrity",
+      "name": "Source files fingerprinted",
+      "status": "PASS",
+      "weight": 1.0,
+      "summary": "2 source files hashed (SHA-256) and recorded.",
+      "remedy": "Quote these hashes next to any reported accuracy figure.",
+      "metrics": {
+        "files": [
+          {
+            "file": "Fake.csv",
+            "sha256": "bebf8bcfe95678bf2c732bf413a2ce5f621af0102c82bf08083b2e5d3c693d0c",
+            "bytes": 62789876,
+            "modified_utc": "2026-08-11T08:59:05.679516+00:00",
+            "rows": 23481
+          },
+          {
+            "file": "True.csv",
+            "sha256": "ba0844414a65dc6ae7402b8eee5306da24b6b56488d6767135af466c7dcb2775",
+            "bytes": 53582940,
+            "modified_utc": "2026-08-11T08:59:05.987556+00:00",
+            "rows": 21417
+          }
+        ]
+      }
+    },
+    {
+      "id": "integrity.unchanged",
+      "category": "integrity",
+      "name": "Data unchanged since last run",
+      "status": "PASS",
+      "weight": 1.0,
+      "summary": "All source files byte-identical to the previous run.",
+      "remedy": "If the data changed, retrain and re-evaluate; cached models are stale.",
+      "metrics": {
+        "changed": [],
+        "new": []
+      }
+    },
+    {
+      "id": "schema.columns",
+      "category": "schema",
+      "name": "Column set and dtypes match EXPECTED_SCHEMA",
+      "status": "PASS",
+      "weight": 1.5,
+      "summary": "Both files carry exactly the four expected columns (title, text, subject, date), all object/string dtype.",
+      "remedy": "Update EXPECTED_SCHEMA deliberately, or fix the extract.",
+      "metrics": {
+        "per_file": [
+          {
+            "file": "Fake.csv",
+            "columns": 4,
+            "rows": 23481,
+            "missing": "-",
+            "unexpected": "-",
+            "wrong_dtype": "-",
+            "column_order_matches": true
+          },
+          {
+            "file": "True.csv",
+            "columns": 4,
+            "rows": 21417,
+            "missing": "-",
+            "unexpected": "-",
+            "wrong_dtype": "-",
+            "column_order_matches": true
+          }
+        ],
+        "expected_columns": [
+          "title",
+          "text",
+          "subject",
+          "date"
+        ]
+      }
+    },
+    {
+      "id": "schema.label_provenance",
+      "category": "schema",
+      "name": "Label is implicit in the filename",
+      "status": "WARN",
+      "weight": 1.0,
+      "summary": "Neither CSV contains a label column; the label comes from which file a row was read from. Any row that moves between files silently changes class, and there is no way to detect that from the data.",
+      "remedy": "Materialise an explicit `label` column (and a source_file column) when the two CSVs are merged, so provenance survives the join.",
+      "metrics": {
+        "mapping": {
+          "Fake.csv": 0,
+          "True.csv": 1
+        }
+      }
+    },
+    {
+      "id": "completeness.nulls",
+      "category": "completeness",
+      "name": "No missing or blank required fields",
+      "status": "WARN",
+      "weight": 1.5,
+      "summary": "631 blank cells across 44,898 rows. Worst column: `text` in Fake.csv at 2.68% (630 rows).",
+      "remedy": "Rows with an empty `text` still carry a title, so `content` is non-empty and they survive load_data(). Decide explicitly whether a headline-only row is a valid training example - currently it is treated as one.",
+      "metrics": {
+        "per_column": [
+          {
+            "file": "Fake.csv",
+            "column": "title",
+            "rows": 23481,
+            "nulls": 0,
+            "empty_or_blank": 0,
+            "empty_rate": 0.0
+          },
+          {
+            "file": "Fake.csv",
+            "column": "text",
+            "rows": 23481,
+            "nulls": 0,
+            "empty_or_blank": 630,
+            "empty_rate": 0.026830203142966653
+          },
+          {
+            "file": "Fake.csv",
+            "column": "subject",
+            "rows": 23481,
+            "nulls": 0,
+            "empty_or_blank": 0,
+            "empty_rate": 0.0
+          },
+          {
+            "file": "Fake.csv",
+            "column": "date",
+            "rows": 23481,
+            "nulls": 0,
+            "empty_or_blank": 0,
+            "empty_rate": 0.0
+          },
+          {
+            "file": "True.csv",
+            "column": "title",
+            "rows": 21417,
+            "nulls": 0,
+            "empty_or_blank": 0,
+            "empty_rate": 0.0
+          },
+          {
+            "file": "True.csv",
+            "column": "text",
+            "rows": 21417,
+            "nulls": 0,
+            "empty_or_blank": 1,
+            "empty_rate": 4.6691880282018954e-05
+          },
+          {
+            "file": "True.csv",
+            "column": "subject",
+            "rows": 21417,
+            "nulls": 0,
+            "empty_or_blank": 0,
+            "empty_rate": 0.0
+          },
+          {
+            "file": "True.csv",
+            "column": "date",
+            "rows": 21417,
+            "nulls": 0,
+            "empty_or_blank": 0,
+            "empty_rate": 0.0
+          }
+        ],
+        "total_blank_cells": 631
+      }
+    },
+    {
+      "id": "uniqueness.exact_duplicates",
+      "category": "uniqueness",
+      "name": "No exact duplicate articles",
+      "status": "FAIL",
+      "weight": 2.0,
+      "summary": "5,795 of 44,898 rows (12.9%) are exact duplicates of an earlier row. 0 article texts appear under both labels.",
+      "remedy": "load_data(drop_duplicates=True) removes these, and it must run BEFORE train_test_split - otherwise the same article lands on both sides of the split and test accuracy is inflated.",
+      "metrics": {
+        "rows": 44898,
+        "duplicate_rows": 5795,
+        "duplicate_rate": 0.12907033720878436,
+        "texts_with_both_labels": 0
+      }
+    },
+    {
+      "id": "uniqueness.duplicate_titles",
+      "category": "uniqueness",
+      "name": "Headlines are distinct",
+      "status": "FAIL",
+      "weight": 1.0,
+      "summary": "6,169 repeated headlines (13.7%). After exact-body deduplication 374 repeated headlines remain, i.e. different bodies published under the same headline.",
+      "remedy": "Same-headline/different-body pairs are usually a story and its update; they are near-duplicates for training purposes.",
+      "metrics": {
+        "duplicate_titles": 6169,
+        "duplicate_title_rate": 0.13740032963606397,
+        "duplicate_titles_after_content_dedupe": 374
+      }
+    },
+    {
+      "id": "uniqueness.near_duplicates",
+      "category": "uniqueness",
+      "name": "No near-duplicate articles",
+      "status": "PASS",
+      "weight": 1.5,
+      "summary": "Exhaustive, whole corpus: normalising case, punctuation and whitespace turns 272 further rows (0.6%) into duplicates that `drop_duplicates(\"content\")` leaves in place. Sampled, MinHash+LSH over 6,000 of the 39,103 unique articles: 12 pairs at estimated Jaccard >= 0.80, touching 24 articles (0.4% of the sample), of which 10 are the punctuation-only kind and 0 straddle the fake/real boundary. That sample covers only 2.4% of all possible pairs, so the sampled rate is a lower bound, not an estimate - the exhaustive number above is the one to act on.",
+      "remedy": "Exact deduplication is not enough: near-duplicates split across the train/test boundary leak just as effectively. Deduplicate on a hash of the normalised text - that is O(n), needs no threshold, and catches the punctuation-only pairs for free. Raise --near-dup-sample to search harder for the genuinely fuzzy ones.",
+      "metrics": {
+        "normalised_extra_duplicates": 272,
+        "normalised_extra_rate": 0.006058176310748809,
+        "sample_size": 6000,
+        "unique_articles": 39103,
+        "threshold": 0.8,
+        "pairs": 12,
+        "articles_involved": 24,
+        "sampled_rate": 0.004,
+        "pair_coverage_of_corpus": 0.023544113617158698,
+        "identical_after_normalisation": 10,
+        "cross_label_pairs": 0,
+        "n_hashes": 64,
+        "shingle_words": 5
+      }
+    },
+    {
+      "id": "uniqueness.shared_openings",
+      "category": "uniqueness",
+      "name": "Articles do not share identical openings",
+      "status": "PASS",
+      "weight": 1.0,
+      "summary": "6,116 rows repeat an earlier row's first 120 normalised characters. 5,795 of those are exact duplicates already counted above, leaving 321 rows (0.7%) that open identically but are not identical texts.",
+      "remedy": "Cheap linear screen: one hash per row, no pairwise comparison. Run it before the MinHash join to see whether the expensive step is even needed.",
+      "metrics": {
+        "rows_repeating_a_prefix": 6116,
+        "exact_duplicates_among_them": 5795,
+        "beyond_exact_duplicates": 321,
+        "prefix_chars": 120
+      }
+    },
+    {
+      "id": "validity.dates",
+      "category": "validity",
+      "name": "Dates parse and fall in the declared range",
+      "status": "WARN",
+      "weight": 1.0,
+      "summary": "10 of 44,898 date values (0.022%) do not parse; 9 of those contain a URL instead of a date. 0 parsed dates fall outside 2015-01-01..2018-12-31.",
+      "remedy": "These rows are scraper failures - the URL landed in both `title` and `date`. Drop them; they carry no article text worth training on.",
+      "metrics": {
+        "unparseable": 10,
+        "unparseable_rate": 0.00022272707024811796,
+        "url_in_date_field": 9,
+        "out_of_range": 0,
+        "examples": [
+          "https://100percentfedup.com/served-roy-moore-vietnamletter-veteran-sets-record-s",
+          "https://100percentfedup.com/video-hillary-asked-about-trump-i-just-want-to-eat-s",
+          "https://100percentfedup.com/12-yr-old-black-conservative-whose-video-to-obama-we",
+          "https://fedup.wpengine.com/wp-content/uploads/2015/04/hillarystreetart.jpg",
+          "https://fedup.wpengine.com/wp-content/uploads/2015/04/entitled.jpg"
+        ],
+        "min": "2015-03-31 00:00:00",
+        "max": "2018-02-19 00:00:00"
+      }
+    },
+    {
+      "id": "validity.title_is_url",
+      "category": "validity",
+      "name": "Headlines are headlines, not URLs",
+      "status": "WARN",
+      "weight": 1.0,
+      "summary": "9 rows have a URL in the `title` field.",
+      "remedy": "Same scraper failure as the unparseable dates - the two overlap.",
+      "metrics": {
+        "url_titles": 9,
+        "rate": 0.00020045436322330617
+      }
+    },
+    {
+      "id": "validity.encoding",
+      "category": "validity",
+      "name": "Text decodes cleanly as UTF-8",
+      "status": "PASS",
+      "weight": 1.0,
+      "summary": "No U+FFFD replacement characters, no mojibake sequences and no C0 control characters (0 total). 19 cells contain zero-width or bidi format characters, and 25,575 contain non-ASCII characters - almost all of them curly quotes, which clean_text() strips anyway.",
+      "remedy": "Normalise Unicode (NFKC) and strip format characters at load time if the vectorizer is ever changed to keep punctuation.",
+      "metrics": {
+        "per_column": [
+          {
+            "file": "Fake.csv",
+            "column": "title",
+            "replacement_char": 0,
+            "mojibake": 0,
+            "control_char": 0,
+            "invisible_char": 4,
+            "non_ascii": 14676
+          },
+          {
+            "file": "Fake.csv",
+            "column": "text",
+            "replacement_char": 0,
+            "mojibake": 0,
+            "control_char": 0,
+            "invisible_char": 0,
+            "non_ascii": 0
+          },
+          {
+            "file": "True.csv",
+            "column": "title",
+            "replacement_char": 0,
+            "mojibake": 0,
+            "control_char": 0,
+            "invisible_char": 1,
+            "non_ascii": 50
+          },
+          {
+            "file": "True.csv",
+            "column": "text",
+            "replacement_char": 0,
+            "mojibake": 0,
+            "control_char": 0,
+            "invisible_char": 14,
+            "non_ascii": 10849
+          }
+        ],
+        "hard_failures": 0,
+        "invisible_chars": 19
+      }
+    },
+    {
+      "id": "validity.length",
+      "category": "validity",
+      "name": "Article length is plausible",
+      "status": "WARN",
+      "weight": 1.5,
+      "summary": "610 articles (1.4%) are under 20 words, 12 are over 6,000. 631 rows have an empty body and consist of the headline alone. Median 385 words, max 8,389.",
+      "remedy": "A headline-only row teaches the model headline style, not article content. Either drop them or record that the effective corpus is mixed.",
+      "metrics": {
+        "short": 610,
+        "short_rate": 0.013586351285135195,
+        "long": 12,
+        "empty_body": 631,
+        "median_words": 385.0,
+        "max_words": 8389,
+        "min_words": 4
+      }
+    },
+    {
+      "id": "validity.formatting",
+      "category": "validity",
+      "name": "Articles are not all-caps or mostly punctuation",
+      "status": "PASS",
+      "weight": 1.0,
+      "summary": "82 articles are more than 60% uppercase characters and 3 are less than 50% letters. Both skew heavily fake (82 and 1 respectively), so they are a style signal as much as a defect.",
+      "remedy": "Do not silently delete these - they are real examples of the fake style. Flag them so the effect on the model can be measured.",
+      "metrics": {
+        "all_caps": 82,
+        "mostly_punctuation": 3,
+        "all_caps_fake_share": 1.0
+      }
+    },
+    {
+      "id": "consistency.subject_label",
+      "category": "consistency",
+      "name": "Subject categories are shared across classes",
+      "status": "FAIL",
+      "weight": 2.0,
+      "summary": "8 of 8 subject values appear in exactly one class. Predicting the majority class of an article's `subject` scores 100.00% accuracy on the whole corpus, with no text and no model involved.",
+      "remedy": "`subject` must never be used as a feature, and its presence means the two files came from different scrapes rather than one sampling frame. Treat it as evidence about provenance, not as metadata.",
+      "metrics": {
+        "subjects": 8,
+        "exclusive_subjects": 8,
+        "purity": 1.0,
+        "subject_only_rule_accuracy": 1.0,
+        "unknown_subjects": []
+      }
+    },
+    {
+      "id": "consistency.date_label",
+      "category": "consistency",
+      "name": "Publication dates overlap across classes",
+      "status": "FAIL",
+      "weight": 1.5,
+      "summary": "Fake articles span 2015-03-31..2018-02-19, real articles 2016-01-13..2017-12-31. 2,926 articles (6.5%) fall outside the shared window, and 100.0% of them are fake - the date alone classifies them.",
+      "remedy": "Restrict both classes to the shared window before drawing any conclusion about model skill, or accept that part of the accuracy is calendar arithmetic.",
+      "metrics": {
+        "fake_range": [
+          "2015-03-31",
+          "2018-02-19"
+        ],
+        "real_range": [
+          "2016-01-13",
+          "2017-12-31"
+        ],
+        "shared_window": [
+          "2016-01-13",
+          "2017-12-31"
+        ],
+        "articles_outside_shared_window": 2926,
+        "fake_share_outside": 1.0
+      }
+    },
+    {
+      "id": "consistency.publisher_fingerprint",
+      "category": "consistency",
+      "name": "No single token identifies a class",
+      "status": "FAIL",
+      "weight": 2.0,
+      "summary": "The literal string `(Reuters)` appears in 99.2% of real articles and 0.0% of fake ones. \"Contains it, therefore real\" scores 99.60% on the whole corpus with no model. The two classes are not fake vs real news; they are one wire service vs a set of blogs.",
+      "remedy": "Every accuracy figure from this dataset must be quoted next to this number. `python src/train.py --strip-boilerplate` retrains without the marker; the drop is the leakage share. See `reports/eda_report.md` for the full marker sweep.",
+      "metrics": {
+        "marker": "(Reuters)",
+        "in_fake": 0.0003832886163280951,
+        "in_real": 0.9920623803520567,
+        "gap": 0.9916790917357287,
+        "one_rule_accuracy": 0.9960131854425587
+      }
+    },
+    {
+      "id": "consistency.class_balance",
+      "category": "consistency",
+      "name": "Classes are reasonably balanced",
+      "status": "PASS",
+      "weight": 1.0,
+      "summary": "fake 23,481 / real 21,417; minority class is 47.7% of the corpus. No resampling needed.",
+      "remedy": "",
+      "metrics": {
+        "fake": 23481,
+        "real": 21417,
+        "minority_share": 0.47701456635039424
+      }
+    },
+    {
+      "id": "drift.length",
+      "category": "drift",
+      "name": "Article length distributions agree",
+      "status": "WARN",
+      "weight": 1.0,
+      "summary": "KS statistic 0.110 (p=3.65e-118), Jensen-Shannon distance 0.298 on the length histogram. Median 390 words fake vs 377 real - a 13-word difference. A KS statistic of 0.11 is a small effect: length is the dimension on which these two files come closest to agreeing, and it is also the only one a scraper does not control.",
+      "remedy": "With n>17,000 per class the KS p-value is effectively zero for any difference at all, so read the statistic (effect size), not the p-value.",
+      "metrics": {
+        "ks_statistic": 0.10984598008890478,
+        "ks_pvalue": 3.6507462861408083e-118,
+        "js_distance": 0.297839227719253,
+        "median_fake": 390.0,
+        "median_real": 377.0
+      }
+    },
+    {
+      "id": "drift.vocabulary",
+      "category": "drift",
+      "name": "Vocabulary distributions agree",
+      "status": "WARN",
+      "weight": 1.0,
+      "summary": "Jensen-Shannon distance 0.397 between the two unigram distributions on a 8,000-article sample; term-set Jaccard overlap 0.849 over the 20,000 terms that survive min_df=3. (`src/eda.py` reports Jaccard 0.34 for the same corpus - that figure includes the long tail of once-seen tokens, which is where the two files diverge most. Neither number is wrong; they measure different vocabularies.) Some vocabulary difference is expected between real and fabricated news; the question is whether it is topical or publisher-specific, and the leakage audit in `src/eda.py` says largely the latter.",
+      "remedy": "Re-run this after `strip_source_boilerplate()` to see how much of the gap is Reuters datelines rather than content.",
+      "metrics": {
+        "js_distance": 0.39723397976321256,
+        "jaccard": 0.84945,
+        "sample": 8000,
+        "vocab_size": 20000
+      }
+    },
+    {
+      "id": "drift.dates",
+      "category": "drift",
+      "name": "Publication date distributions agree",
+      "status": "FAIL",
+      "weight": 1.5,
+      "summary": "Jensen-Shannon distance 0.482 on the monthly publication histogram - which on its own looks unremarkable, because both classes are dense through the middle of the period. The decisive number is that 11 of 35 months (31%) contain articles from one class only. A single divergence statistic hides a hard calendar boundary; this check reports both and takes the worse verdict.",
+      "remedy": "Sample both classes from the same calendar window, or state plainly that the model has a date confound it cannot separate.",
+      "metrics": {
+        "js_distance": 0.4817356179367614,
+        "months": 35,
+        "single_class_months": 11,
+        "single_class_month_share": 0.3142857142857143
+      }
+    }
+  ]
+}

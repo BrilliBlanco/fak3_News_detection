@@ -76,13 +76,30 @@ Windows (then add it to PATH).
 Run these top to bottom on a fresh clone. Times are from a mid-range laptop.
 
 ```bash
-python src/setup_data.py                      # ~5s   -> data/Fake.csv, data/True.csv
-python src/eda.py                             # ~90s  -> reports/eda_report.md + figures
-python src/train.py --cv 3                    # ~60s  -> models/
-python src/evaluate.py --cv 3 --learning-curve # ~5min -> reports/evaluation_report.md
-python -m pytest -q                                     # ~10s  -> 53 passed
-python -m streamlit run app.py                          # opens http://localhost:8501
+python src/setup_data.py                       # ~5s    -> data/Fake.csv, data/True.csv
+python src/data_quality.py                     # ~2min  -> reports/data_quality_report.md
+python src/eda.py                              # ~90s   -> reports/eda_report.md + figures
+python src/train.py --cv 3                     # ~60s   -> models/
+python src/evaluate.py --cv 3 --learning-curve # ~5min  -> reports/evaluation_report.md
+python -m pytest -q                            # ~15s   -> 78 passed
+python -m streamlit run app.py                 # opens http://localhost:8501
 ```
+
+The deeper analyses. Each rebuilds the same test split from
+`models/run_metadata.json`, so their numbers line up with `metrics.json`:
+
+```bash
+python src/significance.py                     # ~1min  -> McNemar + bootstrap CIs
+python src/temporal_eval.py                    # ~4min  -> train on older, test on newer
+python src/alt_models.py                       # ~6min  -> char/stylometry/non-linear baselines
+python src/error_taxonomy.py                   # ~2min  -> categorised errors
+python src/tune.py                             # ~10min -> grid search + feature ablation
+```
+
+Useful flags: `--strict` (data_quality, exits non-zero on FAIL — use it as a CI
+gate before training), `--strip-boilerplate` (temporal_eval), `--quick` /
+`--full` (tune), `--sweep` (temporal_eval, tries several cutoffs),
+`--bootstrap 0` (significance, skips the slow CIs).
 
 Expected output at each step:
 
@@ -92,7 +109,7 @@ Expected output at each step:
 | `eda.py` | ends with `Key finding: '(Reuters) tag' alone classifies 99.5% …` |
 | `train.py` | SVM ≈ 0.993 accuracy, `one_rule_mentions_reuters` ≈ 0.994 |
 | `evaluate.py` | prints a 3-row table with `roc_auc` ≈ 0.99+ |
-| `pytest` | `53 passed` |
+| `pytest` | `78 passed` |
 | `streamlit` | five tabs, sidebar warns about boilerplate leakage |
 
 > **Ordering rules.** `train.py` needs `data/`. `evaluate.py` and `explain.py`
@@ -439,7 +456,7 @@ preprocessing.py ◄─────┘   clean_text, strip_source_boilerplate,
 ## 9. Before you push
 
 ```bash
-python -m pytest -q                        # 53 passed
+python -m pytest -q                        # 78 passed
 python src/train.py              # artifacts still build
 git status                       # no data/*.csv, no *.joblib, no predictions.db
 ```

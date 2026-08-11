@@ -31,6 +31,23 @@ weights (`reuters` carries ~4× the weight of any other feature), and
 Being able to *find, measure and explain* that is the actual result of this
 project. Reporting 99% and stopping would have been the failure.
 
+### Five independent lines of evidence
+
+Every number below is reproducible from a command in the table further down.
+
+| Evidence | Result | Source |
+|---|---|---|
+| The keyword rule is **not statistically distinguishable** from the best model | 0.9932 vs 0.9940; 78 discordant articles split 36/42; Holm-adjusted **p = 0.57** | `significance.py` |
+| **50 features are as good as 5,000** — the ablation curve is flat, so there is nothing to learn | SVM 0.9898 @ 50 features vs 0.9932 @ 5,000. Strip the boilerplate and the same curve climbs 0.9105 → 0.9847, i.e. the model finally has to work | `tune.py` |
+| `reuters` is the **6th term** the vectorizer keeps when the vocabulary is squeezed | rank 6 of 50 | `tune.py` |
+| A model that **cannot see** the fingerprint scores far lower — and is unmoved by removing it | stylometry-only 0.8832 → 0.8841 (−0.0009), while the keyword stump collapses 0.9940 → 0.5421 (chance) | `alt_models.py` |
+| The label leaks through **three** independent columns, not one | `text` (Reuters tag), `subject` (7/7 categories single-class), `date` (every article before 2016-01-13 is fake) | `eda.py`, `temporal_eval.py` |
+
+**The honest headline: ~0.88, not 0.99.** The stylometry-only model is the only
+one here structurally incapable of reading the publisher fingerprint, so its
+accuracy is the closest thing this dataset offers to a real difficulty estimate
+— pending the cross-dataset test below.
+
 ---
 
 ## Quick start
@@ -58,15 +75,24 @@ Full setup, per-OS notes and troubleshooting: [PROJECT_GUIDE.md](PROJECT_GUIDE.m
 | Command | Purpose |
 |---|---|
 | `python src/setup_data.py` | Extract + verify the dataset from `archive.zip` into `data/` |
+| `python src/data_quality.py` | 21 schema / completeness / validity / drift checks; `--strict` gates training |
 | `python src/eda.py` | Exploratory analysis → `reports/eda_report.md`, figures, tables, **leakage audit** |
 | `python src/train.py` | Train NB / SVM / LR → `models/` + metrics + model card |
-| `python src/evaluate.py` | ROC, PR, calibration, threshold sweep, error analysis → `reports/evaluation_report.md` |
+| `python src/evaluate.py` | ROC, PR, calibration, threshold sweep, error analysis |
+| `python src/significance.py` | McNemar + paired bootstrap CIs — **are the model differences real?** |
+| `python src/temporal_eval.py` | Train on older articles, test on newer ones |
+| `python src/tune.py` | GridSearchCV + the feature-count ablation |
+| `python src/alt_models.py` | Char n-gram, stylometry-only, non-linear, and leakage-only baselines |
+| `python src/error_taxonomy.py` | Categorised error analysis, not just a dump |
 | `python src/predict.py` | Classify text, a file, a URL, or a whole CSV |
 | `python src/explain.py` | Per-prediction and global feature attributions |
 | `python src/cross_dataset_eval.py` | Score the trained models on a *second* dataset — the only honest generalization test |
 | `python src/db.py` | Inspect / export the prediction log |
-| `python -m pytest -q` | 53 tests |
-| `python -m streamlit run app.py` | Demo UI: Classify, Batch, Dataset, Model, History |
+| `python -m pytest -q` | 78 tests |
+| `python -m streamlit run app.py` | Demo UI: Classify, Batch, Data, Model, History |
+
+Data management — provenance, schemas, retention, governance and the
+known-issues register — is documented in [docs/DATA_MANAGEMENT.md](docs/DATA_MANAGEMENT.md).
 
 Every script supports `--help`.
 
@@ -263,25 +289,39 @@ fake-news-detection/
 ├── archive.zip                 bundled dataset
 ├── data/                       Fake.csv / True.csv (git-ignored)
 ├── models/                     trained artifacts (git-ignored)
+├── docs/DATA_MANAGEMENT.md     provenance, schemas, retention, issues register
 ├── reports/                    generated analysis - committed
-│   ├── eda_report.md
-│   ├── evaluation_report.md
-│   ├── eda_tables/*.csv
-│   ├── figures/*.png
+│   ├── eda_report.md           exploratory analysis + leakage audit
+│   ├── evaluation_report.md    curves, calibration, thresholds
+│   ├── data_quality_report.md  21 quality checks (+ .json for CI)
+│   ├── significance_report.md  McNemar + bootstrap CIs
+│   ├── temporal_report.md      older-vs-newer validation
+│   ├── tuning_report.md        grid search + feature ablation
+│   ├── alt_models_report.md    alternative representations
+│   ├── error_taxonomy.md       categorised errors
+│   ├── eda_tables/*.csv, error_tables/*.csv, figures/*.png
 │   └── predictions.db          runtime log (git-ignored)
 ├── src/
 │   ├── config.py               paths, label convention, model registry
 │   ├── setup_data.py           dataset extraction + verification
 │   ├── preprocessing.py        cleaning, leakage guard, stats, loading
+│   ├── data_quality.py         schema / completeness / validity / drift gate
 │   ├── eda.py                  exploratory analysis + leakage audit
 │   ├── train.py                training pipeline + model card
 │   ├── evaluate.py             curves, calibration, thresholds, errors
+│   ├── significance.py         McNemar, Holm, paired bootstrap
+│   ├── temporal_eval.py        temporal split + date-leakage analysis
+│   ├── tune.py                 GridSearchCV + feature ablation
+│   ├── alt_models.py           char n-gram / stylometry / non-linear baselines
+│   ├── error_taxonomy.py       error categorisation
 │   ├── explain.py              feature attribution
 │   ├── predict.py              CLI: single + batch scoring
 │   ├── cross_dataset_eval.py   generalization test
 │   ├── extract.py              URL scraping + OCR
 │   └── db.py                   SQLite prediction store
-├── tests/test_pipeline.py      53 tests
+├── tests/
+│   ├── test_pipeline.py        core pipeline
+│   └── test_analysis_modules.py  the statistics (McNemar, Holm, bootstrap)
 ├── PROJECT_GUIDE.md            run + debug guide
 ├── requirements.txt
 └── README.md

@@ -1,0 +1,106 @@
+{
+  "generated_at": "2026-08-11 20:51 UTC",
+  "search": {
+    "grid_level": "default",
+    "search_kind": "GridSearchCV(32 points)",
+    "cv_folds": 3,
+    "scoring": "f1",
+    "search_docs": 12000,
+    "train_docs": 31278,
+    "strip_boilerplate": false,
+    "random_state": 42
+  },
+  "environment": {
+    "python": "3.12.3",
+    "sklearn": "1.6.1"
+  },
+  "defaults": {
+    "max_features": 5000,
+    "ngram_range": [
+      1,
+      2
+    ],
+    "min_df": 2,
+    "sublinear_tf": false
+  },
+  "models": {
+    "nb": {
+      "params": {
+        "alpha": 0.1,
+        "max_features": 20000,
+        "min_df": 2,
+        "ngram_range": [
+          1,
+          2
+        ],
+        "sublinear_tf": true
+      },
+      "cv_f1_tuned": 0.9622262505796612,
+      "cv_f1_default": 0.9455227252191198,
+      "cv_delta": 0.016703525360541316,
+      "test_f1_default": 0.9467106814430559,
+      "test_f1_tuned": 0.9613207547169811,
+      "test_delta_ci95": [
+        0.011359605209419985,
+        0.01787141329772414
+      ],
+      "train_py_command": "python src/train.py --max-features 20000 --ngram-max 2 --min-df 2",
+      "not_exposed_by_train_py": {
+        "alpha": 0.1,
+        "sublinear_tf": true
+      }
+    },
+    "svm": {
+      "params": {
+        "C": 1.0,
+        "max_features": 5000,
+        "min_df": 5,
+        "ngram_range": [
+          1,
+          2
+        ],
+        "sublinear_tf": true
+      },
+      "cv_f1_tuned": 0.9937922706147244,
+      "cv_f1_default": 0.9888307052008392,
+      "cv_delta": 0.0049615654138852605,
+      "test_f1_default": 0.9943462897526502,
+      "test_f1_tuned": 0.9959905660377358,
+      "test_delta_ci95": [
+        0.0005808265921808442,
+        0.002711176722583094
+      ],
+      "train_py_command": "python src/train.py --max-features 5000 --ngram-max 2 --min-df 5",
+      "not_exposed_by_train_py": {
+        "C": 1.0,
+        "sublinear_tf": true
+      }
+    },
+    "lr": {
+      "params": {
+        "C": 10.0,
+        "max_features": 5000,
+        "min_df": 2,
+        "ngram_range": [
+          1,
+          2
+        ],
+        "sublinear_tf": true
+      },
+      "cv_f1_tuned": 0.9915835016187217,
+      "cv_f1_default": 0.9805141975434063,
+      "cv_delta": 0.011069304075315367,
+      "test_f1_default": 0.9877905611645926,
+      "test_f1_tuned": 0.9938737040527804,
+      "test_delta_ci95": [
+        0.004410454247123055,
+        0.007894660778631888
+      ],
+      "train_py_command": "python src/train.py --max-features 5000 --ngram-max 2 --min-df 2",
+      "not_exposed_by_train_py": {
+        "C": 10.0,
+        "sublinear_tf": true
+      }
+    }
+  }
+}
