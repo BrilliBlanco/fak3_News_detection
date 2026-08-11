@@ -1,10 +1,23 @@
+# Core data + modelling
 pandas>=2.2.3
 numpy>=1.26.4
 scikit-learn>=1.5.1
-joblib>=1.4.2
 scipy>=1.13.1
+joblib>=1.4.2
+
+# Analysis + plots (eda.py, evaluate.py, cross_dataset_eval.py)
+matplotlib>=3.8.0
+
+# Demo UI
 streamlit>=1.37.0
+
+# Optional input sources (URL scraping / screenshot OCR).
+# The app degrades gracefully if these are missing - core text
+# classification never depends on them.
 beautifulsoup4>=4.12.3
 requests>=2.32.3
 pytesseract>=0.3.10
 pillow>=10.4.0
+
+# Tests
+pytest>=8.0.0

@@ -1,10 +1,27 @@
 venv/
+.venv/
 __pycache__/
 *.pyc
+.pytest_cache/
 
+# Datasets - too big for git, extracted from archive.zip by src/setup_data.py
 data/*.csv
+
+# Trained artifacts - regenerate with src/train.py
 models/*.joblib
 models/metrics.txt
+models/metrics.json
+models/run_metadata.json
+models/model_card.md
+
+# Runtime prediction store and scored outputs.
+# The generated analysis (reports/*.md, figures/, eda_tables/) IS committed,
+# so teammates can read the findings without running the pipeline first.
+reports/predictions.db
+reports/*_scored.csv
+reports/corrections.csv
 
 .DS_Store
 Thumbs.db
+.idea/
+.vscode/

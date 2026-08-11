@@ -1,0 +1,8 @@
+subject,fake,real,exclusive_to
+News,9050,0,fake only
+politics,6837,0,fake only
+US_News,783,0,fake only
+left-news,705,0,fake only
+Government News,532,0,fake only
+politicsNews,0,11216,real only
+worldnews,0,9980,real only
