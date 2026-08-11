@@ -154,6 +154,14 @@ def run_batch(args, vectorizer, models):
     X = vectorizer.transform(cleaned)
 
     out = df.copy()
+
+    # Re-scoring an already-scored CSV is a normal thing to do; without this the
+    # previous run's columns are silently overwritten and the comparison is lost.
+    clashes = [c for c in df.columns
+               if c.split("_")[0] in ("prediction", "confidence") or c.startswith("proba_real")]
+    if clashes and not args.quiet:
+        print(f"  note: overwriting existing column(s) {clashes} in the output")
+
     for key, model in models.items():
         proba = model.predict_proba(X)[:, list(model.classes_).index(REAL)] \
             if hasattr(model, "predict_proba") else None
@@ -170,8 +178,11 @@ def run_batch(args, vectorizer, models):
 
         if not args.quiet:
             share_fake = (pred[usable.to_numpy()] == 0).mean() if usable.any() else 0
+            conf = np.maximum(proba, 1 - proba)[usable.to_numpy()]
+            # all-NaN when the model has no predict_proba; nanmean would warn
+            mean_conf = f"{np.nanmean(conf):.1%}" if np.isfinite(conf).any() else "n/a"
             print(f"  {model_name(key):<26} {share_fake:.1%} flagged FAKE, "
-                  f"mean confidence {np.nanmean(np.maximum(proba, 1 - proba)[usable.to_numpy()]):.1%}")
+                  f"mean confidence {mean_conf}")
 
         if args.label_column:
             if args.label_column not in df.columns:

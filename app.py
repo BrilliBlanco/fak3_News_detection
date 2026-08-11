@@ -82,15 +82,53 @@ def available_models() -> list[str]:
 
 # --- classification UI -----------------------------------------------------
 
-def show_result(text: str, model_key: str, source: str, origin: str = None):
-    """Run one classification and render prediction + evidence + feedback."""
+RESULT_KEY = "classification_result"
+BATCH_KEY = "batch_result"
+
+
+def classify_and_store(text: str, model_key: str, source: str, origin: str = None):
+    """
+    Run one classification, log it, and stash it in session state.
+
+    Compute must be separated from render: Streamlit reruns the whole script on
+    every widget interaction, and `st.button(...)` is True only on the run
+    immediately after its click. Anything rendered inside `if st.button(...)`
+    disappears on the next interaction - which previously meant the feedback
+    buttons were destroyed by their own click and never fired. Storing the
+    result here and rendering from session state keeps it on screen and makes
+    it exactly one DB row per classification.
+    """
     vectorizer, model = load_vectorizer(), load_model(model_key)
     result = explain_prediction(text, model, vectorizer, top_n=12)
 
     if "error" in result:
-        st.warning(f"{result['error']} Try a longer or different input.")
+        st.session_state[RESULT_KEY] = {"error": result["error"]}
         return
 
+    contrib = result.get("contributions")
+    top_terms = [[r.term, round(float(r.contribution), 5)] for r in contrib.itertuples()] \
+        if contrib is not None and not contrib.empty else []
+
+    row_id = log_prediction(text, result, model_key, source=source,
+                            origin=origin, top_terms=top_terms)
+
+    st.session_state[RESULT_KEY] = {
+        "result": result, "text": text, "model_key": model_key,
+        "row_id": row_id, "feedback": None,
+    }
+    st.session_state["last_prediction_id"] = row_id
+
+
+def render_result():
+    """Render whatever is in session state. Safe to call on every rerun."""
+    state = st.session_state.get(RESULT_KEY)
+    if not state:
+        return
+    if "error" in state:
+        st.warning(f"{state['error']} Try a longer or different input.")
+        return
+
+    result, text, row_id = state["result"], state["text"], state["row_id"]
     label, confidence = result["label"], result["confidence"]
 
     col1, col2 = st.columns([2, 1])
@@ -117,11 +155,14 @@ def show_result(text: str, model_key: str, source: str, origin: str = None):
     contrib = result.get("contributions")
     if contrib is not None and not contrib.empty:
         st.subheader("Why - the evidence behind this decision")
-        st.caption(
-            "Each term's effect = its TF-IDF value x the model's learned weight. "
-            "These add up (with the bias) to the decision, so this is the actual "
-            "arithmetic, not an approximation."
-        )
+        caption = ("Each term's effect = its TF-IDF value x the model's learned "
+                   "weight. These add up (with the bias) to the decision score, "
+                   "so this is the actual arithmetic, not an approximation.")
+        if state["model_key"] == "svm":
+            caption += (" (For the calibrated SVM the weights are averaged over "
+                        "its 3 calibration folds, so treat the ranking as exact "
+                        "and the magnitudes as very close.)")
+        st.caption(caption)
         chart_df = contrib.set_index("term")["contribution"]
         st.bar_chart(chart_df, color="#3d5a80", horizontal=True)
 
@@ -155,22 +196,25 @@ def show_result(text: str, model_key: str, source: str, origin: str = None):
     with st.expander("Text used for classification"):
         st.text(text[:3000] + ("..." if len(text) > 3000 else ""))
 
-    # Log + feedback loop
-    top_terms = [[r.term, round(float(r.contribution), 5)] for r in contrib.itertuples()] \
-        if contrib is not None and not contrib.empty else []
-    row_id = log_prediction(text, result, model_key, source=source,
-                            origin=origin, top_terms=top_terms)
-    st.session_state["last_prediction_id"] = row_id
-
+    # Feedback loop. These buttons live outside any `if st.button(...)` block,
+    # so the rerun their own click triggers still renders them and the handler
+    # below actually runs.
     st.divider()
+    if state["feedback"]:
+        st.success(f"Recorded as **{state['feedback']}** - thanks. "
+                   "Exportable as training data from the History tab.")
+        return
+
     st.caption(f"Logged as prediction #{row_id}. Was this right?")
     f1, f2, _ = st.columns([1, 1, 4])
     if f1.button("Correct", key=f"ok_{row_id}"):
         record_feedback(row_id, correct=True)
-        st.toast("Thanks - recorded as correct.")
+        state["feedback"] = "correct"
+        st.rerun()
     if f2.button("Wrong", key=f"no_{row_id}"):
         record_feedback(row_id, correct=False)
-        st.toast("Thanks - recorded as incorrect. Exportable as training data.")
+        state["feedback"] = "incorrect"
+        st.rerun()
 
 
 def tab_classify(model_key: str):
@@ -182,7 +226,7 @@ def tab_classify(model_key: str):
             if not text.strip():
                 st.warning("Please paste some text first.")
             else:
-                show_result(text, model_key, source="text")
+                classify_and_store(text, model_key, source="text")
 
     with sub_url:
         if EXTRACT_ERROR:
@@ -207,7 +251,7 @@ def tab_classify(model_key: str):
                             "Very little text extracted - this site probably blocks "
                             "scraping or renders with JavaScript. Paste the text manually instead."
                         )
-                    show_result(extracted, model_key, source="url", origin=url)
+                    classify_and_store(extracted, model_key, source="url", origin=url)
 
     with sub_image:
         st.caption("Requires the Tesseract OCR engine installed on this machine - see README.")
@@ -226,7 +270,11 @@ def tab_classify(model_key: str):
             if extracted:
                 if len(extracted) < 30:
                     st.warning("Very little text extracted - try a clearer, higher-resolution screenshot.")
-                show_result(extracted, model_key, source="image", origin=uploaded.name)
+                classify_and_store(extracted, model_key, source="image", origin=uploaded.name)
+
+    # Rendered outside every `if st.button(...)` block so the result survives
+    # the reruns caused by the feedback buttons.
+    render_result()
 
 
 # --- batch tab -------------------------------------------------------------
@@ -253,39 +301,56 @@ def tab_batch(model_key: str):
     label_col = st.selectbox("True-label column (optional, 0=fake 1=real)",
                              ["(none)"] + list(df.columns))
 
-    if not st.button("Score all rows", type="primary"):
+    if st.button("Score all rows", type="primary"):
+        with st.spinner(f"Scoring {len(df):,} rows..."):
+            vectorizer, model = load_vectorizer(), load_model(model_key)
+            texts = df[text_col].fillna("").astype(str)
+            if text_col != "title" and "title" in df.columns:
+                texts = (df["title"].fillna("").astype(str) + " " + texts).str.strip()
+
+            cleaned = texts.map(clean_text)
+            usable = cleaned.str.len() > 0
+            X = vectorizer.transform(cleaned)
+            proba_real = model.predict_proba(X)[:, list(model.classes_).index(1)]
+
+            out = df.copy()
+            out["prediction"] = [LABEL_NAMES[int(p >= 0.5)] if u else "UNUSABLE"
+                                 for p, u in zip(proba_real, usable)]
+            out["proba_real"] = proba_real.round(4)
+            out["confidence"] = [max(p, 1 - p).round(4) for p in proba_real]
+            out.loc[~usable, ["proba_real", "confidence"]] = None
+
+        # Stash it: scoring a large CSV is expensive, and clicking the download
+        # button below triggers a rerun that would otherwise discard everything.
+        st.session_state[BATCH_KEY] = {
+            "out": out, "usable": usable, "label_col": label_col,
+        }
+
+    state = st.session_state.get(BATCH_KEY)
+    if not state:
         return
+    out, usable, label_col = state["out"], state["usable"], state["label_col"]
 
-    with st.spinner(f"Scoring {len(df):,} rows..."):
-        vectorizer, model = load_vectorizer(), load_model(model_key)
-        texts = df[text_col].fillna("").astype(str)
-        if text_col != "title" and "title" in df.columns:
-            texts = (df["title"].fillna("").astype(str) + " " + texts).str.strip()
-
-        cleaned = texts.map(clean_text)
-        usable = cleaned.str.len() > 0
-        X = vectorizer.transform(cleaned)
-        proba_real = model.predict_proba(X)[:, list(model.classes_).index(1)]
-
-        out = df.copy()
-        out["prediction"] = [LABEL_NAMES[int(p >= 0.5)] if u else "UNUSABLE"
-                             for p, u in zip(proba_real, usable)]
-        out["proba_real"] = proba_real.round(4)
-        out["confidence"] = [max(p, 1 - p).round(4) for p in proba_real]
-        out.loc[~usable, ["proba_real", "confidence"]] = None
+    if len(out) != len(df):
+        st.info("Showing results from the previously scored file. "
+                "Click **Score all rows** to score the file now uploaded.")
 
     flagged = (out["prediction"] == "FAKE").sum()
+    mean_conf = out["confidence"].mean()
     c1, c2, c3 = st.columns(3)
     c1.metric("Flagged FAKE", f"{flagged:,}", f"{flagged / max(len(out), 1):.1%}")
-    c2.metric("Mean confidence", f"{out['confidence'].mean():.1%}")
+    c2.metric("Mean confidence", f"{mean_conf:.1%}" if pd.notna(mean_conf) else "n/a")
     c3.metric("Low confidence (<70%)", int((out["confidence"] < 0.7).sum()))
 
-    if label_col != "(none)":
-        y = pd.to_numeric(df[label_col], errors="coerce")
+    if label_col != "(none)" and label_col in out.columns:
+        y = pd.to_numeric(out[label_col], errors="coerce")
         mask = y.notna() & usable
-        pred_int = (out.loc[mask, "prediction"] == "REAL").astype(int)
-        acc = (pred_int.to_numpy() == y[mask].astype(int).to_numpy()).mean()
-        st.metric("Accuracy against the supplied labels", f"{acc:.2%}")
+        if mask.any():
+            pred_int = (out.loc[mask, "prediction"] == "REAL").astype(int)
+            acc = (pred_int.to_numpy() == y[mask].astype(int).to_numpy()).mean()
+            st.metric("Accuracy against the supplied labels", f"{acc:.2%}")
+        else:
+            st.info(f"No usable rows with a numeric label in `{label_col}`.")
 
     st.dataframe(out.head(50), use_container_width=True)
     st.download_button("Download scored CSV", out.to_csv(index=False).encode("utf-8"),
@@ -434,11 +499,16 @@ def tab_history():
     view["confidence"] = view["confidence"].map(lambda v: f"{v:.1%}" if pd.notna(v) else "")
     st.dataframe(view, use_container_width=True, hide_index=True)
 
+    # Both exports query the whole store, not the slider-limited `df` above -
+    # otherwise "Download corrections (N rows)" silently under-reports and
+    # under-exports whenever there are more corrections than rows on screen.
+    full_log = fetch_predictions(limit=0)
+    corrections = full_log[full_log["true_label"].notna()]
+
     e1, e2 = st.columns(2)
-    e1.download_button("Download the full log (CSV)",
-                       fetch_predictions(limit=0).to_csv(index=False).encode("utf-8"),
+    e1.download_button(f"Download the full log ({len(full_log)} rows)",
+                       full_log.to_csv(index=False).encode("utf-8"),
                        file_name="prediction_log.csv", mime="text/csv")
-    corrections = df[df["true_label"].notna()]
     e2.download_button(f"Download corrections ({len(corrections)} rows)",
                        corrections.to_csv(index=False).encode("utf-8"),
                        file_name="corrections.csv", mime="text/csv",

@@ -13,6 +13,14 @@ decomposes exactly:
 so each term's contribution is a real number you can rank and display -
 not an approximation like SHAP or LIME.
 
+One caveat, stated plainly because the project claims exactness as its main
+advantage over an LLM: this is exact for Logistic Regression (log-odds) and
+Naive Bayes (log-likelihood ratio). For the **calibrated SVM** the weights are
+averaged over the 3 calibration folds. That average reproduces the mean
+decision margin exactly, but the reported probability is a mean of per-fold
+sigmoids rather than a sigmoid of the mean - so for that model, treat the
+term ranking as exact and the magnitudes as very close, not identical.
+
 Usage:
     python src/explain.py --text "Breaking: scientists confirm ..." --model lr
     python src/explain.py --global --model svm --top-n 25

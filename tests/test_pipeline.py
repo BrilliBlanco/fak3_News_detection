@@ -209,6 +209,13 @@ class TestPredictionStore:
     def test_feedback_on_unknown_id_returns_false(self, db):
         assert record_feedback(9999, correct=True, db_path=db) is False
 
+    def test_feedback_without_a_verdict_raises(self, db):
+        """Defaulting here would silently record 'incorrect' and flip true_label."""
+        row_id = log_prediction("x", _result(), "lr", db_path=db)
+        with pytest.raises(ValueError, match="correct=|true_label="):
+            record_feedback(row_id, db_path=db)
+        assert fetch_predictions(limit=1, db_path=db).iloc[0]["user_feedback"] is None
+
     def test_observed_accuracy_uses_reviewed_rows_only(self, db):
         good = log_prediction("a", _result(0), "lr", db_path=db)
         bad = log_prediction("b", _result(0), "lr", db_path=db)

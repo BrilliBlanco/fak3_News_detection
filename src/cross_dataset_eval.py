@@ -65,6 +65,16 @@ def load_second_dataset(path: str, sample: int = None, label_col: str = None,
         )
 
     df = pd.read_csv(path)
+
+    # Validate user-supplied names up front. Without this, a typo'd
+    # --label-column silently no-ops in the rename below and surfaces as a bare
+    # KeyError('label') a few lines later, pointing at the wrong thing.
+    for flag, name in (("--text-column", text_col), ("--label-column", label_col)):
+        if name and name not in df.columns:
+            raise SystemExit(
+                f"{flag} {name!r} is not in {path.name}. Columns: {list(df.columns)}"
+            )
+
     cols = {c.lower().strip(): c for c in df.columns}
     title_col = cols.get("title")
     text_col = text_col or cols.get("text") or cols.get("content")

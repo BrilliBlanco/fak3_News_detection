@@ -185,7 +185,14 @@ def record_feedback(row_id: int, correct: bool = None, true_label: int = None,
     Attach a human verdict to a logged prediction. Either say whether the
     prediction was right (`correct`), or give the actual label (`true_label`),
     from which correctness is derived.
+
+    Raises ValueError if neither is supplied - defaulting would silently record
+    the prediction as *incorrect* and flip its true_label, quietly corrupting
+    the very data the correction export is meant to produce.
     """
+    if correct is None and true_label is None:
+        raise ValueError("record_feedback needs either correct= or true_label=")
+
     init_db(db_path)
     with connect(db_path) as conn:
         row = conn.execute("SELECT prediction FROM predictions WHERE id = ?",
