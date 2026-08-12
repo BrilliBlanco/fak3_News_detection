@@ -25,8 +25,10 @@ close to meaningless, and the project now proves why:
 
 So most of the apparent skill is publisher fingerprinting, not fake-vs-real
 detection. `src/eda.py` quantifies it, `src/explain.py` shows it in the model
-weights (`reuters` carries ~4× the weight of any other feature), and
-`src/train.py --strip-boilerplate` lets you retrain without it.
+weights — `reuters` is the top-weighted "real" indicator in every model
+(2.74× the next feature in the SVM, and Reuters-derived terms take four of its
+eight strongest) — and `src/train.py --strip-boilerplate` lets you retrain
+without it.
 
 Being able to *find, measure and explain* that is the actual result of this
 project. Reporting 99% and stopping would have been the failure.
