@@ -470,24 +470,34 @@ without running the pipeline.
 ## 10. Demo script
 
 A five-minute walkthrough that leads with the finding rather than the accuracy.
+Run `python src/eda.py`, `evaluate.py`, `significance.py`, `temporal_eval.py`,
+`tune.py`, `alt_models.py`, `error_taxonomy.py` and `data_quality.py` first so
+every tab is populated.
 
-1. **Start with the flaw.** Open the app's **Dataset** tab. The red banner:
-   *"a single-rule classifier scores 99.7%"*. Explain that this is why the
-   headline accuracy can't be taken at face value.
+1. **Start with the flaw.** Open the **Data** tab. The red banner: *"a
+   single-rule classifier scores 99.5%"*. Explain that this is why the headline
+   accuracy can't be taken at face value.
 
-2. **Show the model agreeing.** **Model** tab → strongest REAL indicators.
+2. **Prove it four ways in thirty seconds.** **Evidence** tab. The KPI row is
+   the whole argument: keyword rule vs best model **p = 0.57, no difference
+   detected**; SVM at **50 features scores 98.98%**; the stylometry model that
+   cannot see the tag scores **88.32%** and *doesn't move* when you strip the
+   boilerplate; the keyword stump **collapses 45 points** when you do. Click
+   through the five pills if there's time — each is a separate analysis.
+
+3. **Show the model agreeing.** **Model** tab → strongest REAL indicators.
    `reuters` sits on top with roughly 4× the weight of anything else. The
    audit and the learned weights independently point at the same thing.
 
-3. **Then classify something.** **Classify** tab, paste sensational text. Point
+4. **Then classify something.** **Classify** tab, paste sensational text. Point
    at the evidence chart: `breaking`, `mainstream media` push FAKE, with exact
    numbers. Contrast with an LLM, which cannot show you this.
 
-4. **Show the honest limitation.** Paste a short, neutral sentence. Watch the
+5. **Show the honest limitation.** Paste a short, neutral sentence. Watch the
    low-confidence and few-features-matched warnings appear. The system knows
    when it doesn't know.
 
-5. **Close on the management layer.** **History** tab — every prediction
+6. **Close on the management layer.** **History** tab — every prediction
    logged, review verdicts recorded, corrections exportable as new training
    data. Not just a model, a loop.
 

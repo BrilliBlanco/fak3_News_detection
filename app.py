@@ -74,9 +74,29 @@ FIGURE_LABELS = {
 }
 EDA_FIGURES = ["leakage_audit", "class_balance", "subject_by_class",
                "length_distribution", "articles_over_time", "style_features",
-               "top_terms"]
+               "top_terms", "data_quality"]
 EVAL_FIGURES = ["roc_pr_curves", "calibration_curves", "confusion_matrices",
                 "threshold_sweep", "learning_curve", "cross_dataset"]
+
+# The five independent lines of evidence, each produced by its own module.
+# label -> (figure stems, report file, one-line claim)
+EVIDENCE = {
+    "Significance": (
+        ["significance"], "significance_report.md",
+        "Is the best model actually better than grepping for one word?"),
+    "Feature ablation": (
+        ["feature_ablation", "tuning_results"], "tuning_report.md",
+        "How many features does the task really need?"),
+    "Temporal split": (
+        ["temporal_validation"], "temporal_report.md",
+        "What happens when the test articles are published after the training ones?"),
+    "Representations": (
+        ["alt_models"], "alt_models_report.md",
+        "Do models that cannot see the fingerprint still work?"),
+    "Error taxonomy": (
+        ["error_taxonomy"], "error_taxonomy.md",
+        "Which mistakes are the dataset's fault rather than the model's?"),
+}
 
 
 # --- cached loaders --------------------------------------------------------
@@ -107,6 +127,24 @@ def load_run_meta():
 def load_eda_table(name: str):
     path = REPORTS_DIR / "eda_tables" / name
     return pd.read_csv(path, index_col=0) if path.exists() else None
+
+
+@st.cache_data
+def load_report_csv(name: str):
+    """A table written by one of the analysis modules, or None if not run yet."""
+    path = REPORTS_DIR / name
+    return pd.read_csv(path) if path.exists() else None
+
+
+@st.cache_data
+def load_data_quality():
+    path = REPORTS_DIR / "data_quality.json"
+    return json.loads(path.read_text(encoding="utf-8")) if path.exists() else None
+
+
+def read_report(name: str):
+    path = REPORTS_DIR / name
+    return path.read_text(encoding="utf-8") if path.exists() else None
 
 
 def available_models() -> list[str]:
@@ -460,9 +498,29 @@ def tab_data():
         if leak is not None and not leak.empty:
             st.metric("Best one-rule accuracy",
                       f"{leak['one_rule_accuracy'].max():.1%}", border=True)
+        dq = load_data_quality()
+        if dq:
+            counts = dq.get("status_counts", {})
+            st.metric("Data quality score", f"{dq['score']:.0f}/100",
+                      f"{counts.get('FAIL', 0)} fail / {counts.get('WARN', 0)} warn",
+                      delta_color="off", border=True,
+                      help="From src/data_quality.py. Two failures are permanent "
+                           "properties of this corpus, not bugs to fix: disjoint "
+                           "subjects, and the two source files not being samples "
+                           "of one population.")
 
     with st.container(border=True):
         figure_gallery(EDA_FIGURES, key="eda_figs")
+
+    dq = load_data_quality()
+    if dq:
+        with st.expander(f"Data quality checks ({len(dq['checks'])})",
+                         icon=":material/checklist:"):
+            checks = pd.DataFrame(dq["checks"])[
+                ["status", "category", "name", "summary"]]
+            st.dataframe(checks, width="stretch", hide_index=True)
+            st.caption("Run `python src/data_quality.py --strict` to exit "
+                       "non-zero on any failure - use it as a gate before training.")
 
     if leak is not None:
         with st.expander("Leakage audit table", icon=":material/rule:"):
@@ -474,6 +532,130 @@ def tab_data():
 
     with st.expander("Full EDA report", icon=":material/description:"):
         st.markdown((REPORTS_DIR / "eda_report.md").read_text(encoding="utf-8"))
+
+
+# --- evidence --------------------------------------------------------------
+
+def evidence_headline():
+    """
+    The four numbers that make the project's case, pulled from the modules'
+    own output rather than hardcoded, so they cannot drift from the reports.
+    """
+    pair = load_report_csv("significance_pairwise.csv")
+    ablation = load_report_csv("feature_ablation.csv")
+    alt = load_report_csv("alt_models_table.csv")
+
+    shown = False
+    with st.container(horizontal=True):
+        if pair is not None and not pair.empty:
+            # the comparison between the keyword rule and the best trained model
+            row = pair[pair["comparison"].str.contains("Reuters", na=False)
+                       & pair["comparison"].str.contains("SVM", na=False)]
+            if not row.empty:
+                r = row.iloc[0]
+                st.metric("Best model vs keyword rule", f"p = {r['p_holm']:.2f}",
+                          str(r["verdict"]), delta_color="off", border=True,
+                          help="McNemar, Holm-adjusted. A large p means the "
+                               "difference between the trained model and a "
+                               "one-word grep is indistinguishable from chance.")
+                shown = True
+
+        if ablation is not None and not ablation.empty:
+            raw = ablation[(ablation["variant"] == "raw")
+                           & ablation["model"].eq("svm")]
+            if not raw.empty:
+                small = raw.loc[raw["max_features"].idxmin()]
+                big = raw.loc[raw["max_features"].idxmax()]
+                st.metric(f"SVM at {int(small['max_features'])} features",
+                          f"{small['accuracy']:.2%}",
+                          f"{small['accuracy'] - big['accuracy']:+.2%} "
+                          f"vs {int(big['max_features']):,} features",
+                          delta_color="off", border=True,
+                          help="A flat ablation curve means there is nothing to "
+                               "learn - the shortcut is available immediately.")
+                shown = True
+
+        if alt is not None and not alt.empty:
+            style = alt[alt["model"].str.contains("Stylometry", na=False)]
+            leak = alt[alt["model"].str.contains("stump", na=False)]
+            if not style.empty:
+                raw_acc = style[style["condition"] == "raw"]["accuracy"]
+                strip = style[style["condition"] == "stripped"]["accuracy"]
+                delta = (f"{strip.iloc[0] - raw_acc.iloc[0]:+.2%} when stripped"
+                         if not strip.empty else None)
+                st.metric("Stylometry only (blind to the tag)",
+                          f"{raw_acc.iloc[0]:.2%}", delta, delta_color="off",
+                          border=True,
+                          help="This model reads only punctuation and casing "
+                               "counts, so it cannot see '(Reuters)' at all. "
+                               "Closest thing here to the real task difficulty.")
+                shown = True
+            if not leak.empty:
+                raw_acc = leak[leak["condition"] == "raw"]["accuracy"]
+                strip = leak[leak["condition"] == "stripped"]["accuracy"]
+                if not raw_acc.empty and not strip.empty:
+                    st.metric("Keyword stump", f"{raw_acc.iloc[0]:.2%}",
+                              f"{strip.iloc[0] - raw_acc.iloc[0]:+.2%} when stripped",
+                              delta_color="off", border=True,
+                              help="One binary feature: does the text contain "
+                                   "'reuters'. Collapses to the majority class "
+                                   "once the fingerprint is removed.")
+                    shown = True
+    return shown
+
+
+def tab_evidence():
+    any_report = any((REPORTS_DIR / rpt).exists()
+                     for _, rpt, _ in EVIDENCE.values())
+    if not any_report:
+        st.info("No analysis reports yet. Run the deeper analyses first:",
+                icon=":material/science:")
+        st.code("python src/significance.py\npython src/temporal_eval.py\n"
+                "python src/tune.py\npython src/alt_models.py\n"
+                "python src/error_taxonomy.py", language="bash")
+        return
+
+    st.error(
+        "**The headline accuracy does not measure fake-news detection.** Five "
+        "independent analyses agree: a one-word keyword rule matches the best "
+        "model, 50 features score as well as 5,000, and the only model that "
+        "cannot see the publisher fingerprint scores far lower. The label leaks "
+        "through three separate columns - text, subject and date.",
+        icon=":material/priority_high:",
+    )
+
+    evidence_headline()
+
+    labels = list(EVIDENCE)
+    choice = st.segmented_control("Line of evidence", labels, default=labels[0],
+                                  key="evidence_pick",
+                                  label_visibility="collapsed") or labels[0]
+    stems, report_name, claim = EVIDENCE[choice]
+
+    with st.container(border=True):
+        st.subheader(choice, anchor=False)
+        st.caption(claim)
+
+        if choice == "Significance":
+            scores = load_report_csv("significance_scores.csv")
+            if scores is not None and not scores.empty:
+                view = scores[["system", "accuracy", "acc_ci_low",
+                               "acc_ci_high", "errors"]].copy()
+                st.dataframe(
+                    view.style.format({"accuracy": "{:.4f}", "acc_ci_low": "{:.4f}",
+                                       "acc_ci_high": "{:.4f}"}),
+                    width="stretch", hide_index=True)
+                st.caption("95% percentile intervals from a paired bootstrap - "
+                           "every system scored on the same resampled articles.")
+
+        if not figure_gallery(stems, key=f"ev_{choice}"):
+            st.caption("Figure not generated yet - run the matching module.")
+
+    body = read_report(report_name)
+    if body:
+        with st.expander(f"Full report - {report_name}",
+                         icon=":material/description:"):
+            st.markdown(body)
 
 
 # --- model -----------------------------------------------------------------
@@ -645,7 +827,8 @@ def main():
                    "a badly-written truth reads FAKE.")
 
     tabs = st.tabs([":material/search: Classify", ":material/table_rows: Batch",
-                    ":material/analytics: Data", ":material/model_training: Model",
+                    ":material/analytics: Data", ":material/science: Evidence",
+                    ":material/model_training: Model",
                     ":material/history: History"])
     with tabs[0]:
         tab_classify(model_key)
@@ -654,8 +837,10 @@ def main():
     with tabs[2]:
         tab_data()
     with tabs[3]:
-        tab_model(model_key)
+        tab_evidence()
     with tabs[4]:
+        tab_model(model_key)
+    with tabs[5]:
         tab_history()
 
 

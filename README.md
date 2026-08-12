@@ -89,7 +89,7 @@ Full setup, per-OS notes and troubleshooting: [PROJECT_GUIDE.md](PROJECT_GUIDE.m
 | `python src/cross_dataset_eval.py` | Score the trained models on a *second* dataset — the only honest generalization test |
 | `python src/db.py` | Inspect / export the prediction log |
 | `python -m pytest -q` | 78 tests |
-| `python -m streamlit run app.py` | Demo UI: Classify, Batch, Data, Model, History |
+| `python -m streamlit run app.py` | Demo UI: Classify, Batch, Data, Evidence, Model, History |
 
 Data management — provenance, schemas, retention, governance and the
 known-issues register — is documented in [docs/DATA_MANAGEMENT.md](docs/DATA_MANAGEMENT.md).
@@ -285,7 +285,7 @@ Five tabs:
 
 ```
 fake-news-detection/
-├── app.py                      Streamlit UI (5 tabs)
+├── app.py                      Streamlit UI (6 tabs)
 ├── archive.zip                 bundled dataset
 ├── data/                       Fake.csv / True.csv (git-ignored)
 ├── models/                     trained artifacts (git-ignored)
